@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "5AE8177426349D2C", title: "Starting Out!" }
+		{ id: "4C27A710E32D8A9A", title: "Additional's" }
+		{ id: "693226878D58638A", title: "GregTech" }
+		{ id: "1C1C4FB2AFCF489D", title: "Kind of Important?" }
+		{ id: "2E4F640A4C7964ED", title: "Chemicals and Materials" }
+	]
+}

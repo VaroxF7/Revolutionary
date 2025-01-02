@@ -1,0 +1,187 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	disable_toast: true
+	filename: "progression"
+	group: "1C1C4FB2AFCF489D"
+	icon: "gtceu:basic_electronic_circuit"
+	id: "28EBC0FF82EFD94B"
+	order_index: 1
+	quest_links: [
+		{
+			id: "2BB2FC2D9D2F2E57"
+			linked_quest: "4B979482EF026BFF"
+			shape: "rsquare"
+			size: 0.75d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "0B488F9F519FBA61"
+			linked_quest: "3B49BD004F38E1A2"
+			shape: "rsquare"
+			size: 0.8d
+			x: 6.0d
+			y: 8.0d
+		}
+		{
+			id: "025C3D8C61A9C011"
+			linked_quest: "42CD789B8C40E424"
+			shape: "rsquare"
+			size: 0.8d
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			id: "54F1B023BEC98314"
+			linked_quest: "47087361D6DE7DCF"
+			shape: "rsquare"
+			size: 0.75d
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			id: "4EABE2BF51A06FC8"
+			linked_quest: "7AE681E2AB31EA0D"
+			shape: "rsquare"
+			size: 0.75d
+			x: 5.0d
+			y: 6.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["4B979482EF026BFF"]
+			description: [
+				"Circuits along this line are &7LV&r, and are interchangeable in recipes."
+				""
+				"&cElectronic Circuits&r are the \"worst\" in terms of cost and effort required to produce, but you have to start somewhere."
+				""
+				"&eBasic Integrated Processors&r act as a middle layer between &cElectronic Circuits&r and &2Microchip Processors.&r"
+				""
+				"Finally, &2Microchip Processors&r will be the best option for the rest of the playthrough."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:lv_machine_casing"
+			id: "7707E5B061A7FFF7"
+			size: 0.85d
+			title: "&7LV&r Circuits"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Circuits along this line are &bMV&r, and are interchangeable in recipes."
+				""
+				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:mv_machine_casing"
+			id: "45CA8DCA8226945A"
+			size: 0.85d
+			title: "&bMV&r Circuits"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Circuits along this line are &6HV&r, and are interchangeable in recipes."
+				""
+				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:hv_machine_casing"
+			id: "54CF2016ED44CC45"
+			size: 0.85d
+			title: "&6HV&r Circuits"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"Circuits along this line are &5EV&r, and are interchangeable in recipes."
+				""
+				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:ev_machine_casing"
+			id: "2A9ECD745E15A5D8"
+			size: 0.85d
+			title: "&5EV&r Circuits"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["42CD789B8C40E424"]
+			description: [
+				"Circuits along this line are &1IV&r, and are interchangeable in recipes."
+				""
+				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:iv_machine_casing"
+			id: "5B0AC445672E14B6"
+			size: 0.85d
+			title: "&1IV&r Circuits"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["47087361D6DE7DCF"]
+			description: [
+				"Circuits along this line are &dLuV&r, and are interchangeable in recipes."
+				""
+				"The pattern stays the same: the rightmost circuit comes in &dlarger quantities&r and is overall &aeasier&r to produce."
+				""
+				"Make sure to set up &3wetware board production&r as soon as possible! These take a &6very long time&r to make."
+				""
+				"It's &dLuV&r, not &4LUV&r."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:luv_machine_casing"
+			id: "140E91C53C30C096"
+			size: 0.85d
+			title: "&dLuV&r Circuits"
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7AE681E2AB31EA0D"]
+			description: ["Circuits along this line are &cZPM&r, and are interchangeable in recipes."]
+			hide_dependency_lines: true
+			icon: "gtceu:zpm_machine_casing"
+			id: "2E00E10D4E92F64D"
+			size: 0.85d
+			title: "&cZPM&r Circuits"
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			description: ["Circuits along this line are &3UV&r, and are interchangeable for each other."]
+			hide_dependency_lines: true
+			icon: "gtceu:uv_machine_casing"
+			id: "35EFFA6C85EFCA58"
+			size: 0.85d
+			title: "&3UV&r Circuits"
+			x: -1.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["3B49BD004F38E1A2"]
+			description: [
+				"Congratulations! You've reached the end of the circuit progression."
+				""
+				"The only &4UHV&r circuit is the &6Wetware Mainframe&r, which is used for crafting some endgame stuff."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:uhv_machine_casing"
+			id: "177ADFFD33DDA624"
+			size: 0.85d
+			title: "&4UHV&r Circuits"
+			x: -1.0d
+			y: 8.0d
+		}
+	]
+	subtitle: ["A step forward is always rewarding"]
+	title: "Circuit Progression"
+}

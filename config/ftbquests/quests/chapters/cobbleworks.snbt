@@ -1,0 +1,449 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cobbleworks"
+	group: "1C1C4FB2AFCF489D"
+	icon: "gtceu:lv_extractor"
+	id: "62E0DD08C5908BC3"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["65FDA53B4DFC5504"]
+			description: ["This is one of the &aBest Ways&r to get &6Magnesium&r!"]
+			id: "59BDF93DF8095EF8"
+			size: 0.5d
+			tasks: [{
+				id: "1F27226DAAC90BC9"
+				item: "create:powdered_obsidian"
+				type: "item"
+			}]
+			x: 1.25d
+			y: 4.25d
+		}
+		{
+			dependencies: ["1E5C47C2D769EC14"]
+			description: [
+				"You can use it to get &0Coal&r, &eGold&r and &cRedstone&r from it!"
+				""
+				"I mean if you really want, automate it and send me screenshots of this useless thing actually being used!"
+			]
+			id: "175F4974DA764C15"
+			size: 0.5d
+			tasks: [{
+				id: "0FE38E08B5997A73"
+				item: "gtceu:netherrack_dust"
+				type: "item"
+			}]
+			x: 1.25d
+			y: 3.25d
+		}
+		{
+			dependencies: ["1844C9BC37A478F6"]
+			description: ["Either Macerate &aGravel&r or &4Cobble Stone&r, your choice! You need much of this to be efficient."]
+			id: "3206F7695D845E70"
+			tasks: [{
+				id: "768D314209228AC4"
+				item: "gtceu:stone_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.25d
+		}
+		{
+			dependencies: ["3206F7695D845E70"]
+			description: [
+				"Combind &2Stone Dust&r with &9Water&r."
+				""
+				"&bElectrolyze&r it to get all of the dust out of it!"
+				""
+				""
+			]
+			id: "2298D0A95C99704F"
+			subtitle: "&l&6The OP dust!&r&r"
+			tasks: [{
+				id: "3F3A0D6E353D02EA"
+				item: "gtceu:clay_dust"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.25d
+		}
+		{
+			dependencies: [
+				"2298D0A95C99704F"
+				"3206F7695D845E70"
+			]
+			description: [
+				"This is used for many things down the line, I recommend to buffer it for when you need it."
+				""
+				"Combind &9Water&r, &1Clay&r and &8Stone Dust&r to get &7Liquid Concrete&r."
+			]
+			icon: "gtceu:concrete_dust"
+			id: "23F8043A1EE6C3D6"
+			tasks: [{
+				id: "4A543323381753ED"
+				item: "gtceu:concrete_bucket"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.75d
+		}
+		{
+			dependencies: [
+				"2298D0A95C99704F"
+				"2D2E91000ADEDE7D"
+			]
+			description: [
+				"&aThe Main Source of all those dust is the OP CLAY LINE!&r"
+				""
+				"Congrats you are rich now!"
+			]
+			icon: "gtceu:silicon_dust"
+			id: "623C39ECBE95CA6F"
+			subtitle: "&l&6Clay&r&r"
+			tasks: [
+				{
+					id: "5A82A3C5B1595245"
+					item: "gtceu:silicon_dust"
+					type: "item"
+				}
+				{
+					id: "5917F194CDDA9AA6"
+					item: "gtceu:lithium_dust"
+					type: "item"
+				}
+				{
+					id: "4E077C630396B53D"
+					item: "gtceu:aluminium_dust"
+					type: "item"
+				}
+				{
+					id: "73D1A96918AD95CB"
+					item: "gtceu:sodium_dust"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 3.25d
+		}
+		{
+			description: ["The best source of &aCobblestone&r is &aThermal &6Igneous Extruders&r. If the first one isn't enough, you can always upgrade and make more of them.&r This is the starting point of your &aCobbleworks&r. "]
+			disable_toast: true
+			id: "1844C9BC37A478F6"
+			size: 1.2d
+			tasks: [{
+				id: "5618DA3443832E1E"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.25d
+		}
+		{
+			dependencies: ["1844C9BC37A478F6"]
+			description: ["Break up your &aCobblestone&r into &aGravel&r. "]
+			id: "399F96DEB9E84B7A"
+			size: 1.2d
+			tasks: [{
+				id: "6FB7704BE5498433"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.25d
+		}
+		{
+			dependencies: ["399F96DEB9E84B7A"]
+			description: ["Break up your &aGravel&r into &aSand&r. "]
+			id: "631663145962C355"
+			size: 1.2d
+			tasks: [{
+				id: "115D7D1ACCA0476D"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.25d
+		}
+		{
+			dependencies: ["631663145962C355"]
+			id: "70209037D99BA88C"
+			tasks: [{
+				id: "056C4534E18D663B"
+				item: "kubejs:block_dust"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.25d
+		}
+		{
+			dependencies: ["631663145962C355"]
+			description: ["Compact your &6Sand&r into &6Sandstone&r. Either use the &aCreate Compacting&r Recipe or &aCompressor&r."]
+			id: "0B0718B6DB856918"
+			size: 1.2d
+			tasks: [{
+				id: "070B015925225C53"
+				item: "minecraft:sandstone"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.25d
+		}
+		{
+			dependencies: ["0B0718B6DB856918"]
+			description: [
+				"Break up your &aSandstone&r into &aSaltpeter&r. This is probably the best way to get &6Saltpeter&r."
+				""
+				"You can also electrolyse it for &6Potassium&r, although it isn't recommended because of how easily you can get &6Potassium&r, such as from &9Deepslate &3Processing&r, and how much &6Saltpeter&r it costs."
+			]
+			id: "3A992B7669FA0A3B"
+			size: 1.2d
+			tasks: [{
+				id: "21453FCAD23A761A"
+				item: "gtceu:saltpeter_dust"
+				type: "item"
+			}]
+			x: 4.514285714285691d
+			y: 0.25051020408166025d
+		}
+		{
+			dependencies: ["631663145962C355"]
+			id: "68735B1C00D77429"
+			tasks: [{
+				id: "24CE73B0A52B2DD8"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 1.25d
+		}
+		{
+			dependencies: ["3A992B7669FA0A3B"]
+			description: ["Crush your &6Glass&r into &6Quartz Sand&r. Can be centrifuged into useful resources."]
+			id: "6D1A13AF590AC344"
+			size: 1.2d
+			tasks: [{
+				id: "3FE2808BF28548F9"
+				item: "gtceu:quartz_sand_dust"
+				type: "item"
+			}]
+			x: 5.828571428571429d
+			y: 0.25d
+		}
+		{
+			dependencies: ["70209037D99BA88C"]
+			icon: "minecraft:tuff"
+			id: "6F06EA84C2EEFC66"
+			tasks: [{
+				id: "4F29216A6D83BA15"
+				item: "minecraft:tuff"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.25d
+		}
+		{
+			dependencies: ["70209037D99BA88C"]
+			id: "515A4B76CEEECAE3"
+			tasks: [{
+				id: "3ED414B1938B6BD7"
+				item: "minecraft:magma_block"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["515A4B76CEEECAE3"]
+			id: "1E5C47C2D769EC14"
+			tasks: [{
+				id: "1DEF10446307F0B7"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.25d
+		}
+		{
+			dependencies: ["1E5C47C2D769EC14"]
+			id: "65FDA53B4DFC5504"
+			tasks: [{
+				id: "75DC548F3C3B0152"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.25d
+		}
+		{
+			dependencies: ["3A992B7669FA0A3B"]
+			id: "6DF3339AACDD6853"
+			tasks: [{
+				id: "69E023BC7536E1F6"
+				item: "gtceu:potassium_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.25d
+		}
+		{
+			dependencies: ["68735B1C00D77429"]
+			id: "6283BF8A2F315A71"
+			tasks: [{
+				id: "07E78284F3E107C8"
+				item: "gtceu:glass_dust"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["6283BF8A2F315A71"]
+			id: "2D2E91000ADEDE7D"
+			tasks: [{
+				id: "27E3FB4BDF1F53B7"
+				item: "gtceu:silicon_dioxide_dust"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.25d
+		}
+		{
+			dependencies: ["631663145962C355"]
+			id: "6FE6D6912C0FE8FB"
+			tasks: [{
+				id: "24E50907FFB96FDC"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["6FE6D6912C0FE8FB"]
+			description: ["Now just &aCrush&r it to get Lapis Lazuli."]
+			id: "1DF00CD7B67A4456"
+			tasks: [{
+				id: "33CBB86C365C62B2"
+				item: "create:scoria"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -1.75d
+		}
+		{
+			dependencies: ["6FE6D6912C0FE8FB"]
+			id: "6F4117DEA66327D0"
+			tasks: [{
+				id: "5C7140A483A37880"
+				item: "minecraft:diorite"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -1.75d
+		}
+		{
+			dependencies: ["6F06EA84C2EEFC66"]
+			description: [
+				"Tuff is a very good source early source for,"
+				""
+				"- Electrum"
+				"- Gold"
+				"- Iron"
+				"- Zinc"
+				"- Copper"
+				"- Flint"
+				""
+				"&6Electrum&r is used in many recipes in &aMV&r and &aHV&r so this should be pretty good automated."
+			]
+			icon: "create_enchantment_industry:enchanting_guide"
+			id: "58C261012036D7A5"
+			shape: "gear"
+			tasks: [{
+				id: "03308CB112801901"
+				item: "minecraft:tuff"
+				type: "item"
+			}]
+			title: "Resource Output"
+			x: 1.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["6FE6D6912C0FE8FB"]
+			description: [
+				"If you &9Wash&r the &6Soul Sand&r you get &6Nether Quartz&r and &6Gold Nuggets&r from it. However you can also &9Centrifuge&r it to get some &0Oil&r, &6Salpeter&r and Sand but thats not so much good of a Recipe Considering it takes 10 Seconds for each cycle and you do not have a 100% chance. "
+				""
+				"Consider this Recipe later down the Line when you have &6HV&r or &6EV&r Machinery."
+			]
+			icon: "create_enchantment_industry:enchanting_guide"
+			id: "77F6BB7B2FDB581B"
+			shape: "gear"
+			tasks: [{
+				id: "7F4A49DFF413CD9F"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			title: "Resource Output"
+			x: 1.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["1844C9BC37A478F6"]
+			description: ["Same way as the Cobblestone, just use a &aIgneous Extruder&r."]
+			id: "0522F20CF39C86CC"
+			tasks: [{
+				id: "5944564B8174A870"
+				item: "minecraft:deepslate"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.25d
+		}
+		{
+			dependencies: ["0522F20CF39C86CC"]
+			id: "20D3EC1AC808D840"
+			subtitle: "&bThis is Still Work in Progress!&r"
+			tasks: [{
+				id: "46052829A510819D"
+				item: "gtceu:thorium_dust"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.25d
+		}
+		{
+			dependencies: ["1DF00CD7B67A4456"]
+			id: "5FCA35AA437D494E"
+			shape: "gear"
+			tasks: [{
+				id: "145891ED5C25ED24"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.75d
+		}
+		{
+			dependencies: ["6F4117DEA66327D0"]
+			description: ["If you &9Crush&r it you can get &6Nether Quartz&r out of it, however if you use a &9Thermal Centrifuge&r you can get &6Impure Piles or Iron Dust&r."]
+			id: "32903C5C0C9F07B0"
+			shape: "gear"
+			tasks: [
+				{
+					id: "549BD0AFD50F23E5"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "2FB8E5ABDA5EE60B"
+					item: "gtceu:impure_iron_dust"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -2.75d
+		}
+	]
+	title: "Cobbleworks™"
+}

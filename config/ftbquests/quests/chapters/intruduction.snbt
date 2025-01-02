@@ -1,0 +1,254 @@
+{
+	autofocus_id: "37E5924FEA898C8B"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "intruduction"
+	group: "5AE8177426349D2C"
+	icon: "gtceu:exquisite_spessartine_gem"
+	id: "7C9A3FFFE12EF6D1"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:textures/entity_icon/camel/camel.png"
+			rotation: -15.0d
+			width: 1.0d
+			x: -1.2551020408163254d
+			y: -0.9336734693877489d
+		}
+		{
+			height: 1.0d
+			image: "cold_sweat:item/filled_waterskin"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.3979591836734713d
+			y: -0.18622448979591155d
+		}
+		{
+			height: 1.0d
+			image: "sereneseasons:item/tropical_calendar_03"
+			rotation: -20.0d
+			width: 1.0d
+			x: -1.5d
+			y: -0.13775510204080987d
+		}
+		{
+			height: 1.0d
+			image: "ftblibrary:icons/heart"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.010204081632650741d
+			y: -0.7780612244897895d
+		}
+		{
+			height: 1.0d
+			image: "farmersdelight:item/horse_feed"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.23469387755101678d
+			y: -2.369897959183664d
+		}
+		{
+			height: 0.5d
+			hover: ["Foxy!"]
+			image: "minecraft:textures/entity_icon/fox/fox_sleep.png"
+			rotation: 0.0d
+			width: 0.5d
+			x: 0.030612244897952223d
+			y: -2.5535714285714235d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["37E5924FEA898C8B"]
+			description: [
+				"&9Seasons&r, self explanitory. We have added &aSeasons to our pack&r. There are all the normal 4 seasons. &aSpring/Summer/Fall/Winter&r, however, all of the crops are effected by it too! So keep an eye out for that!"
+				""
+				"&a&nJEI IS YOUR FRIEND!&r&r"
+				""
+				""
+				"{@pagebreak}"
+				""
+				"So, for crops, there is a &ecoloured tooltip&r below each crop and seed, check for that to see &ewhich season is needed to grow said crop&r, however, there also is a work-around. You can either grow your cropy &n&abelow y=55&r&r or &aBuild a Greenhouse&r / &aIndustrial Greenhouse&r later on."
+				""
+				""
+				"{@pagebreak}"
+				""
+				"The &aNormal Greenhouse&r will not require any power, however, you need to also harvest them right? You can use &bCreate / Thermal&r or other means to harvest them. "
+				""
+				"When a &acrop is in season&r, it will grow as it &anormally&r does, and you'll be able to use bonemeal to grow it faster like normal. "
+				"When a &acrop is out of season&r, it will grow very slowly, and will &arequire more bonemeal than usual&r to increase its growth stage. "
+				"&4To grow out of season crops efficiently, you have three options:&r"
+				""
+				"&aPlacing glass/stained glass blocks within 16 blocks above crops to grow out of season crops above ground&r."
+				"Growing out of season crops &aunderground&r, as long as they're below a certain &cY level (55)&r and not exposed to the sky."
+			]
+			id: "673EF15C13E7FD10"
+			rewards: [
+				{
+					id: "7BC9522A5D36DE89"
+					item: "sereneseasons:season_sensor"
+					type: "item"
+				}
+				{
+					id: "0F23831699170FFB"
+					item: "sereneseasons:calendar"
+					type: "item"
+				}
+				{
+					id: "4EDEADFF9875E955"
+					type: "xp"
+					xp: 10
+				}
+			]
+			subtitle: "Better Watch it!"
+			tasks: [{
+				id: "403C380338B24C0F"
+				title: "Seasons"
+				type: "checkmark"
+			}]
+			title: "Seasons and Crops"
+			x: -1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["37E5924FEA898C8B"]
+			description: [
+				"So for the &6Temperatur&r, you will notice that you have a little head beside's your Hotbar, this is your temperatur. &aKeep it in the Gray Zone.&r"
+				""
+				"If you are too &6Hot&r, it will be &6Orange Flaming Hot&r."
+				""
+				"If you are too &bCold&r, it will be &bBlue Icy Cold&r."
+				""
+				""
+				"{@pagebreak}"
+				""
+				"There are Machines like the &fHearth&r that can give you &aInsulation / Warmth&r."
+				""
+				"There is also something that can cool you down like the &bIcebox&r!"
+				""
+				""
+				"{@pagebreak}"
+				""
+				"You could also just make yourself the &6Hoglin&r or &6Fur Armor&r for &aTemperatur Regulation!&r"
+			]
+			id: "7C317860E316429E"
+			rewards: [{
+				id: "00B9BBC539C2D32B"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "This is Coly!"
+			tasks: [{
+				id: "7F7A088E4168C1D6"
+				title: "Yes!"
+				type: "checkmark"
+			}]
+			title: "Temperatur and Clothing"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			description: [
+				"&9Welcome to Securite Gregified!&r"
+				""
+				"This Pack is intended for &9Beginner&r and &9Advanced Gregtech&r Players, do not try this pack if you have no Modded Experience at all. Turn around and go far far away."
+				""
+				"{@pagebreak}"
+				""
+				"We have planned many more &aAdditions&r and &aContent&r for the Future, but I am very busy with work and overall life."
+				""
+				"Furthermore we also want to host a &aCommunity Server&r in the future, but that really just depends on the Playerbase each day. "
+				""
+				"&aThank you for reading!&r ✨"
+			]
+			id: "37E5924FEA898C8B"
+			rewards: [
+				{
+					id: "618CC1F7DBE127B4"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "77BD56D2AF652114"
+					item: {
+						Count: 1
+						id: "gtceu:prospector.hv"
+						tag: {
+							Charge: 100000L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "43421E06EA8D70B3"
+					item: {
+						Count: 1
+						id: "gtceu:diamond_mining_hammer"
+						tag: {
+							DissallowContainerItem: 0b
+							Enchantments: [
+								{
+									id: "minecraft:efficiency"
+									lvl: 5s
+								}
+								{
+									id: "minecraft:unbreaking"
+									lvl: 3s
+								}
+							]
+							GT.Behaviours: {
+								AoEColumn: 1
+								AoELayer: 0
+								AoERow: 1
+								MaxAoEColumn: 1
+								MaxAoELayer: 0
+								MaxAoERow: 1
+							}
+							GT.Tool: {
+								AttackDamage: 8.5f
+								AttackSpeed: -3.1000001f
+								Damage: 0
+								HarvestLevel: 3
+								MaxDamage: 2303
+								ToolSpeed: 6.4f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "Well, hello there..."
+			tasks: [{
+				id: "27659C5EAA464EE6"
+				title: "Welcome to the Pack!"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"The &6whole pack's quest book&r is from the &6GregTech Community Pack&r. So full Credit to them!"
+				""
+				"We have made &esome additions&r for our &eprogression of the pack&r. "
+				""
+				"&a&nWe are very gradeful!&r&r"
+			]
+			icon: "ftbquests:book"
+			id: "250111AFE8F3E765"
+			tasks: [{
+				id: "6DAC8E85909069F3"
+				title: "Yep."
+				type: "checkmark"
+			}]
+			title: "Big Thanks!"
+			x: 0.0d
+			y: -0.5d
+		}
+	]
+	subtitle: ["Welcome!"]
+	title: "Introduction"
+}

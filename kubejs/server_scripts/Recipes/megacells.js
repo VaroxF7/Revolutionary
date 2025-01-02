@@ -1,0 +1,131 @@
+ServerEvents.recipes(e => {
+    e.recipes.gtceu.assembler("mega_pattern_provider_new")
+     .itemInputs("#ae2:pattern_provider", "megacells:accumulation_processor")
+     .inputFluids([Fluid.of("kubejs:liquid_fluix", 288)])
+     .itemOutputs("megacells:mega_pattern_provider")
+     .duration(440).EUt(16)
+
+     e.recipes.gtceu.assembler("mega_interface_new")
+     .itemInputs("ae2:interface", "megacells:accumulation_processor")
+     .inputFluids([Fluid.of("kubejs:liquid_fluix", 288)])
+     .itemOutputs("megacells:mega_interface")
+     .duration(440).EUt(16)
+
+     e.recipes.gtceu.assembler("mega_crafting_monitor_new")
+     .itemInputs("megacells:mega_crafting_unit", "ae2:storage_monitor")
+     .inputFluids([Fluid.of("kubejs:liquid_fluix", 288)])
+     .itemOutputs("megacells:mega_crafting_monitor")
+     .duration(440).EUt(16)
+
+     e.recipes.gtceu.assembler("mega_256m_crafting_storage_new")
+     .itemInputs("megacells:mega_crafting_unit", "megacells:cell_component_256m")
+     .inputFluids([Fluid.of("kubejs:liquid_fluix", 288)])
+     .itemOutputs("megacells:256m_crafting_storage")
+     .duration(440).EUt(16)
+
+     e.recipes.gtceu.assembler("mega_64m_crafting_storage_new")
+     .itemInputs("megacells:mega_crafting_unit", "megacells:cell_component_64m")
+     .inputFluids([Fluid.of("kubejs:liquid_fluix", 288)])
+     .itemOutputs("megacells:64m_crafting_storage")
+     .duration(440).EUt(16)
+
+     e.recipes.gtceu.assembler("mega_16m_crafting_storage_new")
+     .itemInputs("megacells:mega_crafting_unit", "megacells:cell_component_16m")
+     .inputFluids([Fluid.of("kubejs:liquid_fluix", 288)])
+     .itemOutputs("megacells:16m_crafting_storage")
+     .duration(440).EUt(16)
+
+     e.recipes.gtceu.assembler("mega_4m_crafting_storage_new")
+     .itemInputs("megacells:mega_crafting_unit", "megacells:cell_component_4m")
+     .inputFluids([Fluid.of("kubejs:liquid_fluix", 288)])
+     .itemOutputs("megacells:4m_crafting_storage")
+     .duration(440).EUt(16)
+
+     e.recipes.gtceu.assembler("mega_1m_crafting_storage_new")
+     .itemInputs("megacells:mega_crafting_unit", "megacells:cell_component_1m")
+     .inputFluids([Fluid.of("kubejs:liquid_fluix", 288)])
+     .itemOutputs("megacells:1m_crafting_storage")
+     .duration(440).EUt(16)
+
+     e.recipes.gtceu.assembler("mega_co_crafting_storage_new")
+     .itemInputs("megacells:mega_crafting_unit", "ae2:engineering_processor")
+     .inputFluids([Fluid.of("kubejs:liquid_fluix", 288)])
+     .itemOutputs("megacells:mega_crafting_accelerator")
+     .duration(440).EUt(16)
+
+     // MORE EXPENSIV ONES //
+     
+     e.recipes.gtceu.assembler("mega_crafting_unit_new")
+     .itemInputs("8x ae2:crafting_unit", "4x ae2:logic_processor", "2x megacells:accumulation_processor", "4x ae2:fluix_smart_cable")
+     .inputFluids([Fluid.of("kubejs:clean_fluix", 288)])
+     .itemOutputs("megacells:mega_crafting_unit")
+     .duration(640).EUt(32)
+
+     e.recipes.gtceu.assembler("mega_superdense_cell_new")
+     .itemInputs("16x ae2:dense_energy_cell", "2x megacells:accumulation_processor")
+     .inputFluids([Fluid.of("gtceu:silver", 1200)])
+     .itemOutputs("megacells:mega_energy_cell")
+     .duration(840).EUt(32)
+
+     // COMPONENTS - 1M to 256M //
+
+     e.recipes.gtceu.circuit_assembler("1m_mega_component_new")
+      .itemInputs("3x ae2:cell_component_256k", "4x megacells:accumulation_processor", "16x gtceu:sky_stone_dust", "ae2:quartz_vibrant_glass", "32x kubejs:mana_ram_chip", "32x gtceu:soc")
+      .itemOutputs("megacells:cell_component_1m")
+      .inputFluids([Fluid.of("gtceu:electrum", 2200)])
+      .duration(960).EUt(512)
+
+     e.recipes.gtceu.circuit_assembler("1m_mega_component_new_clean")
+      .itemInputs("3x ae2:cell_component_256k", "2x megacells:accumulation_processor", "8x gtceu:sky_stone_dust", "ae2:quartz_vibrant_glass", "32x kubejs:mana_ram_chip", "32x gtceu:soc")
+      .itemOutputs("megacells:cell_component_1m")
+      .inputFluids([Fluid.of("gtceu:silver", 1200)])
+      .duration(560).EUt(120).cleanroom(CleanroomType.CLEANROOM)
+
+      e.recipes.gtceu.circuit_assembler("4m_mega_component_new")
+      .itemInputs("3x megacells:cell_component_1m", "4x megacells:accumulation_processor", "8x #forge:dusts/ender_pearl", "ae2:quartz_vibrant_glass", "32x kubejs:mana_ram_chip", "32x gtceu:soc")
+      .itemOutputs("megacells:cell_component_4m")
+      .inputFluids([Fluid.of("gtceu:polyethylene", 1200)])
+      .duration(960).EUt(512)
+
+      e.recipes.gtceu.circuit_assembler("4m_mega_component_new_clean")
+      .itemInputs("3x megacells:cell_component_1m", "2x megacells:accumulation_processor", "4x #forge:dusts/ender_pearl", "ae2:quartz_vibrant_glass", "32x kubejs:mana_ram_chip", "32x gtceu:soc")
+      .itemOutputs("megacells:cell_component_4m")
+      .inputFluids([Fluid.of("gtceu:polyethylene", 400)])
+      .duration(560).EUt(120).cleanroom(CleanroomType.CLEANROOM)
+
+      e.recipes.gtceu.circuit_assembler("16m_mega_component_new")
+      .itemInputs("3x megacells:cell_component_4m", "4x megacells:accumulation_processor", "8x #forge:dusts/ender_pearl", "ae2:quartz_vibrant_glass", "32x kubejs:mana_ram_chip", "32x gtceu:advanced_soc")
+      .itemOutputs("megacells:cell_component_16m")
+      .inputFluids([Fluid.of("gtceu:polyvinyl_chloride", 1200)])
+      .duration(960).EUt(512)
+
+      e.recipes.gtceu.circuit_assembler("16m_mega_component_new_clean")
+      .itemInputs("3x megacells:cell_component_4m", "2x megacells:accumulation_processor", "4x #forge:dusts/ender_pearl", "ae2:quartz_vibrant_glass", "32x kubejs:mana_ram_chip", "32x gtceu:advanced_soc")
+      .itemOutputs("megacells:cell_component_16m")
+      .inputFluids([Fluid.of("gtceu:polyvinyl_chloride", 400)])
+      .duration(560).EUt(120).cleanroom(CleanroomType.CLEANROOM)
+
+      e.recipes.gtceu.circuit_assembler("64m_mega_component_new")
+      .itemInputs("3x megacells:cell_component_16m", "4x megacells:accumulation_processor", "ae2:quartz_vibrant_glass", "16x ae2:matter_ball", "64x kubejs:mana_ram_chip", "16x gtceu:highly_advanced_soc")
+      .itemOutputs("megacells:cell_component_64m")
+      .inputFluids([Fluid.of("gtceu:polyvinyl_chloride", 1200)])
+      .duration(960).EUt(512)
+
+      e.recipes.gtceu.circuit_assembler("64m_mega_component_new_clean")
+      .itemInputs("3x megacells:cell_component_16m", "2x megacells:accumulation_processor", "ae2:quartz_vibrant_glass", "16x ae2:matter_ball", "64x kubejs:mana_ram_chip", "16x gtceu:highly_advanced_soc")
+      .itemOutputs("megacells:cell_component_64m")
+      .inputFluids([Fluid.of("gtceu:titanium_silver", 1200)])
+      .duration(560).EUt(512).cleanroom(CleanroomType.CLEANROOM)
+
+      e.recipes.gtceu.circuit_assembler("256m_mega_component_new")
+      .itemInputs("3x megacells:cell_component_64m", "16x megacells:accumulation_processor", "ae2:quartz_vibrant_glass", "32x ae2:matter_ball", "64x kubejs:mana_ram_chip", "32x gtceu:highly_advanced_soc")
+      .itemOutputs("megacells:cell_component_256m")
+      .inputFluids([Fluid.of("gtceu:titanium_silver", 1200)])
+      .duration(960).EUt(2048)
+
+      e.recipes.gtceu.circuit_assembler("256m_mega_component_new_clean")
+      .itemInputs("3x megacells:cell_component_64m", "8x megacells:accumulation_processor", "ae2:quartz_vibrant_glass", "16x ae2:matter_ball", "64x kubejs:mana_ram_chip", "32x gtceu:highly_advanced_soc")
+      .itemOutputs("megacells:cell_component_256m")
+      .inputFluids([Fluid.of("gtceu:titanium_silver", 2000)])
+      .duration(560).EUt(2048).cleanroom(CleanroomType.CLEANROOM)
+})

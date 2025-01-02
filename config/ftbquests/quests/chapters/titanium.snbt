@@ -1,0 +1,324 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "titanium"
+	group: "2E4F640A4C7964ED"
+	icon: "gtceu:titanium_ingot"
+	id: "1B124C51B8672DA4"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5B338534F9AA5446"]
+			description: ["Now put them together into the &aFusion Reactor&r and &6fuse&r them together to get the &dPlasma&r! But watch out this stuff is &6hot&r!!!!"]
+			id: "30F890E026EA71FF"
+			subtitle: "Fusing!"
+			tasks: [{
+				id: "4D6AE2A1F9FBE5B8"
+				item: "gtceu:fusion_titanium_plasma_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"20B0155AE1960AEE"
+				"0B21E06F2B725ADC"
+			]
+			description: [
+				"Build the structure displayed with Fusion Glass in &aJEI&r."
+				""
+				"To save on Fusion Casings, fit Input + Output Hatches wherever you can (as displayed in the structure)."
+				""
+				"This time, we'll try something new: let's explain the Lore at the same time as the mechanics."
+				""
+				"Enjoy the ride!"
+				"{@pagebreak}"
+				""
+				"Recipes can only start if the &9EU to start&r is stored internally, which will be &cconsumed&r. With this stored energy, the reactor can keep running recipes until it goes idle. At this point it will need to be topped up on EU to start again."
+				"{@pagebreak}"
+				"Shadow of Greg's &3Fusion Reactor&r (which is now GTCEu's Fusion Reactor) comes with an added mechanic called &4Heat&r."
+				""
+				"When the reactor is running, the &9EU to start&r is converted to &4Heat&r. That Heat is preserved until the Reactor goes idle, at which point it will slowly go down."
+				""
+				"Next time a recipe is found, it will use all possible Heat and deduct it from the &9EU to start&r, allowing you to save Energy for short pauses."
+				""
+				"The &3Fusion Reactor I&r can only run recipes up to a required EU of 160 MEU to start. It will also overclock up to &dLuV&r at best, even if you upgrade to ZPM Hatches, so don't stress over attempting this."
+			]
+			id: "5B338534F9AA5446"
+			shape: "gear"
+			size: 1.0d
+			subtitle: "Stellar power"
+			tasks: [{
+				id: "3089A8668F48F3D6"
+				item: "gtceu:luv_fusion_reactor"
+				type: "item"
+			}]
+			title: "Fusion for the Win!"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6EEF07C67F8F7576"]
+			description: [
+				"Now you need &bLiquid Aluminium&r and &dUranium Enriched Ostrum Solution&r."
+				""
+				"For the Ostrum, you need to &4(again)&r setup &a&nUranium Processing&r&r! Because you will need &aUranium 235&r. "
+			]
+			id: "20B0155AE1960AEE"
+			tasks: [
+				{
+					id: "17CB0811FA176D69"
+					item: "gtceu:uranium_enriched_ostrum_bucket"
+					type: "item"
+				}
+				{
+					id: "61263FFFD25039BB"
+					item: "gtceu:aluminium_bucket"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"This is the main material from &6MARS&r! So its not that hard to mine by hand, however, you do need to automate it dont you?"
+				""
+				"The Best way to get &dTitanium&r in our Pack is the &nFusion Route&r, which means you need to automate all of this!"
+			]
+			id: "1949931CAFB03D6B"
+			tasks: [{
+				count: 32L
+				id: "569E74BC22680F5C"
+				item: "ad_astra:raw_ostrum"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1949931CAFB03D6B"]
+			description: ["Basically, melt them down into a Fluid!"]
+			id: "6EEF07C67F8F7576"
+			tasks: [{
+				id: "7CDDB465B0F88EB0"
+				item: "gtceu:ostrum_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1949931CAFB03D6B"]
+			description: [
+				"This is probably the most&n insane step&r in any of our &acustom lines&r!"
+				""
+				"&aYou will need:&r"
+				""
+				"- A &6Quantum Chamber&r &aMk1 or Mk2&r"
+				"- A &6Quantum Simulation Server&r"
+				"- A &6Microverse Miner&r &aT3&r"
+				""
+				"&4Dont be afraid tho!&r"
+				""
+				"You can still &afarm it by hand&r and replace the miner all the time, or &abuild once and forget&r!"
+				""
+				"We made the decision to even fund your expension some more! Therefore you will be getting a second QNM Mk1, or you upgrade them to Mk2."
+			]
+			icon: "gtceu:quantum_chamber"
+			id: "1DBFC2968A9633DD"
+			rewards: [
+				{
+					id: "4151B0207FA9433C"
+					item: "gtceu:quantum_chamber"
+					type: "item"
+				}
+				{
+					count: 266
+					id: "5A072406AFD7162B"
+					item: "gtceu:inert_machine_casing"
+					type: "item"
+				}
+				{
+					count: 192
+					id: "0E81876C4BEE62D3"
+					item: "gtceu:high_temperature_smelting_casing"
+					type: "item"
+				}
+				{
+					count: 56
+					id: "23A16D0286987711"
+					item: "gtceu:laminated_glass"
+					type: "item"
+				}
+			]
+			subtitle: "SpaceX and Musk would be proud!"
+			tasks: [
+				{
+					id: "6569AF10DA0FC380"
+					item: "kubejs:miner_tier_3"
+					type: "item"
+				}
+				{
+					id: "1F07E82D8A3E2FAF"
+					item: "gtceu:quantum_chamber"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 266L
+					id: "509189AC4A184E30"
+					item: "gtceu:inert_machine_casing"
+					type: "item"
+				}
+				{
+					count: 31L
+					id: "6A7AC39DD662D9DE"
+					item: "gtceu:nonconducting_casing"
+					type: "item"
+				}
+				{
+					count: 192L
+					id: "0C07FE3AF6449243"
+					item: "gtceu:high_temperature_smelting_casing"
+					type: "item"
+				}
+				{
+					count: 56L
+					id: "36B75B1973E32207"
+					item: "gtceu:laminated_glass"
+					type: "item"
+				}
+			]
+			title: "A Real-life Simulation of Mars on Earth!"
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1949931CAFB03D6B"]
+			description: [
+				"We admit it... this is a completely &doptional&r Multiblock. Many playtesters kept using their &6HV&r singleblock miners and didn't find any problems in throughput."
+				""
+				"The &3Larger Miner&r will further boost your returns when collecting ores from veins."
+				""
+				"Ores are mined as if they were &amacerated&r, but they yield &6three times&r as many &dCrushed ores&r."
+				""
+				"You will need to have automated &aDrilling Fluid&r to run this."
+				""
+				"You might also want to use a &3Quantum Tunnel&r from AE2 and &3GTEU P2P Tunnels&r to transfer the items and to power it up."
+				"{@pagebreak}"
+				""
+				"It's not perfect, as there isn't really any advantage on upgrading this miner to the advanced versions. We were thinking of rebalancing the energy costs and yield per tier."
+			]
+			icon: "gtceu:ev_large_miner"
+			id: "3529171A5ED89489"
+			subtitle: "Now onto Mars!"
+			tasks: [
+				{
+					id: "7175A69A843AE9BC"
+					item: "gtceu:ev_large_miner"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6651E6E3D02F85B4"
+					item: "gtceu:solid_machine_casing"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "1ED3BEB92DBA4AC3"
+					item: "gtceu:steel_frame"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3E20B7F5D4BB0747"]
+			description: ["From the &aDistillation&r you will get &63200mb&r of &5Titanium Torrent&r, which you will need to Fuse together with &1Hydrogen&r in the &aFusion Reactor MK1&r."]
+			id: "0B21E06F2B725ADC"
+			subtitle: "This is Tough!"
+			tasks: [{
+				id: "0C05628FF63C5A97"
+				item: "gtceu:titanium_torrent_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["24BD242AB419E967"]
+			description: [
+				"Now, that you've reached the &aPlanet's Surface&r of &6Mars&r, you needto gather the &aAtmosphere&r of &6Mars&r and turn it into Materials! "
+				""
+				"&eThe Athmosphere of Mars consists of,&r"
+				""
+				"1. &aPlatinum Pulse&r (&6Platinum&r)"
+				"2. &aTitanium Torrent&r (&5Titanium&r)"
+				"3. &aMartian Enithium&r (&6Copper&r)"
+				"4. &aZenithal Zephyr&r (&7Silver&r)"
+				"5. &aRedon Radiance&r (&bLightweight RDD1&r)"
+				"6. &aRedon Riplon&r (&aDurable RDD2&r)"
+				"7. &4Redstone&r"
+				"8. &fAntimony&r "
+				""
+				""
+				"{@pagebreak}"
+				""
+				"You will see, that you need a Distillation Tower for this Operation tho. You need atleast 8 Output Hatches on it. "
+			]
+			id: "3E20B7F5D4BB0747"
+			tasks: [{
+				id: "525DFDF10DC9CDF1"
+				item: "gtceu:martian_air_bucket"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5B338534F9AA5446"]
+			description: ["Now its fused with &9Hydrogen&r, you need to Run it through a &aPlasma Generator&r now to slow it down and get the Fluid out of it!"]
+			id: "7C661D61441CF84B"
+			subtitle: "Hydronium"
+			tasks: [{
+				id: "4F57EF5B0B6E1E64"
+				item: "gtceu:titanium_torrentium_hydroplasm_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7C661D61441CF84B"
+				"30F890E026EA71FF"
+			]
+			description: ["Now you need to &aFluid Solidify&r it into the Ingot or Whatever form you need!"]
+			id: "422785B6774CEAC0"
+			tasks: [{
+				id: "5784411240C67B86"
+				item: "gtceu:titanium_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			id: "24BD242AB419E967"
+			subtitle: "Now this is Collecting!"
+			tasks: [{
+				id: "35C8380FB569B442"
+				item: "gtceu:mv_gas_collector"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+	]
+	title: "Titanium"
+}

@@ -1,0 +1,214 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iridium_and_osmium"
+	group: "2E4F640A4C7964ED"
+	icon: "gtceu:platinum_group_sludge_dust"
+	id: "5A2C9AEE8A68A6D1"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"05DAD29C027D4352"
+				"3E72BD2E15F00CFD"
+			]
+			description: [
+				"Now you have &6PGS Dust&r, the next step would now be to &aEBF Crack&r it and Seperate the Dust into the other dusts that you need!"
+				""
+				"For that, you need a &aKanthal Coil EBF&r and some &6Aqua Regia&r. Check the next Quest for more information."
+			]
+			id: "58DE449EAB7DD22D"
+			tasks: [{
+				count: 16L
+				id: "32727F78CB8E6269"
+				item: "gtceu:platinum_group_sludge_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"If you have &nany&r of theses Ores you are set to get &bIridium&r and &5Osmium&r."
+				""
+				"&bQuick Tip:&r There are &6Bees&r!"
+				""
+				"The Best However is S&6heldonite Ore&r! You get &nDouble&r of the &6PGS Dust&r from it."
+			]
+			id: "05DAD29C027D4352"
+			rewards: [{
+				id: "6FA58E1DF09FACFD"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "4C86EF03A5388EBD"
+					item: "gtceu:raw_tetrahedrite"
+					type: "item"
+				}
+				{
+					id: "33810812A113C163"
+					item: "gtceu:raw_bornite"
+					type: "item"
+				}
+				{
+					id: "3D5EE6155A2FDE8B"
+					item: "gtceu:raw_pentlandite"
+					type: "item"
+				}
+				{
+					id: "705864C3AC7B2198"
+					item: "gtceu:raw_chalcopyrite"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"To &aStart&r This Right here, you want to build yourself a &aAir Distillation Plant&r. You need &bNitrogen&r and &bOxygen&r in lots for this!"
+				""
+				"For the &9Water&r you can either build a &aHose from Create&r, some Ultra-Complicated recipe chain from GregTech or just get a &aKitchen Sink&r..."
+				""
+				"&9Pssst.&r Maybe its locked behind EV? Who knows!?"
+				""
+				"Good thing is, &bNitrogen Dioxide&r is very easy to get, you should Craft up a &aHV Gas Collector&r in &nThe End&r on &nProgram 3&r. Then you just ned a &aVaccum Freezer&r at IV and a &aDistillation Tower&r at IV."
+			]
+			id: "3E72BD2E15F00CFD"
+			tasks: [{
+				id: "2E038A8968D715BE"
+				item: "gtceu:nitric_acid_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"58DE449EAB7DD22D"
+				"3DAC245D84228191"
+			]
+			description: ["A way to get Iridium and Osmium!"]
+			id: "1FD187CB9EA768EE"
+			tasks: [{
+				id: "72768489E2B751ED"
+				item: "gtceu:rarest_metal_mixture_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"58DE449EAB7DD22D"
+				"3DAC245D84228191"
+			]
+			description: ["Basically a good way to get Iron and Gold! :3"]
+			id: "238BB69081D2B995"
+			tasks: [{
+				id: "3F03AF718F5B23D8"
+				item: "gtceu:platinum_sludge_residue_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"58DE449EAB7DD22D"
+				"3DAC245D84228191"
+			]
+			description: [
+				"This &nMixture&r is one of the ways you can get &aRhodium&r and &bRuthenium&r &4without&r the &nPlatline&r. "
+				""
+				"With the &aPlatline&r you will get both of them as a product! Check the Platline Quest Line!"
+			]
+			id: "03E0323C926F9F7C"
+			tasks: [{
+				count: 3L
+				id: "44318B342ED0B91F"
+				item: "gtceu:inert_metal_mixture_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3E72BD2E15F00CFD"]
+			description: [
+				"&6Sulfuric Acid&r + &fSalt&r = &7Hydroflouric Acid&r"
+				""
+				"Now combind that with the &6Nitric Acid&r you have made to desolve the &nPGS Dust&r and you have &6Aqua Regia&r!"
+			]
+			id: "3DAC245D84228191"
+			tasks: [{
+				id: "3948463A5FAA722E"
+				item: "gtceu:aqua_regia_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["03E0323C926F9F7C"]
+			description: ["You get this from processing the Ruthenium Tetroxide or the Platline!"]
+			id: "74E9F084E4D47700"
+			tasks: [{
+				id: "6A0E310C59135A13"
+				item: "gtceu:ruthenium_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["03E0323C926F9F7C"]
+			description: [
+				"You get this from processing the Rhodium Sulfate that you get from the Step you just did before!"
+				""
+				"You also get this from the Platline!"
+			]
+			id: "5CCC3852A1D6BD5E"
+			tasks: [{
+				count: 6L
+				id: "57368FA55DBDDC40"
+				item: "gtceu:rhodium_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1FD187CB9EA768EE"]
+			description: ["You get this from the &aAcetic Osmium Solution&r and then &nDistill&r it into the &aOsmium Dust&r!"]
+			id: "78F1010C3A2FD6F9"
+			tasks: [{
+				id: "51E50B71E1F0BD55"
+				item: "gtceu:osmium_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1FD187CB9EA768EE"]
+			description: [
+				"By Processing down the &aRarest Metal Dust&r you can get the &aIridium Metal Residue&r, from that you can get the &6Iridium Chloride&r and then &n&6Iridium&r&r!"
+				""
+				"&aRemember JEI is your friend!&r"
+			]
+			id: "496C961590609B45"
+			tasks: [{
+				id: "45D02B56922C493B"
+				item: "gtceu:iridium_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+	]
+	title: "PGS Processing "
+}

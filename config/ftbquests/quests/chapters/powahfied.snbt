@@ -1,0 +1,479 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "powahfied"
+	group: "4C27A710E32D8A9A"
+	icon: "powah:crystal_niotic"
+	id: "7D6121DB2E0C37A2"
+	images: [
+		{
+			height: 1.0d
+			image: "cofh_core:textures/gui/icons/icon_information.png"
+			rotation: 20.0d
+			width: 1.0d
+			x: 0.547619047619051d
+			y: -0.3214285714285623d
+		}
+		{
+			height: 0.75d
+			image: "ftbquests:textures/gui/alert.png"
+			rotation: -20.0d
+			width: 0.75d
+			x: -1.3333333333333144d
+			y: -2.5833333333333215d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Where it all begins to form! This Book will be your Guide Through the Mod."]
+			id: "7C4187EF145757F6"
+			tasks: [{
+				id: "485595899291C08B"
+				item: "powah:book"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C4187EF145757F6"]
+			description: ["For now, you will need &aClay&r and &6Lava&r to do this, later on you can get more from it with Silicon!"]
+			id: "17BCC2FA07DAA3AB"
+			subtitle: "The Start of it all!"
+			tasks: [{
+				id: "361BC2E549A068AE"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"17BCC2FA07DAA3AB"
+				"7B0462158233009F"
+			]
+			description: [
+				"I would recommend to start with &nthis&r &aTier of Rods&r, they hold more, they are faster and better!"
+				""
+				"You will need to make &6Lower Tier Rods first tho&r. You will need it for the &nFirst Batch&r of &6Energized Steel&r!"
+			]
+			id: "0F327BABD40BB198"
+			tasks: [
+				{
+					id: "3C642F4A41BC10C5"
+					item: "powah:energizing_rod_hardened"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7373A7EFE9500B51"
+					item: "powah:energizing_rod_blazing"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17BCC2FA07DAA3AB"]
+			id: "7B0462158233009F"
+			subtitle: "Either of these work!"
+			tasks: [
+				{
+					id: "7FDCEAB40BCC4BC9"
+					item: "powah:energizing_rod_starter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1F2CE3EF51A3F744"
+					item: "powah:energizing_rod_basic"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17BCC2FA07DAA3AB"]
+			description: [
+				"This is the &6Orb-jective&r, haha, get it? Anyways."
+				""
+				"This is the &aOrb&r where you place all of your &aItems&r that you want to &6Energize&r into."
+			]
+			id: "44D0878411403BBA"
+			subtitle: "The Next Step!"
+			tasks: [{
+				id: "49F31F39821EFFAD"
+				item: "powah:energizing_orb"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"0F327BABD40BB198"
+				"44D0878411403BBA"
+			]
+			description: ["&9Energized Steel&r is the a main Material for &aLuV&r and upwards so you should maybe automate it right?"]
+			id: "648C20E07CDDFD13"
+			subtitle: "The Gate to it all!"
+			tasks: [{
+				id: "3001ED2FB7C7A4A7"
+				item: "powah:steel_energized"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["30FDF3C30D68A5D2"]
+			id: "40CD40DD4D884D58"
+			subtitle: "The Best Low Tier!"
+			tasks: [{
+				id: "407035AB5EDC8903"
+				item: "powah:crystal_blazing"
+				type: "item"
+			}]
+			title: "Tier: &cBlazing&r"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["45150D348EA1D366"]
+			id: "094DDE4D97D34477"
+			subtitle: "Better Than Blazing!"
+			tasks: [{
+				id: "0DE4509CC3019D51"
+				item: "powah:crystal_niotic"
+				type: "item"
+			}]
+			title: "Tier: &9Niotic&r"
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0646E109F8FBC075"]
+			id: "0EDB5E917FC665F3"
+			subtitle: "Better than Niotic!"
+			tasks: [{
+				id: "70CE626FACB32D61"
+				item: "powah:crystal_spirited"
+				type: "item"
+			}]
+			title: "Tier: &2Spirited&r"
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["329B04A4039F3C32"]
+			id: "3BD0C9D934985ACC"
+			subtitle: "The Best High Tier!"
+			tasks: [{
+				count: 16L
+				id: "49D7131721BCB402"
+				item: "powah:crystal_nitro"
+				type: "item"
+			}]
+			title: "Tier: &4Nitro&r"
+			x: -1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["648C20E07CDDFD13"]
+			description: ["The Rod Recipe is far more efficient, you can choose!"]
+			id: "30FDF3C30D68A5D2"
+			subtitle: "Either One!"
+			tasks: [
+				{
+					count: 4L
+					id: "292CAB31081C7947"
+					item: "minecraft:blaze_powder"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "63FA278AB99AF19F"
+					item: "minecraft:blaze_rod"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["648C20E07CDDFD13"]
+			id: "45150D348EA1D366"
+			subtitle: "Diamonds!"
+			tasks: [{
+				id: "150D2F92312B030A"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["648C20E07CDDFD13"]
+			id: "0646E109F8FBC075"
+			subtitle: "Emeralds!"
+			tasks: [{
+				id: "10AF3F197CD95997"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["648C20E07CDDFD13"]
+			id: "329B04A4039F3C32"
+			subtitle: "The NITRIOS!"
+			tasks: [
+				{
+					id: "4A77344B109CE331"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "126ED5C8DCD9E4DF"
+					item: "powah:blazing_crystal_block"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "39E38980723048EA"
+					item: "minecraft:redstone_block"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6D88C19F47D0D469"]
+			description: ["This block will drain FE from any charged item."]
+			id: "33816AF0E699F19F"
+			optional: true
+			tasks: [{
+				id: "43B03D8E251B44DD"
+				item: "powah:energy_discharger_starter"
+				type: "item"
+			}]
+			title: "Energy Discharger"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6D88C19F47D0D469"]
+			description: ["The &9Energy Hopper&r will charge any chargeable item inside of the inventory of the block it is pointed to, like a chest."]
+			id: "5BCA3F716348ECCD"
+			optional: true
+			tasks: [{
+				id: "3C2CFE54F8372650"
+				item: "powah:energy_hopper_starter"
+				type: "item"
+			}]
+			title: "Energy Hopper"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6D88C19F47D0D469"]
+			description: [
+				"The &9Player Transmitter&r will charge a player's items wirelessly. You must first bind this to a player using a &9Binding Card&r. This is the basic card which allows the transmitter to only work in the same dimension. You can upgrade this by using a &dBinding Card (Dimensional)&r instead. "
+				""
+				"Note: To get a Player Aerial Pearl, use an Aerial Pearl on a Zombie or Husk."
+			]
+			icon: "powah:player_transmitter_starter"
+			id: "677365A816994C8B"
+			tasks: [
+				{
+					id: "71BD7D345E670234"
+					item: "powah:player_transmitter_starter"
+					type: "item"
+				}
+				{
+					id: "2770BC3653EE0F88"
+					item: "powah:binding_card"
+					type: "item"
+				}
+				{
+					id: "62EEEF3216D351CA"
+					item: "powah:binding_card_dim"
+					type: "item"
+				}
+			]
+			title: "Transmitter"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6D88C19F47D0D469"]
+			description: ["These can be used to charge items in your inventory, or can be used to increase the overall power capacity of an &7Ender Network&r channel."]
+			id: "61A8FAEC4FF18449"
+			tasks: [{
+				id: "1D02EF09FDC433ED"
+				item: {
+					Count: 1
+					id: "powah:battery_starter"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Batteries"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"78202A1CF5D86B94"
+				"61A8FAEC4FF18449"
+				"6D88C19F47D0D469"
+			]
+			dependency_requirement: "one_completed"
+			description: ["The &5Ender Cell&r will store power for a channel in your &7Ender Network&r. To increase the power capacity of the network, right click on the Ender Cell to open up the interface, then add either a &aBattery&r or an &9Energy Cell&r to increase the overall capacity."]
+			hide_dependency_lines: true
+			id: "700F3FF7C23D0C0F"
+			tasks: [{
+				id: "30E35BC580349772"
+				item: "powah:ender_cell_starter"
+				type: "item"
+			}]
+			title: "Ender Cell"
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6D88C19F47D0D469"]
+			description: [
+				"The &1Pow-er bank&r of &aPowah&r. Ha, get it? "
+				""
+				"They can be used to &nUpgrade&r the total Energy Storage Capacity..."
+			]
+			id: "78202A1CF5D86B94"
+			tasks: [{
+				id: "096413BFA9FB2C10"
+				item: "powah:energy_cell_starter"
+				type: "item"
+			}]
+			title: "Energy Cell"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17BCC2FA07DAA3AB"]
+			id: "6D88C19F47D0D469"
+			subtitle: "This is tiny..."
+			tasks: [{
+				id: "1BAC364D2AF426D3"
+				item: "powah:capacitor_basic_tiny"
+				type: "item"
+			}]
+			title: "The First Tier!"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6D88C19F47D0D469"]
+			description: [
+				"&5Ender Gates&r are used to transfer power wirelessly to and from an adjacent block into the &7Ender Network&r."
+				""
+				"Think of these like wireless access points to your wireless network of power."
+				""
+				"Note: You can only add &apower storage capacity&r using an Ender Cell."
+			]
+			id: "3CB6DC5B09C62CFE"
+			tasks: [{
+				id: "185C323B23AA0983"
+				item: "powah:ender_gate_starter"
+				type: "item"
+			}]
+			title: "Ender Gate"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6D88C19F47D0D469"]
+			description: [
+				"The &9Reactor&r is a 3x4x3 multiblock generator that burns &aUrananite&r as fuel to produce FE."
+				""
+				"To build it, you'll need to make a total of 36 Reactor Blocks. While holding 36 in hand, placing one block will auto-build the reactor. Make sure to clear out some room first!"
+				""
+				"You'll want to cool the reactor down for it to create more FE, and you can do this with either solid or liquid &bcoolant&r. To use a solid coolant, you'll also need to give it some liquid coolant as well. &bDry Ice&r makes for a great solid coolant! (Note: 1 Water Bucket will do)"
+				""
+				"You can also increase the FE generation by keeping the fuel buffer full, as well as adding both Coal and Redstone to the Reactor. Using Blocks of either will also work!"
+			]
+			id: "1B0087400B0B8B49"
+			min_width: 300
+			tasks: [{
+				count: 36L
+				id: "576DD3980CD97FBC"
+				item: "powah:reactor_starter"
+				type: "item"
+			}]
+			title: "Starter - Reactor"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D88C19F47D0D469"]
+			description: [
+				"The &aSolar Panels Generate FE&r when they have access to the &eSun&r and &nSky&r!"
+				""
+				"The &aGuide&r that we have put together with &nQuests&r is &cnot the only 2&r things you need for this, &acheck JEI&r! But those are the most complicated ones."
+			]
+			id: "7678B5DD1339833E"
+			tasks: [{
+				id: "2B3E7BB9F4D228A7"
+				item: "powah:solar_panel_starter"
+				type: "item"
+			}]
+			title: "Solar Panels"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"40CD40DD4D884D58"
+				"094DDE4D97D34477"
+				"3BD0C9D934985ACC"
+				"0EDB5E917FC665F3"
+			]
+			description: [
+				"Each of the Crystals from Powah can be used together with Cobalt to make the Liquid Computex!"
+				""
+				"&6Blazing&r gives you 18mb."
+				""
+				"&9Niotic&r gives you 72mb."
+				""
+				"&aSpirited&r gives you 144mb."
+				""
+				"&4Nitro&r gives you 288mb."
+			]
+			id: "3388F0AEDE9E204E"
+			rewards: [{
+				count: 28
+				id: "4CA9117A8636E5EC"
+				item: "powah:crystal_nitro"
+				type: "item"
+			}]
+			subtitle: "The Computex for Calculations!"
+			tasks: [{
+				id: "7134E906B84BF26F"
+				item: "gtceu:liquid_computex_selection_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.5d
+		}
+	]
+	title: "Gregwah [W.I.P]"
+}
