@@ -2,10 +2,12 @@
   "modPriorities": [
     "minecraft",
     "kubejs",
-    "gtceu",
+    "crafttweaker",
     "create",
     "thermal",
-    "immersiveengineering"
+    "immersiveengineering",
+    "mekanism",
+    "gtceu"
   ],
   "stoneStrata": [
     "stone",
@@ -30,7 +32,7 @@
     "forge:storage_blocks/raw_{material}"
   ],
   "materials": [
-    "aeterium",
+    "aeternium",
     "aluminum",
     "amber",
     "apatite",
@@ -80,11 +82,19 @@
   ],
   "priorityOverrides": {
     "forge:ingots/rose_gold": "gtceu",
+    "forge:molten_steel": "gtceu",
+    "forge:steel": "gtceu",
+    "forge:iron": "gtceu",
     "forge:storage_blocks/rose_gold": "gtceu",
     "forge:nuggets/rose_gold": "gtceu",
     "forge:dusts/rose_gold": "gtceu",
     "forge:gears/rose_gold": "gtceu",
     "forge:plates/rose_gold": "gtceu",
+    "forge:storage_blocks/bronze": "gtceu",
+    "forge:nuggets/bronze": "gtceu",
+    "forge:dusts/bronze": "gtceu",
+    "forge:gears/bronze": "gtceu",
+    "forge:plates/bronze": "gtceu",
     "forge:ores/nickel": "gtceu",
     "forge:ores/silver": "gtceu",
     "forge:ores/lead": "gtceu",

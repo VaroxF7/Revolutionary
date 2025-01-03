@@ -2,47 +2,63 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: "rsquare"
 	filename: "ore_generation"
-	group: "5AE8177426349D2C"
+	group: "26721A7382570C98"
 	icon: "minecraft:iron_ore"
 	id: "6A809CAE287B97BA"
 	order_index: 2
-	quest_links: [ ]
+	quest_links: [
+		{
+			id: "2A7A9FDC95689799"
+			linked_quest: "41D32C5178760F47"
+			shape: "square"
+			size: 1.5d
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			id: "60F24741924E3089"
+			linked_quest: "2124BF15006733D5"
+			x: 13.0d
+			y: 3.0d
+		}
+	]
 	quests: [
 		{
 			description: [
 				"Some of the details are repeated from the introduction quest, but we feel like we needed to expand on the explanation if you want to know all the details!"
 				""
+				"Ready for some \"light\" reading?"
+				"{@pagebreak}"
 				"Each vein can contain up to four different ores."
 				""
 				"Ore veins generate in a &4Grid&r. Every vein is spaced by 3 chunks from one to another in a cardinal direction."
 				""
-				"They spawn at the &4Center&r of the Chunks which have both their X and Z coordinates be at &b1 plus a multiple of 3&r (-8, -5, -2, 1, 4, 7, ...)."
+				"They spawn at the &4Center&r of the Chunks which have both their X and Z coordinates be at &b1 plus a multiple of 3&r (-8, -5, -2, 1, 4, 7, ...). You will typically find two veins in the selected chunk - one will be in the Stone layer, and the other vein lays deeper in the Deepslate layer."
 				""
 				"However, Ore veins may be deleted by caves, Oil deposits, or from trying to generate above the ground."
 				"{@pagebreak}"
 				"It's a good practice to make &dWaypoints&r to every vein you find, and to label their type. You may want to come back to it several times."
 				""
-				"Each Ore vein is always &d7 blocks&r tall, and ores generate in 4 different patterns:"
+				"A typical Ore vein is &d7 blocks&r tall, and ores generate in 4 different patterns:"
 				"- The &9Top Ore&r generates in the higher 4 layers of the vein."
 				"- The &9Bottom Ore&r generates in the lower 3 layers of the vein."
 				"- The &9Between Ore&r generates in the middle 3 layers of the vein."
 				"- The &9Sporadic Ore&r generates anywhere in the vein. There will be the least amount of this ore in a vein."
 				""
 				"The same ore type can be in 2 different generation patterns, such as in Cassiterite veins."
-				""
-				"In &6LV&r Age, you can craft an Ore Prospector to assist yourself in finding ores."
 			]
 			icon: "gtceu:cobalt_ore"
 			id: "41730E340B3D8EDA"
 			shape: "square"
 			size: 1.5d
+			subtitle: "You'll be an expert by the time you finish reading this!"
 			tasks: [{
 				id: "502C58F19FF7DE24"
 				type: "checkmark"
 			}]
 			title: "Ore Generation"
-			x: 2.25d
-			y: -0.75d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -74,11 +90,16 @@
 				}
 			]
 			title: "Limonite"
-			x: 1.3499999999999999d
-			y: -3.5999999999999996d
+			x: 1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
+			description: [
+				"This vein is namely one of the few direct sources of Gold in the overworld."
+				""
+				"There are many other sources of Gold in GregTech, but you will likely see better yields of Gold if you obtain it by processing other resources."
+			]
 			icon: "gtceu:magnetite_ore"
 			id: "260E516A219825A2"
 			size: 0.9d
@@ -101,15 +122,15 @@
 				}
 			]
 			title: "Magnetite"
-			x: 2.25d
-			y: -3.5999999999999996d
+			x: 2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
 				"An excellent Iron-Copper hybrid vein."
 				""
-				"Chalcopyrite will play an essential role in the late game for Platinum Group Sludge."
+				"Chalcopyrite will play an integral role in the late game, when you're looking to get your hands on some Platinum Group Sludge."
 			]
 			icon: "gtceu:pyrite_ore"
 			id: "03FBBA4A693011A8"
@@ -138,15 +159,15 @@
 				}
 			]
 			title: "Pyrite"
-			x: 3.15d
-			y: -3.5999999999999996d
+			x: 3.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
 				"A great vein for the early game. Copper and Tin to make Bronze, Realgar for your first source of Arsenic, and Zeolite for... nothing much."
 				"{@pagebreak}"
-				"&l&3Lore:&r&o Due to auto-generated recipes, Zeolite used to be electrolyzed in batches of 141. Oops!"
+				"&l&3Lore:&r&o As GregTech used to auto-generate its recipes, Zeolite used to electrolyze in batches of 141 dust at a time. Whoops!"
 			]
 			icon: "gtceu:chalcopyrite_ore"
 			id: "4826DCD2FC457EA5"
@@ -175,16 +196,16 @@
 				}
 			]
 			title: "Chalcopyrite"
-			x: 4.05d
-			y: -3.5999999999999996d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
-			description: ["A pure, very rich Tin vein - excellent for early game."]
+			description: ["A pure, very rich Tin vein - excellent for early game. You'll be over the moon to find one of these in the &6Steam Age&r."]
 			icon: "gtceu:cassiterite_ore"
 			id: "3B379794A3030C73"
 			size: 0.9d
-			subtitle: "Source of Tin"
+			subtitle: "#1 Source of Tin"
 			tasks: [
 				{
 					id: "46C302CBE74092FC"
@@ -198,8 +219,8 @@
 				}
 			]
 			title: "Cassiterite"
-			x: 4.05d
-			y: -2.6999999999999997d
+			x: 5.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -235,12 +256,16 @@
 				}
 			]
 			title: "Cassiterite Sand"
-			x: 0.44999999999999996d
-			y: -2.6999999999999997d
+			x: 5.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
-			description: ["Coal as an ore is hardly worth it because of the additional step(s) required to turn it into usable fuel, but it's still good to have some in your back pocket."]
+			description: [
+				"As an ore, Coal is hardly worth large-scale processing, because there are too many additional steps. required to turn it into usable fuel. It's still good to have some in your back pocket."
+				""
+				"Just run it through a Furnace."
+			]
 			icon: "minecraft:coal_ore"
 			id: "1E27C654E2F6FFF2"
 			size: 0.9d
@@ -251,8 +276,8 @@
 				type: "item"
 			}]
 			title: "Coal"
-			x: 4.05d
-			y: -0.8999999999999999d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -261,9 +286,9 @@
 				""
 				"Diamond has &6five times more durability&r than Iron for tools. The catch is that you'll need Diamond Plates for some tools, which is gated behind the Cutting Machine."
 				""
-				"Diamond and Graphite both electrolyze into a ton of Carbon."
+				"Diamond and Graphite both electrolyze into a ton of Carbon. Hint, hint..?"
 				""
-				"&cNote:&r Avoid macerating Diamonds in the early game. Recovering gem dusts into the actual gem cannot be done for a while."
+				"&cNote:&r Avoid macerating Diamonds in the early game. Recovering gem dusts into the actual gem cannot be done for a while - and even then, the process is slow and time-consuming..."
 			]
 			icon: "gtceu:graphite_ore"
 			id: "1B45DB5C85B68182"
@@ -287,15 +312,15 @@
 				}
 			]
 			title: "Graphite"
-			x: 4.05d
-			y: 0.0d
+			x: 5.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
 				"Your one-stop-shop for sources of Chlorine."
 				""
-				"Lithium can be obtained from Lepidolite Ore Processing."
+				"If you're pining after Lithium, note that it can be obtained from Lepidolite Ore Processing."
 			]
 			icon: "gtceu:salt_ore"
 			id: "5289D5049A236D55"
@@ -324,15 +349,15 @@
 				}
 			]
 			title: "Gamer Rage"
-			x: 4.05d
-			y: 0.8999999999999999d
+			x: 5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"This vein is only ever good for its Magnesium starting in the mid game."
+				"This vein starts to become notable for its Magnesium output starting in the midgame."
 				""
-				"However, Olivine has its uses, as it can substitute Emerald in many recipes."
+				"Olivine also has various uses, as it can substitute &aEmerald&r in a couple of recipes."
 			]
 			icon: "gtceu:olivine_ore"
 			id: "7C1B5559A03F6E02"
@@ -361,15 +386,15 @@
 				}
 			]
 			title: "Olivine"
-			x: 1.7999999999999998d
-			y: 0.8999999999999999d
+			x: 4.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"It's shiny!"
+				"It's shiny! That's about it!"
 				""
-				"You wish you could make jewelry out of it."
+				"Yeah, you wish you could make jewelry out of it."
 			]
 			icon: "gtceu:red_garnet_ore"
 			id: "178285129CEA9F9F"
@@ -398,17 +423,17 @@
 				}
 			]
 			title: "Garnet"
-			x: 4.05d
-			y: 2.25d
+			x: 3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"Anyone remember Forestry?"
+				"Hey, anyone remember Forestry?"
 				""
-				"This is pretty much the one vein you want to tap in for Phosphorus, which requires quite a few steps of processing to obtain."
+				"This is pretty much the one vein you want to tap in for Phosphorus - which requires quite a few steps of processing to obtain."
 				""
-				"Pyrochlore will eventually become extremely valuable, as it is a source of Niobium."
+				"Pyrochlore will eventually become extremely valuable, as it's a good source of Niobium."
 			]
 			icon: "gtceu:apatite_ore"
 			id: "70252B72F7728EFD"
@@ -432,20 +457,20 @@
 				}
 			]
 			title: "Apatite"
-			x: 3.15d
-			y: 2.25d
+			x: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
 				"Your classic Redstone vein."
 				""
-				"Ruby is very important for the Chrome it contains."
+				"Ruby is very important for the Chromium it contains. You'll quickly discover that you can never have too much Chromium!"
 			]
 			icon: "minecraft:redstone_ore"
 			id: "2E5A71CED4B01657"
 			size: 0.9d
-			subtitle: "Source of Redstone, Ruby, Chrome, Mercury"
+			subtitle: "Source of Redstone, Ruby, Chromium, Mercury"
 			tasks: [
 				{
 					id: "2CE255679DBEF5D8"
@@ -464,13 +489,13 @@
 				}
 			]
 			title: "Redstone"
-			x: 2.25d
-			y: 2.25d
+			x: 1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"Both Sapphire variants serve as your primary source of Aluminium until you can unlock other electrolysis recipes in MV."
+				"Both Sapphire variants serve as your primary source of Aluminium until you can unlock other electrolysis recipes in &bMV&r."
 				""
 				"The other two gems are mediocre at best."
 			]
@@ -501,15 +526,15 @@
 				}
 			]
 			title: "Sapphire"
-			x: 1.3499999999999999d
-			y: 2.25d
+			x: 0.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"Good source of &6Heavy Oil&r, which is useful for &6Diesel&r setups early on."
+				"A good source of &6Heavy Oil&r, which is useful for &6Diesel&r setups early on."
 				""
-				"If you don't want to process the ore entirely, you can &bCentrifuge&r it directly."
+				"If you don't want to spend time processing Oilsands through your setup, you can always just &bCentrifuge&r it directly to get the Heavy Oil."
 			]
 			icon: "gtceu:oilsands_ore"
 			id: "7C35B6B0B4CFFEB2"
@@ -521,12 +546,16 @@
 				type: "item"
 			}]
 			title: "Oilsands"
-			x: 0.44999999999999996d
-			y: 2.25d
+			x: -0.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
-			description: ["This one's nothing but a meme. It's literally called a Lubricant vein."]
+			description: [
+				"This one's nothing but a meme. It's literally called a Lubricant vein."
+				""
+				"With that being said, Lubricant is always useful for your &eCutting Machines&r to keep your factory running smoothly."
+			]
 			icon: "gtceu:soapstone_ore"
 			id: "676667089653641C"
 			size: 0.9d
@@ -554,15 +583,15 @@
 				}
 			]
 			title: "Soapstone"
-			x: 2.6999999999999997d
-			y: 0.8999999999999999d
+			x: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"Did you know Lazurite and Sodalite can substitute Lapis in enchanting?"
+				"Did you know Lazurite and Sodalite can be used as substitutes for &9Lapis&r in enchanting?"
 				""
-				"Sodalite is the most valuable Ore here, thanks to its electrolysis in the MV Age."
+				"Sodalite is the most valuable Ore here, thanks to its useful electrolysis recipe when you get to &bMV&r."
 			]
 			icon: "gtceu:lapis_ore"
 			id: "39A58AFE2E0C13EB"
@@ -591,15 +620,15 @@
 				}
 			]
 			title: "Lapis"
-			x: 0.44999999999999996d
-			y: 0.8999999999999999d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"Pyrolusite is what you're here for. It smelts directly into Manganese, which is needed in bulk for the &6HV&r Age."
+				"Pyrolusite is what most people are here for. It smelts directly into Manganese, which you'll be needing in bulk for &6HV&r."
 				""
-				"Tantalite eventually becomes extremely valuable thanks to Niobium byproducts."
+				"Tantalite will eventually become extremely valuable, thanks to its Niobium byproducts, and its utility when crafting &bSMD Components&r."
 			]
 			icon: "gtceu:pyrolusite_ore"
 			id: "2C75A50B17AA9AF1"
@@ -628,7 +657,7 @@
 				}
 			]
 			title: "Pyrolusite"
-			x: 0.44999999999999996d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
@@ -656,8 +685,8 @@
 				}
 			]
 			title: "Galena"
-			x: 0.44999999999999996d
-			y: -0.8999999999999999d
+			x: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
@@ -689,15 +718,17 @@
 				}
 			]
 			title: "Nickel"
-			x: 0.44999999999999996d
-			y: -1.7999999999999998d
+			x: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
 			description: [
 				"A source of Bauxite for your first ever Titanium."
 				""
-				"Kyanite and Mica have decent decompositions, but there are better options."
+				"Kyanite and Mica decompose into some desirable products if you electrolyze them, but there are definitely better options, so you shouldn't hunt them down if you want their byproducts."
+				""
+				"&8(This vein probably irks your average GTNH player...)&r"
 			]
 			icon: "gtceu:mica_ore"
 			id: "0B4BA438FE7F3640"
@@ -726,12 +757,16 @@
 				}
 			]
 			title: "Mica"
-			x: 4.05d
-			y: -1.7999999999999998d
+			x: -0.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["41730E340B3D8EDA"]
-			description: ["The worst Iron vein. It's helpful in the early game, but that's about it."]
+			description: [
+				"The worst Iron vein. It's helpful in the early game, but that's about it."
+				""
+				"We love you anyway, Mineral Sand vein!"
+			]
 			icon: "gtceu:granitic_mineral_sand_ore"
 			id: "5295C4AEFA8417F3"
 			size: 0.9d
@@ -759,12 +794,15 @@
 				}
 			]
 			title: "Mineral Sand"
-			x: 0.44999999999999996d
-			y: -3.5999999999999996d
+			x: 0.5d
+			y: -3.5d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
-			description: ["Rare Earth vein for progression in the &5EV&r age and onwards."]
+			description: [
+				"The de-facto Rare Earth vein for progression in &5EV&r... and onwards."
+				""
+				"&l&3Lore:&r&o This vein was bugged for quite some time. It's never actually contained any Monazite, and nobody realised (well, nobody brought it up!) for many, many months. Did you notice?"
+			]
 			icon: "gtceu:netherrack_bastnasite_ore"
 			id: "2171AF09E76A5968"
 			size: 0.9d
@@ -787,12 +825,11 @@
 				}
 			]
 			title: "Bastnatite"
-			x: 0.8999999999999999d
-			y: -4.5d
+			x: 7.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
-			description: ["Emerald is the useful ore here. It's used in small quantities in &bMV&r Age, and is a part of the Crystal process for Crystal and Wetware circuits much later on."]
+			description: ["Emerald is the useful ore here. It's used in small quantities in &bMV&r, and is a part of the Crystal process for Crystal and Wetware circuits much later on."]
 			icon: "gtceu:netherrack_emerald_ore"
 			id: "594D84730913698A"
 			size: 0.9d
@@ -815,15 +852,16 @@
 				}
 			]
 			title: "Emerald"
-			x: 2.6999999999999997d
-			y: -4.5d
+			x: 8.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"This vein is very rare!"
+				"This vein is very rare! Congratulations on stumbling upon one."
 				""
-				"It's basically Molybdenum, plus less important materials."
+				"&8(Or at least... it should be rare.)&r"
+				""
+				"View the contents of this vein as \"&7&obasically Molybdenum, and some other stuff&r\". Yeah, Molybdenum is what's important here."
 			]
 			icon: "gtceu:netherrack_molybdenum_ore"
 			id: "63CB3C9F5A61E0C4"
@@ -852,15 +890,14 @@
 				}
 			]
 			title: "Molybdenum"
-			x: 1.7999999999999998d
-			y: -4.5d
+			x: 9.5d
+			y: -4.0d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"Your ticket into Applied Energistics 2 is to mine some of that Certus Quartz."
+				"Your ticket into &bApplied Energistics 2&r is nestled deep within a Certus Quartz vein."
 				""
-				"Barite electrolyses into Barium, which you will need at some point."
+				"Alongside this, note that Barite electrolyses into Barium, which you will eventually need to make some higher tier Superconductors."
 			]
 			icon: "gtceu:netherrack_certus_quartz_ore"
 			id: "517D50E748A129AB"
@@ -884,17 +921,16 @@
 				}
 			]
 			title: "Certus Quartz"
-			x: -0.44999999999999996d
-			y: -2.25d
+			x: 10.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"Electrotine is important for progression in the &6HV&r Age. It centrifuges into Electrum, a source of Gold and Silver, and Redstone."
+				"Electrotine is important for progression in &6HV&r. It centrifuges into Electrum (a source of Gold and Silver), and Redstone."
 				""
-				"Saltpeter is used in a few reactions, and the other two ores here are pretty bad."
+				"Saltpeter is used in a few reactions, and... the other two ores here are pretty average."
 				"{@pagebreak}"
-				"&l&3Lore:&r&o Does Nikolite ring a bell? It was the ancestor of Electrotine in RedPower."
+				"&l&3Lore:&r&o Does the word \"Nikolite\" ring a bell? It's pretty much Electrotine's great-ancestor, hailing from RedPower."
 			]
 			icon: "gtceu:netherrack_saltpeter_ore"
 			id: "1F572D638AAACA21"
@@ -923,15 +959,14 @@
 				}
 			]
 			title: "Saltpeter"
-			x: -0.44999999999999996d
-			y: -1.3499999999999999d
+			x: 11.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"Both Topaz ores are absolutely excellent for electrolysis."
+				"Both Topaz ores are excellent subjects for eventual electrolysis."
 				""
-				"The best Fluorine source."
+				"This makes this vein one of the best Fluorine sources."
 			]
 			icon: "gtceu:netherrack_topaz_ore"
 			id: "37EC97FB0FC6C56D"
@@ -960,15 +995,14 @@
 				}
 			]
 			title: "Topaz"
-			x: -0.44999999999999996d
-			y: -0.44999999999999996d
+			x: 10.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"Almost a pure Copper vein."
+				"Almost a pure Copper vein. Damn you, Stibnite, ruining our purity!"
 				""
-				"Stibnite smelts directly into Antimony, which you will want in the &7LV&r Age."
+				"You can hardly complain about its presence, though - Stibnite smelts directly into Antimony, which you will want in &7LV&r for your Batteries."
 			]
 			icon: "gtceu:netherrack_tetrahedrite_ore"
 			id: "45B62B35180593EA"
@@ -992,15 +1026,14 @@
 				}
 			]
 			title: "Tetrahedrite"
-			x: 3.5999999999999996d
-			y: -4.5d
+			x: 9.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"This Nether Limonite vein variant is not to be slept on."
+				"This Nether Limonite vein variant isn't to be slept on."
 				""
-				"Thanks to the 2x yield, this is an excellent source of Iron and Gold."
+				"Thanks to the &adoubled yield&r of Nether ores, this is an excellent source of Iron and Gold."
 			]
 			icon: "gtceu:netherrack_yellow_limonite_ore"
 			id: "0AFADD21454D968E"
@@ -1024,13 +1057,12 @@
 				}
 			]
 			title: "Limonite"
-			x: 4.95d
-			y: -0.44999999999999996d
+			x: 8.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
 			description: [
-				"Your first Nether expedition will be for Sulfur, which is found in this vein!"
+				"Your first Nether expedition should be for &eSulfur&r - which is found in this vein! Be careful, as this vein usually spawns from y-levels of 10 to 30. Bring Fire Resistance potions!"
 				""
 				"Sphalerite is extremely valuable, as its ore processing gives Gallium. It also smelts directly into Zinc."
 			]
@@ -1056,11 +1088,10 @@
 				}
 			]
 			title: "Sulfur"
-			x: 4.95d
-			y: -1.3499999999999999d
+			x: 7.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
 			description: [
 				"Your classic Nether Quartz vein."
 				""
@@ -1083,20 +1114,19 @@
 				}
 			]
 			title: "Quartz"
-			x: 4.95d
-			y: -2.25d
+			x: 7.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
+			dependencies: ["41D32C5178760F47"]
 			description: [
-				"You may already have Iron, but don't sleep on this vein."
+				"You may already have boatloads of Iron by the time you make it here, but don't overlook the utility of this vein."
 				""
-				"Chromite is an excellent source of Chrome, and Vanadium is needed in higher quantities in the late game."
+				"Chromite is an excellent source of Chromium, and Vanadium is needed in higher quantities in the late game."
 			]
 			icon: "gtceu:endstone_magnetite_ore"
 			id: "4FC668EF2BF294ED"
-			size: 0.9d
-			subtitle: "Source of Iron, Vanadium, Gold, Chrome"
+			subtitle: "Source of Iron, Vanadium, Gold, Chromium"
 			tasks: [
 				{
 					id: "221E6D04EBEC9DDE"
@@ -1120,21 +1150,20 @@
 				}
 			]
 			title: "Magnetite"
-			x: -0.44999999999999996d
-			y: 2.25d
+			x: 8.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
+			dependencies: ["41D32C5178760F47"]
 			description: [
-				"Naquadah from the TV series Stargate! An essential material from &dLuV&r Age onwards."
+				"Seasoned sci-fi fans might recognise &2Naquadah&r from the series &dStargate&r! You'll find this becomes an essential material from &dLuV&r onwards."
 				""
-				"Naquadah can be processed in &dLuV&r Age for Titanium, Trinium, Barium, Gallium, Indium, Phosphorus, Enriched Naquadah, and Naquadria. Versatile!"
+				"Naquadah can be processed in &dLuV&r for Titanium, Trinium, Barium, Gallium, Indium, Phosphorus, Enriched Naquadah, and Naquadria. Versatile!"
 				""
-				"Plutonium is used to start the Radon loop, required in &1IV&r Age."
+				"Moving the spotlight to the other ore, &cPlutonium&r is used to start the Radon loop, required in &9IV&r."
 			]
 			icon: "gtceu:endstone_naquadah_ore"
 			id: "143B1AE1F3CF53EF"
-			size: 0.9d
 			subtitle: "Source of... a lot."
 			tasks: [
 				{
@@ -1149,22 +1178,21 @@
 				}
 			]
 			title: "Naquadah"
-			x: 4.95d
-			y: 1.3499999999999999d
+			x: 10.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
+			dependencies: ["41D32C5178760F47"]
 			description: [
 				"Platinum starts seeing usage in &5EV&r."
 				""
 				"The Platinum Group Sludge chain becomes a requirement in &1IV&r, and Sheldonite is the best ore to kickstart your processing."
 				"{@pagebreak}"
-				"&l&3Lore:&r&o The actual name for Sheldonite ore is actually Cooperite. GregoriusT thought it was haha funny to make jokes about Sheldon Cooper, despite &lnot&r being the person the ore was named after! And so we kept the haha funny joke going."
+				"&l&3Lore:&r&o The real-world name for Sheldonite ore is actually Cooperite. GregoriusT thought it was \"haha, funny\" to make it a reference to Sheldon Cooper, despite &lnot&r&o being the person the ore was named after!  We kept the \"haha, funny\" joke going."
 			]
 			icon: "gtceu:endstone_cooperite_ore"
 			id: "4D76C334B251EB3A"
-			size: 0.9d
-			subtitle: "Source of a lot, again"
+			subtitle: "Source of a lot, again..."
 			tasks: [
 				{
 					id: "4547E85950CB15E4"
@@ -1188,19 +1216,18 @@
 				}
 			]
 			title: "Sheldonite"
-			x: 4.95d
-			y: 2.25d
+			x: 8.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
+			dependencies: ["41D32C5178760F47"]
 			description: [
-				"Your one and only Tungsten source! (You could technically get Tungstate from macerating End Stone... but the yield is tiny.)"
+				"Your one and only &9Tungsten&r source! Whilst you could technically get your Tungstate from macerating &eEnd Stone,&r the yield is tiny. Process these ores instead!"
 				""
-				"An extremely important veinm, as Tungsten is used in vast amounts in &1IV&r Age and onwards."
+				"An extremely important vein, as Tungsten is used in vast amounts in &9IV&r and onwards."
 			]
 			icon: "gtceu:endstone_scheelite_ore"
 			id: "5AA98D1298FD90BA"
-			size: 0.9d
 			subtitle: "Source of Tungsten, Lithium"
 			tasks: [
 				{
@@ -1220,15 +1247,18 @@
 				}
 			]
 			title: "Scheelite"
-			x: 4.95d
-			y: 0.44999999999999996d
+			x: 10.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
-			description: ["This is a much more sane vein to mine to get Aluminium and Titanium over the Overworld Mica vein."]
+			dependencies: ["41D32C5178760F47"]
+			description: [
+				"The vein to mine for &bAluminium&r and &dTitanium&r if you're a well-adjusted person."
+				""
+				"Ditch those Mica veins - Bauxite is the future!"
+			]
 			icon: "gtceu:endstone_bauxite_ore"
 			id: "40B40DF0D1295A90"
-			size: 0.9d
 			subtitle: "Source of Aluminium, Titanium, Gallium"
 			tasks: [
 				{
@@ -1248,19 +1278,20 @@
 				}
 			]
 			title: "Bauxite"
-			x: -0.44999999999999996d
-			y: 1.3499999999999999d
+			x: 7.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["41730E340B3D8EDA"]
+			dependencies: ["41D32C5178760F47"]
 			description: [
 				"The one and only vein for Uranium!"
 				""
-				"Uranium has a few minor uses in &5EV&r Age and beyond. Nuclear Reactors are planned for GTCEu in the future... keep your eyes peeled."
+				"Uranium has a few minor uses in &5EV&r and beyond."
+				""
+				"Did you know that Nuclear Reactors might be making their way to &bGTCEu&r in the future?"
 			]
 			icon: "gtceu:endstone_pitchblende_ore"
 			id: "5ED483A04095EFA3"
-			size: 0.9d
 			subtitle: "Source of Uranium, Thorium, Lead"
 			tasks: [
 				{
@@ -1275,9 +1306,10 @@
 				}
 			]
 			title: "Pitchblende"
-			x: -0.44999999999999996d
-			y: 0.44999999999999996d
+			x: 11.0d
+			y: 3.0d
 		}
 	]
+	subtitle: ["Ores galore, and so much more"]
 	title: "Ore Generation"
 }

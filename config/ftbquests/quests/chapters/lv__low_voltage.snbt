@@ -1,46 +1,20 @@
 {
-	autofocus_id: "4D6F365E1DDFEA94"
+	autofocus_id: "3D86228B3514EE92"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "lv__low_voltage"
-	group: "693226878D58638A"
+	group: "2C2CAF0515DE6257"
 	icon: "gtceu:microchip_processor"
 	id: "7D50771C3FE033D7"
-	images: [
-		{
-			height: 2.0d
-			image: "gtceu:item/lv_solar_panel"
-			rotation: 0.0d
-			width: 2.0d
-			x: -3.3690476190476204d
-			y: 8.03027210884352d
-		}
-		{
-			height: 1.0d
-			image: "cofh_core:textures/gui/icons/icon_information.png"
-			rotation: 0.0d
-			width: 1.0d
-			x: -1.7142857142857082d
-			y: 7.5d
-		}
-		{
-			height: 1.0d
-			image: "create:item/crushed_raw_copper"
-			rotation: 0.0d
-			width: 1.0d
-			x: -1.6122448979591795d
-			y: 7.920068027210881d
-		}
-		{
-			height: 1.0d
-			image: "create:item/crushed_raw_gold"
-			rotation: 0.0d
-			width: 1.0d
-			x: -2.0d
-			y: 7.981292517006793d
-		}
-	]
-	order_index: 1
+	images: [{
+		height: 2.0d
+		image: "gtceu:item/lv_solar_panel"
+		rotation: 0.0d
+		width: 2.0d
+		x: -2.0d
+		y: -3.5d
+	}]
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -189,8 +163,8 @@
 				item: "gtceu:aluminium_ingot"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 11.0d
+			x: 0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -211,8 +185,8 @@
 				type: "item"
 			}]
 			title: "LV Superconductor"
-			x: 5.5d
-			y: 12.0d
+			x: -1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -243,36 +217,8 @@
 				item: "gtceu:electric_blast_furnace"
 				type: "item"
 			}]
-			x: 4.000717474489797d
-			y: 10.980144557823131d
-		}
-		{
-			description: [
-				"So you might know it, or not... The &aGreenhouse&r has been changed from &4MV to LV&r so. What that means for you as the player is basically that you have &ano issue with food and early game farming&r. &eYou can farm each crop and some custom crops that we've added through that!&r"
-				""
-				"You can also farm trees and other crops we might add later on."
-				""
-				""
-				"{@pagebreak}"
-				""
-				"So basically, this is a &atree farm / crop farm for the early game&r. Its awesome to use later on due to you needing  lots of resin from &arubber trees&r, to well, make &arubber for the circuits!&r"
-				""
-				"&lEnjoy!&r"
-			]
-			id: "459A0DAECB55AAAE"
-			rewards: [{
-				id: "697D64409FF62B80"
-				type: "xp"
-				xp: 100
-			}]
-			subtitle: "Well its \"The Greenhouse\"...."
-			tasks: [{
-				id: "2FBA4FA749DE92BC"
-				item: "gtceu:greenhouse"
-				type: "item"
-			}]
-			x: -10.5d
-			y: 6.5d
+			x: -0.9992825255102034d
+			y: 1.980144557823131d
 		}
 		{
 			description: [
@@ -331,88 +277,14 @@
 					type: "item"
 				}
 				{
-					id: "5E468D54C19A46E6"
-					item: "gtceu:gallium_arsenide_ingot"
-					type: "item"
-				}
-				{
-					id: "16F3D5881BD87C3D"
-					item: "gtceu:gallium_arsenide_plate"
-					type: "item"
-				}
-				{
+					count: 4L
 					id: "57EB60A913A2A0E2"
 					item: "gtceu:small_gallium_arsenide_dust"
 					type: "item"
 				}
 			]
-			x: 1.5d
-			y: 7.0d
-		}
-		{
-			dependencies: [
-				"2EB72021AE4B7ED9"
-				"1A85C7D3C0F53FEF"
-				"021AB1B5CC1984C0"
-				"289BD1EB907285F7"
-				"0C779E320E415A17"
-				"4AF44B820291332A"
-			]
-			description: [
-				"The &9Eden™ Simulation Chamber&r is a good way of getting Resources in &aLV&r to &aMV&r. You will be Upgrading them along the line of Progression."
-				""
-				"Yes, they might not be needed at the Moment, but if you upgrade them even more you get far far more out of them, then later when you have the &9Multiblock Miners&r you they might be obsolete..."
-				""
-				"&9Your Choice, we Provide!&r"
-				""
-				"{@pagebreak}"
-				""
-				"The Multiblock can be &9Perfectly Overclocked&r! It &4Cannot&r handle any Parrallel Hatches tho."
-			]
-			icon: "gtceu:sim_chamber_lv"
-			id: "4D6F365E1DDFEA94"
-			rewards: [
-				{
-					id: "31BAFA885AD70DF5"
-					type: "xp"
-					xp: 50
-				}
-				{
-					id: "6EC802EC1ECF8451"
-					item: "kubejs:miner_tier_1"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 1.7d
-			subtitle: "Very Important"
-			tasks: [
-				{
-					id: "08CA60711317D6D5"
-					item: "gtceu:sim_chamber_lv"
-					type: "item"
-				}
-				{
-					count: 14L
-					id: "5D91AB6B0601333C"
-					item: { Count: 14, id: "kubejs:multi_verse_casing" }
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "741A5F4E4716E27D"
-					item: "gtceu:tempered_glass"
-					type: "item"
-				}
-				{
-					id: "52ED23E40D672E39"
-					item: "minecraft:sculk"
-					type: "item"
-				}
-			]
-			title: "Simulation Chamber MK1"
-			x: -0.6580888605442112d
-			y: 6.486479591836741d
+			x: -3.5d
+			y: -2.0d
 		}
 		{
 			description: [
@@ -450,8 +322,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 7.0d
+			x: -2.5d
+			y: -2.0d
 		}
 		{
 			description: ["Mainly the Powah Steel."]
@@ -555,44 +427,6 @@
 			y: 9.926020408163266d
 		}
 		{
-			dependencies: ["05A8B7FF9E3830A3"]
-			description: ["This is the &aRefined Fuel&r you need for the &aLV Simulation Chamber&r!"]
-			id: "2EB72021AE4B7ED9"
-			tasks: [{
-				id: "0FCC15FA5BF84E41"
-				item: "gtceu:refined_biofuel_bucket"
-				type: "item"
-			}]
-			title: "Refined Biofuel"
-			x: -3.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["69E5274E00CC35F9"]
-			description: [
-				"For the first few of these you will need &6Blaze Powder&r, best way to get that right now is to Spray &4Cinder Powder&r with &6Lava&r."
-				""
-				"So, get some &9Silicon&r and you will need &6Blaze Rods&r for the Start! Unless you want to spend your hard earned &aEmeralds&r or &bDiamonds&r on &fLiquid Computex&r!"
-				""
-				"It gets more effiecient the better the Crystals get! So Nitro with a Nether Star would be &a288mb&r, and blazing with &nONLY&r 4 Blaze Powder &418mb&r... So you see where this is going!"
-			]
-			id: "1A85C7D3C0F53FEF"
-			rewards: [{
-				id: "430FCD516EF8743A"
-				type: "xp"
-				xp: 10
-			}]
-			subtitle: "&5Liquid Computex Selection&r"
-			tasks: [{
-				id: "56B19DC1373BF27A"
-				item: "gtceu:liquid_computex_selection_bucket"
-				type: "item"
-			}]
-			title: "Liquid Computex "
-			x: -0.6428571428571459d
-			y: 11.983333333333327d
-		}
-		{
 			description: [
 				"You have probably crafted them by hand until now... Fear no more! When you get your first MV circuits you can craft a Assembler and make the hell go to waste!"
 				""
@@ -611,8 +445,8 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 9.0d
+			x: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3D86228B3514EE92"]
@@ -636,8 +470,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 7.0d
+			x: -0.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3D86228B3514EE92"]
@@ -650,8 +484,8 @@
 				item: "gtceu:lv_wiremill"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 8.5d
+			x: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3D86228B3514EE92"]
@@ -664,8 +498,8 @@
 				item: "gtceu:lv_lathe"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 9.5d
+			x: 0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3D86228B3514EE92"]
@@ -682,8 +516,8 @@
 				item: "gtceu:lv_bender"
 				type: "item"
 			}]
-			x: 6.5d
-			y: 9.5d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3D86228B3514EE92"]
@@ -704,8 +538,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 9.0d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3D86228B3514EE92"]
@@ -718,8 +552,8 @@
 				item: "gtceu:lv_steam_turbine"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 8.5d
+			x: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["3D86228B3514EE92"]
@@ -729,8 +563,8 @@
 				item: "gtceu:lv_assembler"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 9.0d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["778D824000E530DF"]
@@ -741,8 +575,8 @@
 				item: "gtceu:glue_bucket"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 8.0d
+			x: -3.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6B7EAB58F18584DA"]
@@ -753,8 +587,8 @@
 				item: "gtceu:phenolic_circuit_board"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 9.0d
+			x: -3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1E9BE8D3F8A602DC"]
@@ -780,8 +614,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 11.0d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["512BD9BCA43AEE83"]
@@ -792,8 +626,8 @@
 				item: "gtceu:arsenic_dust"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 10.0d
+			x: -3.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["602738E7EF85A6DD"]
@@ -805,8 +639,8 @@
 				item: "gtceu:lv_electrolyzer"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 10.0d
+			x: -2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -820,8 +654,8 @@
 				item: "gtceu:phenolic_printed_circuit_board"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 9.0d
+			x: -4.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2D3461677C9F48E1"]
@@ -838,8 +672,8 @@
 				item: "gtceu:diode"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 6.0d
+			x: -3.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -854,6 +688,8 @@
 				"You can also &nsafe&r some more &6Circuits&r, &aWires&r and &7Diodes&r if you use a &aCircuit Assembler&r!"
 			]
 			id: "289BD1EB907285F7"
+			shape: "gear"
+			size: 1.5d
 			subtitle: "&6Now you go your First Steps into MV!&r"
 			tasks: [{
 				count: 16L
@@ -861,8 +697,8 @@
 				item: "gtceu:good_electronic_circuit"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 6.5d
+			x: -4.5d
+			y: -3.75d
 		}
 		{
 			dependencies: ["3D86228B3514EE92"]
@@ -877,8 +713,8 @@
 				item: "gtceu:wrought_iron_nugget"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 8.0d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3D86228B3514EE92"]
@@ -888,315 +724,89 @@
 				item: "gtceu:lv_centrifuge"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 8.0d
-		}
-		{
-			dependencies: ["4851D6D65CE33DF5"]
-			description: ["These &aCasings&r a Product of a &5Sky Stone Alloy&r together with Diamond and Steel, so they are very durable."]
-			id: "021AB1B5CC1984C0"
-			tasks: [{
-				count: 15L
-				id: "6A1EA0CC7E85A76E"
-				item: "kubejs:multi_verse_casing"
-				type: "item"
-			}]
-			x: -0.6190476190476275d
-			y: 5.24761904761904d
+			x: -2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: [
-				"1E9BE8D3F8A602DC"
-				"60B3C23FCC68FC5D"
+				"720ED142184FAF1B"
+				"0DE19A3778089EAF"
 			]
-			description: ["You will also need some &9Distilled Water&r, which can just be aquired from &9Distillery&r with &aWafer&r as a Input!"]
-			id: "7B816E515164EE4F"
-			rewards: [{
-				id: "5F45086E531FD3D4"
-				type: "xp_levels"
-				xp_levels: 10
-			}]
-			shape: "gear"
-			subtitle: "&5Silicon&r"
+			id: "472365D29DE5ABDD"
 			tasks: [{
-				count: 64L
-				id: "6575D82E78C76355"
-				item: "ae2:silicon"
+				id: "03A1C1038D4D5B93"
+				item: "gtceu:fermented_biomass_bucket"
 				type: "item"
 			}]
-			x: 3.5d
-			y: 12.0d
+			x: 2.0d
+			y: -3.5d
 		}
 		{
-			description: [
-				"You should have this &9Automated&r by now!"
-				""
-				"We have Written a Detailed Quest Line for it!"
-			]
-			id: "60B3C23FCC68FC5D"
-			rewards: [{
-				id: "21404610B382591A"
-				type: "xp"
-				xp: 10
-			}]
+			dependencies: ["270D67142B01FD0E"]
+			id: "0DE19A3778089EAF"
 			tasks: [{
-				count: 128L
-				id: "76B600406E99C342"
-				item: "ae2:fluix_dust"
+				id: "0969529F0995EE2D"
+				item: "gtceu:bio_chaff"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 12.0d
+			x: 1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: [
-				"1DC5EA975BE798F6"
-				"6A0FE640858E425A"
+				"598F7214FD36E241"
+				"440AB8B938DB5DBF"
 			]
-			description: [
-				"Now its time for the &aFirst Lift-off!&r We'll we are not quiet there yet in terms of big &9Space Manufactory&r but we are getting there. "
-				""
-				"This is your first time going away from this Planet into a whole new System! This is a Big Step for us all, you will find so many new things to play and experiment with!"
-			]
-			icon: {
-				Count: 1
-				id: "ad_astra:tier_1_rocket"
-				tag: {
-					BotariumData: {
-						StoredFluids: [{
-							Amount: 0L
-							Fluid: "minecraft:empty"
-						}]
-					}
-				}
-			}
-			id: "34FCE27A02ED6657"
-			subtitle: "Destination: Moon!"
-			tasks: [
-				{
-					id: "17D1F34D42E4EA17"
-					item: "ad_astra:launch_pad"
-					type: "item"
-				}
-				{
-					id: "10D8A8743C81DF1B"
-					item: {
-						Count: 1
-						id: "ad_astra:tier_1_rocket"
-						tag: { }
-					}
-					type: "item"
-				}
-				{
-					dimension: "ad_astra:moon"
-					icon: "ad_astra:moon_globe"
-					id: "09B93B625CDFC7C5"
-					type: "dimension"
-				}
-			]
-			x: -0.6190476190476275d
-			y: 3.2476190476190396d
-		}
-		{
-			dependencies: [
-				"3428CC1B7BF92FA2"
-				"2F53B17A36A856FD"
-				"0E3561A2D3E12E16"
-			]
-			description: [
-				"Now that you have the &2Fuel&r for your &9First Rocket Expedition&r, its time to build the &9Rocket Pad&r and you have lift-off."
-				""
-				"Have Fun Automating it all since you will need it Later on Again!"
-			]
-			id: "1DC5EA975BE798F6"
-			rewards: [{
-				id: "5DF4F93B45FC3BD5"
-				type: "xp"
-				xp: 100
-			}]
-			subtitle: "You've done it!"
+			description: ["Now you have the &aPlant Balls&r, these may be used to go further down the line or Macerate them and you have &aBio Chaff&r."]
+			id: "270D67142B01FD0E"
 			tasks: [{
-				id: "5638B96BE30155DA"
-				item: "gtceu:rocket_refined_fuel_bucket"
+				id: "6D2F8CC9F7D2ED4B"
+				item: "gtceu:plant_ball"
 				type: "item"
 			}]
-			x: -0.6190476190476275d
-			y: 2.2476190476190396d
+			x: 1.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["2B4622D174258642"]
-			description: ["Once you have these, now Combind them and there you go you have &9Ammonia&r!"]
-			id: "3428CC1B7BF92FA2"
-			rewards: [{
-				id: "4FC84D1DC2640C8B"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [
-				{
-					id: "5C031AE199472125"
-					item: "gtceu:ammonia_bucket"
-					type: "item"
-				}
-				{
-					id: "65954D3BD10AD5CF"
-					item: "gtceu:hydrogen_bucket"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "162158233CB00909"
-					item: "gtceu:nitrogen_bucket"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -1.6190476190476275d
-			y: 1.2476190476190396d
-		}
-		{
-			dependencies: ["34FCE27A02ED6657"]
-			id: "4851D6D65CE33DF5"
+			dependencies: ["78172E5E454897B9"]
+			description: ["Any &aSeeds&r may be used for this one!"]
+			id: "598F7214FD36E241"
 			tasks: [{
-				id: "691394720319E29A"
-				item: "gtceu:liquid_sky_stone_bucket"
+				id: "53AF53A615DA29B1"
+				item: "createaddition:seed_oil_bucket"
 				type: "item"
 			}]
-			x: -0.6190476190476275d
-			y: 4.24761904761904d
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "440AB8B938DB5DBF"
+			tasks: [{
+				id: "25B6F0BDD318DED4"
+				item: "minecraft:oak_leaves"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			description: [
-				"You will be able to make the &1Hydrogen&r with the &9Mixer&r and a &9Superheated Blaze Burner&r."
+				"Due to &6Seasons&r, you &n&ccant&r&r get every Seed every Season, you can hover over the item to see which Season they grow in. "
 				""
-				"For &3Nitrogen&r, you will need to make a &9Basic Gas Collector&r and extract the &9Nitrogen&r out of our &7Air&r."
-			]
-			icon: "gtceu:lv_gas_collector"
-			id: "2B4622D174258642"
-			rewards: [{
-				id: "7505625CA414D480"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
-			subtitle: "Now this is Spicy!"
-			tasks: [
-				{
-					id: "6435199B3DB9DE06"
-					item: "gtceu:lv_gas_collector"
-					type: "item"
-				}
-				{
-					id: "1979D3E4C7988868"
-					item: "create:mechanical_mixer"
-					type: "item"
-				}
-				{
-					id: "187F096693565CF8"
-					item: "create:basin"
-					type: "item"
-				}
-				{
-					id: "260678FD2D12686A"
-					item: "create:blaze_cake"
-					type: "item"
-				}
-				{
-					icon: "create:blaze_burner"
-					id: "34EC76D77D505843"
-					observe_type: 0
-					timer: 0L
-					to_observe: "create:blaze_burner"
-					type: "observation"
-				}
-			]
-			title: "Take a Deep Sip of Air!"
-			x: -1.1190476190476275d
-			y: 0.24761904761903963d
-		}
-		{
-			description: [
-				"You will need to &aReinforce&r the &9Launch Pad&r Quiet abit, due to the Power of the Rocket Fuel it might break if you dont do it."
+				"For the best Results you want a &6Crop&r or a &6Seed&r you can get for Each Season of the year, Spring, Summer, Fall and Winter, so get down to searching!"
 				""
-				"So get yourself some &aConcrete&r and some &aSteel&r and get to it. Should be a fairly easy task since the &9Concrete&r can be made with the &9Cobbleworks Processing Line&r!"
+				"This is good for the &aSeed Oil&r and for the &aFood&r you will get in return to feed your diet!"
 			]
-			icon: "gtceu:concrete_bucket"
-			id: "6A0FE640858E425A"
-			tasks: [
-				{
-					id: "03678CA81D7A3965"
-					item: "gtceu:concrete_bucket"
-					type: "item"
-				}
-				{
-					id: "3D2B7FDE848D4572"
-					item: "kubejs:reinforced_steel_beam"
-					type: "item"
-				}
-			]
-			x: -1.6445578231292473d
-			y: 4.253061224489784d
-		}
-		{
-			dependencies: ["05A8B7FF9E3830A3"]
-			description: ["Now you should be at the point where you have this Setup and Ready to Go!"]
-			hide_dependency_lines: true
-			id: "0E3561A2D3E12E16"
-			rewards: [{
-				id: "35CE9CB744FE7803"
-				type: "xp"
-				xp: 10
-			}]
+			icon: "createdeco:decal_warning"
+			id: "78172E5E454897B9"
 			tasks: [{
-				id: "0BD1BE40F137890E"
-				item: "createaddition:bioethanol_bucket"
-				type: "item"
+				id: "061DACE3E6958FD0"
+				title: "Got it!"
+				type: "checkmark"
 			}]
-			x: -1.6190476190476275d
-			y: 2.2476190476190396d
-		}
-		{
-			description: [
-				"&9Aluminium (III)&r Oxide is a &aVery Clean Powdered&r version of Aluminium."
-				""
-				"It basically need to be cleaned with &bDistilled Water&r, and then you got the &9Al (III) Oxide&r."
-			]
-			id: "2F53B17A36A856FD"
-			rewards: [{
-				id: "45F6FAB737AC8A1A"
-				type: "xp"
-				xp: 10
-			}]
-			tasks: [
-				{
-					id: "5EFE394610D401EE"
-					item: "gtceu:aluminium_three_oxide_dust"
-					type: "item"
-				}
-				{
-					id: "5208775BDCEB7B63"
-					item: "gtceu:aluminium_dust"
-					type: "item"
-				}
-				{
-					id: "1256E41E63388E3F"
-					item: "gtceu:distilled_water_bucket"
-					type: "item"
-				}
-			]
-			x: -0.6190476190476275d
-			y: 1.2476190476190396d
-		}
-		{
-			dependencies: ["6E20B55058CA9011"]
-			description: ["Now just quickly clean it and you have the &aPurified Biomass&r in Pallet form!"]
-			id: "627E0AFFDAF0E4E1"
-			tasks: [{
-				id: "5A7ECF94133768E2"
-				item: "kubejs:purified_biomass_pallet"
-				type: "item"
-			}]
-			x: -5.5d
-			y: 6.5d
+			title: "Seasons!"
+			x: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["270D67142B01FD0E"]
@@ -1206,8 +816,8 @@
 				item: "kubejs:compressed_plant_ball"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.5d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -1221,8 +831,8 @@
 				item: "createaddition:biomass"
 				type: "item"
 			}]
-			x: -6.5d
-			y: 6.5d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6E20B55058CA9011"]
@@ -1232,103 +842,8 @@
 				item: "createaddition:biomass_pellet"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"720ED142184FAF1B"
-				"0DE19A3778089EAF"
-			]
-			id: "472365D29DE5ABDD"
-			tasks: [{
-				id: "03A1C1038D4D5B93"
-				item: "gtceu:fermented_biomass_bucket"
-				type: "item"
-			}]
-			x: -7.0d
-			y: 5.5d
-		}
-		{
-			dependencies: [
-				"598F7214FD36E241"
-				"0C80A36210E8761D"
-			]
-			description: ["Now you have the &aPlant Balls&r, these may be used to go further down the line or Macerate them and you have &aBio Chaff&r."]
-			id: "270D67142B01FD0E"
-			tasks: [{
-				id: "6D2F8CC9F7D2ED4B"
-				item: "gtceu:plant_ball"
-				type: "item"
-			}]
-			x: -8.5d
-			y: 6.5d
-		}
-		{
-			dependencies: ["270D67142B01FD0E"]
-			id: "0DE19A3778089EAF"
-			tasks: [{
-				id: "0969529F0995EE2D"
-				item: "gtceu:bio_chaff"
-				type: "item"
-			}]
-			x: -8.0d
-			y: 5.5d
-		}
-		{
-			dependencies: ["472365D29DE5ABDD"]
-			description: ["&9Fermented Biomass&r can be Distilled into Various Products, the &9Distillation Tower&r needed for it can be made in &dEV&r. So your probably best if you just stach them away and forget about them for now. "]
-			id: "12D7810CBDC66B18"
-			shape: "gear"
-			tasks: [{
-				id: "65CBC8DBAB3AECE5"
-				title: "Distillation"
-				type: "checkmark"
-			}]
-			x: -7.0d
-			y: 4.5d
-		}
-		{
-			dependencies: ["627E0AFFDAF0E4E1"]
-			description: ["&aBiofuel&r is very good in the use for Create Recipes with the &6Blaze Burner&r!"]
-			id: "05A8B7FF9E3830A3"
-			tasks: [{
-				id: "4F6BA90D7010B643"
-				item: "createaddition:bioethanol_bucket"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["459A0DAECB55AAAE"]
-			description: ["Any &aSeeds&r may be used for this one!"]
-			id: "598F7214FD36E241"
-			tasks: [{
-				id: "53AF53A615DA29B1"
-				item: "createaddition:seed_oil_bucket"
-				type: "item"
-			}]
-			x: -9.5d
-			y: 6.0d
-		}
-		{
-			id: "23C8C169FA5080D4"
-			tasks: [
-				{
-					id: "6A66680734D8D045"
-					item: "minecraft:sugar"
-					type: "item"
-				}
-				{
-					id: "3DDAB40BDF0F1FD9"
-					item: "minecraft:sugar_cane"
-					optional_task: true
-					type: "item"
-				}
-			]
-			x: -7.0d
-			y: 7.5d
+			x: 3.0d
+			y: -3.5d
 		}
 		{
 			id: "42A6A4BC94C0C8BF"
@@ -1345,182 +860,101 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
-			y: 7.5d
+			x: 4.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["459A0DAECB55AAAE"]
-			description: [
-				"Anything with the &aPlants Tag&r may fit into this! Which is Basically the whole of the Standard Minecraft Plants!"
-				""
-				"See in &6JEI&r for yourself."
-			]
-			id: "0C80A36210E8761D"
+			dependencies: ["6E20B55058CA9011"]
+			description: ["Now just quickly clean it and you have the &aPurified Biomass&r in Pallet form!"]
+			id: "627E0AFFDAF0E4E1"
 			tasks: [{
-				id: "0805E36673475620"
-				title: "Crops!"
-				type: "checkmark"
-			}]
-			x: -9.5d
-			y: 7.0d
-		}
-		{
-			dependencies: ["7B816E515164EE4F"]
-			id: "69E5274E00CC35F9"
-			tasks: [{
-				id: "2D595635FEE4E9B1"
-				item: "gtceu:lv_extractor"
+				id: "5A7ECF94133768E2"
+				item: "kubejs:purified_biomass_pallet"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 12.0d
+			x: 3.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["4D6F365E1DDFEA94"]
-			description: [
-				"The First Simulation you'll ever do can yield these ores:"
-				""
-				"- &aDense Redstone Ore&r"
-				"- &aDense Iron Ore&r"
-				"- &aDense Nickel Ore&r"
-				"- Dense Cassiterite Ore"
-				"- Dense Ilmenite Ore"
-				"- Galena Ore"
-				"- Silver Ore"
-				"- &aMoon Sand&r"
-				"- &aRocksalt&r"
-				"- Uraninite Ore"
-				"- Molybdenum Ore"
-				"- &6Moon Desh Ore&r"
-				""
-				"All of these can be farmed with the &aTier 1 Drone&r, if you Upgrade them you will need a Upgraded Simulation Chamber aswell."
-			]
-			id: "171264858BACCB59"
-			shape: "gear"
-			tasks: [{
-				id: "7FB0EB0240649123"
-				title: "I got it!"
-				type: "checkmark"
-			}]
-			title: "Ore Simulations"
-			x: -1.7142857142857082d
-			y: 8.07142857142857d
-		}
-		{
-			dependencies: ["51E0FF92EA1C1737"]
-			id: "0C779E320E415A17"
-			shape: "gear"
-			tasks: [{
-				id: "6B1FE41E0908E67F"
-				item: "kubejs:miner_tier_1"
-				type: "item"
-			}]
-			title: "Mining Drone Tier 1"
-			x: -1.702380952380949d
-			y: 5.506462585033994d
-		}
-		{
-			dependencies: [
-				"7ADF4C8F7242CD80"
-				"239768A03BBB0E5D"
-			]
-			description: [
-				"Now this is a bit more expensiv, you will need some &aFlawless Lapis Gem&r and Combind them with the Deuterium to get the &aFluxium&r."
-				""
-				"You will see that you need some MV Machinery now tho, for the glass lens you will need a MV Lathe."
-			]
-			icon: "kubejs:fluxium"
-			id: "51E0FF92EA1C1737"
+			id: "23C8C169FA5080D4"
 			tasks: [
 				{
-					id: "03FF242C098996F9"
-					item: "gtceu:flawless_lapis_gem"
+					id: "6A66680734D8D045"
+					item: "minecraft:sugar"
+					type: "item"
+				}
+				{
+					id: "3DDAB40BDF0F1FD9"
+					item: "minecraft:sugar_cane"
 					optional_task: true
 					type: "item"
 				}
-				{
-					id: "613414478955811C"
-					item: "kubejs:fluxium"
-					type: "item"
-				}
 			]
-			title: "Fluxium"
-			x: -3.0d
-			y: 5.5d
+			x: 2.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["7F44DE0B4CF1920F"]
-			description: ["So now, &aCentrifuge&r the &aMoon Sand&r for &eDeuterium&r!"]
-			id: "7ADF4C8F7242CD80"
+			dependencies: ["627E0AFFDAF0E4E1"]
+			description: ["&aBiofuel&r is very good in the use for Create Recipes with the &6Blaze Burner&r!"]
+			id: "05A8B7FF9E3830A3"
 			tasks: [{
-				id: "5F74313BD2EAB789"
-				item: "gtceu:deuterium_bucket"
+				id: "4F6BA90D7010B643"
+				item: "createaddition:bioethanol_bucket"
 				type: "item"
 			}]
-			x: -2.988095238095241d
-			y: 4.26836734693876d
+			x: 3.0d
+			y: -0.5d
 		}
 		{
-			dependencies: ["34FCE27A02ED6657"]
-			description: ["Moon sand is quit rich and dense in &eDeuterium&r, which can also be used to get &4Tritium&r later on."]
-			id: "7F44DE0B4CF1920F"
+			dependencies: [
+				"05A8B7FF9E3830A3"
+				"6DD903799E4F06F6"
+			]
+			id: "781FDDE52E7E5691"
 			tasks: [{
-				id: "0F02CF39F492F766"
-				item: "ad_astra:moon_sand"
+				id: "53B5DFE47B77E7C3"
+				item: "kubejs:refined_biofuel_bucket"
 				type: "item"
 			}]
-			x: -2.988095238095241d
-			y: 3.26836734693876d
+			x: 3.0d
+			y: 0.5d
 		}
 		{
-			dependencies: ["7ADF4C8F7242CD80"]
-			description: ["&4Tritium&r needs to be used for the &aMK2 Simulation Chamber&r as a Fuel Source!"]
-			id: "50421D637607EFB1"
+			dependencies: ["781FDDE52E7E5691"]
+			id: "569AB3EA2CAB5445"
+			subtitle: "&6Better Steam!&r"
+			tasks: [{
+				id: "3F2F82A2ED1C7C4D"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			icon: "gtceu:tin_dust"
+			id: "6DD903799E4F06F6"
+			tasks: [{
+				count: 8L
+				id: "0B678DE57486C094"
+				item: "gtceu:salt_dust"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["472365D29DE5ABDD"]
+			description: ["&9Fermented Biomass&r can be Distilled into Various Products, the &9Distillation Tower&r needed for it can be made in &dEV&r. So your probably best if you just stach them away and forget about them for now. "]
+			id: "12D7810CBDC66B18"
 			shape: "gear"
-			size: 0.75d
 			tasks: [{
-				id: "36A43E3194A6902D"
-				item: "gtceu:tritium_bucket"
-				type: "item"
+				id: "65CBC8DBAB3AECE5"
+				title: "Distillation"
+				type: "checkmark"
 			}]
-			x: -3.8894557823129148d
-			y: 4.270068027210861d
-		}
-		{
-			id: "239768A03BBB0E5D"
-			tasks: [{
-				id: "2E0DFFDB3835DC2B"
-				item: "gtceu:mv_lathe"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 5.5d
-		}
-		{
-			description: [
-				"Also, you will need to make your first &4Redstone Alloy&r now!"
-				""
-				"You will need it in form of Single Wire for the Controller."
-			]
-			icon: "gtceu:red_alloy_foil"
-			id: "4AF44B820291332A"
-			shape: "gear"
-			tasks: [
-				{
-					count: 16L
-					id: "2575AC098E533A82"
-					item: "gtceu:red_alloy_foil"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "6D1B03CC369E524B"
-					item: "enderio:redstone_alloy_ingot"
-					type: "item"
-				}
-			]
-			x: 0.48571428571428754d
-			y: 5.280952380952378d
+			x: 2.0d
+			y: -4.5d
 		}
 	]
 	subtitle: [""]

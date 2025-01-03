@@ -107,6 +107,16 @@ ServerEvents.recipes(e => {
     C: 'gtceu:steel_plate'   
   })
 
+  e.shaped('powah:capacitor_basic', [
+    'AAA', 
+    ' C ', 
+    ' B '  
+  ], {
+    A: 'powah:dielectric_paste', 
+    B: 'powah:steel_energized', 
+    C: 'gtceu:aluminium_block'   
+  })
+
   e.shaped('gtceu:wrought_iron_ingot', [
     'AAA', 
     'AAA', 
@@ -462,13 +472,13 @@ ServerEvents.recipes(e => {
              .itemOutputs('create:rose_quartz')
              .inputFluids([Fluid.of('gtceu:redstone', 144)])
              .duration(120).EUt(16) 
-             
+             /* // does now work
              e.recipes.gtceu.create_mixer('kubejs:create_rose_quartz_recipe')
              .itemInputs('minecraft:quartz')
              .itemOutputs('create:rose_quartz')
              .inputFluids([Fluid.of('gtceu:redstone', 144)])
-             .duration(60).EUt(16).rpm(120) 
-             
+             .duration(60).EUt(16)
+             */
              e.recipes.gtceu.cutter('kubejs:rose_quartz_recipe')
              .itemInputs('create:rose_quartz')
              .itemOutputs('create:polished_rose_quartz')
@@ -652,73 +662,6 @@ ServerEvents.recipes(e => {
               "burnTime": 20000,
               "superheated": false
             })
-
-// CUSTOM JSON
-      e.custom({
-       "type": "melter:melting",
-       "ingredient": {
-       "tag": "forge:ingots/iron",
-       "count": 1
-       },
-      "result": {
-      "fluid": "gtceu:iron",
-      "amount": 144
-      },
-      "processingTime": 100,
-      "minimumHeat": 3
-      })
-      e.custom({
-        "type": "melter:melting",
-        "ingredient": {
-        "tag": "forge:ingots/tin",
-        "count": 1
-        },
-       "result": {
-       "fluid": "gtceu:tin",
-       "amount": 144
-       },
-       "processingTime": 100,
-       "minimumHeat": 3
-       })
-       e.custom({
-        "type": "melter:melting",
-        "ingredient": {
-        "tag": "forge:ingots/copper",
-        "count": 1
-        },
-       "result": {
-       "fluid": "gtceu:copper",
-       "amount": 144
-       },
-       "processingTime": 100,
-       "minimumHeat": 3
-       })
-       e.custom({
-        "type": "melter:melting",
-        "ingredient": {
-        "tag": "forge:ingots/zinc",
-        "count": 1
-        },
-       "result": {
-       "fluid": "gtceu:zinc",
-       "amount": 144
-       },
-       "processingTime": 100,
-       "minimumHeat": 3
-       })
-       e.custom({
-        "type": "melter:melting",
-        "ingredient": {
-        "tag": "forge:ingots/electrum",
-        "count": 1
-        },
-       "result": {
-       "fluid": "gtceu:electrum",
-       "amount": 144
-       },
-       "processingTime": 100,
-       "minimumHeat": 3
-       })
      e.shaped('gtceu:lv_electric_motor',
        [
        'CDB',

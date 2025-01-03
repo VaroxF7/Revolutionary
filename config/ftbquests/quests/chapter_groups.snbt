@@ -1,9 +1,8 @@
 {
 	chapter_groups: [
-		{ id: "5AE8177426349D2C", title: "Starting Out!" }
-		{ id: "4C27A710E32D8A9A", title: "Additional's" }
-		{ id: "693226878D58638A", title: "GregTech" }
-		{ id: "1C1C4FB2AFCF489D", title: "Kind of Important?" }
-		{ id: "2E4F640A4C7964ED", title: "Chemicals and Materials" }
+		{ id: "26721A7382570C98", title: "Starting Off" }
+		{ id: "2C2CAF0515DE6257", title: "Chapter 1" }
+		{ id: "1DD7806DF47F7856", title: "Misc." }
+		{ id: "471451F84A9BD3EB", title: "WIP TITELS" }
 	]
 }

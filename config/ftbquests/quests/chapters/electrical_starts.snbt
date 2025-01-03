@@ -1,0 +1,505 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "electrical_starts"
+	group: "2C2CAF0515DE6257"
+	id: "08F08F901507C8D0"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["27DA3FD7B4353D64"]
+			id: "480B2E421A1C9422"
+			tasks: [{
+				id: "25246A5C3A5BEABC"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["67D5C697CB018D2C"]
+			icon: "create:fluid_pipe"
+			id: "4A39ECE7D30ADBD6"
+			tasks: [
+				{
+					id: "6330BC4F9F5C10A7"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "5A5E927DE308B9D8"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["67D5C697CB018D2C"]
+			icon: "create:steam_engine"
+			id: "533EDD4D9E16112A"
+			tasks: [
+				{
+					id: "3A91BE1E3BC98B67"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					id: "5EC256986F6DC9CB"
+					item: "create:steam_engine"
+					type: "item"
+				}
+			]
+			title: "Steam Engine"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21D8BEB6E7E95419"]
+			id: "67D5C697CB018D2C"
+			tasks: [{
+				id: "7B41AF2BE675EA44"
+				item: "minecraft:lava_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["051708262629A0D7"]
+			id: "0B96AC88886A0E5B"
+			tasks: [
+				{
+					id: "5D260A1B5A7E915E"
+					item: "create:item_drain"
+					type: "item"
+				}
+				{
+					id: "38EC6FD15B5D3FF4"
+					item: "create:portable_fluid_interface"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "051708262629A0D7"
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "30D0AF7F0B87E3C3"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["051708262629A0D7"]
+			id: "6249DE10F8C56BD0"
+			tasks: [{
+				id: "2C10BF86D22478E7"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6249DE10F8C56BD0"
+				"323196D95A0675D8"
+				"64ED1F742BE5CB1D"
+			]
+			id: "50514101110540B2"
+			tasks: [{
+				id: "79353BCA369AFBBB"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["051708262629A0D7"]
+			id: "21D8BEB6E7E95419"
+			tasks: [{
+				id: "77D33C853658B8BC"
+				item: "create:hose_pulley"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6249DE10F8C56BD0"
+				"67D5C697CB018D2C"
+			]
+			id: "3BCF7C0C380BB8FC"
+			tasks: [{
+				id: "1B3BFD604B400E9B"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3BCF7C0C380BB8FC"]
+			id: "7FF17DAE59D9BF84"
+			subtitle: "&4First Steps forwards!&r"
+			tasks: [{
+				id: "0E9E12335CE638D3"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["73B6A86912FFF6F6"]
+			description: ["Big Steps Towards &2Automation Mayham&r!"]
+			id: "323196D95A0675D8"
+			subtitle: "&6Your First Steel Ingot!&r"
+			tasks: [{
+				id: "36A3AB9011E68BB3"
+				item: "gtceu:steel_ingot"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["43D769A3AE56D53A"]
+			id: "5F737E0DF24942A0"
+			tasks: [{
+				id: "0FF135459B233DD9"
+				item: "gtceu:coke_gem"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"480B2E421A1C9422"
+				"3B3664F0C9BDB24C"
+				"1C35D24857E1196E"
+				"36D4C86729D207F6"
+				"6CAA2F66237CAAC1"
+			]
+			id: "1F6C5DA9A9348475"
+			tasks: [{
+				id: "615D67FF91BBBFE7"
+				item: "kubejs:early_electronic_circuit"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "3B3664F0C9BDB24C"
+			tasks: [{
+				id: "10F3E104DF3E7EE0"
+				item: "gtceu:fine_copper_wire"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["50514101110540B2"]
+			id: "27DA3FD7B4353D64"
+			tasks: [{
+				id: "4F3AA2DE42C94AE3"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "5D5CD07BD0A3710B"
+			tasks: [{
+				id: "3847F1C74C254536"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50514101110540B2"]
+			id: "730D12491D480443"
+			tasks: [
+				{
+					id: "0AA259A8869F46D8"
+					item: "create:display_link"
+					type: "item"
+				}
+				{
+					id: "791A27B5002F2E75"
+					item: "create:display_board"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			id: "229B8261A5124557"
+			tasks: [{
+				id: "23DB4578E1F4A27D"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7DD747A43AB84387"]
+			id: "1C35D24857E1196E"
+			tasks: [{
+				id: "0BAD82C764CBD775"
+				item: "gtceu:resin_printed_circuit_board"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			id: "02F13DE3EBA76BDC"
+			tasks: [{
+				id: "4AB60D0377CC8E21"
+				item: "gtceu:electrum_bolt"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2909AA5FE625D559"]
+			id: "7DD747A43AB84387"
+			tasks: [{
+				id: "351317EC318D1317"
+				item: "gtceu:sticky_resin"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"02F13DE3EBA76BDC"
+				"5D5CD07BD0A3710B"
+			]
+			id: "36D4C86729D207F6"
+			tasks: [{
+				id: "595B4EC522DD8B6C"
+				item: "kubejs:energized_pin"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1F6C5DA9A9348475"
+				"229B8261A5124557"
+			]
+			id: "5EA4B21BEB587A93"
+			tasks: [{
+				id: "59153C4130D414EF"
+				item: "kubejs:rusty_chip"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			id: "7DDE27690D60A2C7"
+			tasks: [{
+				id: "1C28C6211E80AA37"
+				item: "kubejs:kelp_sediment_bucket"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"468997638A46472C"
+				"7DDE27690D60A2C7"
+			]
+			id: "2909AA5FE625D559"
+			tasks: [{
+				id: "20D508228A696DA9"
+				item: "minecraft:magma_cream"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			id: "468997638A46472C"
+			tasks: [{
+				id: "2D5C2BD2E6B1DC5A"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5EA4B21BEB587A93"]
+			id: "201A81AFA110ECA0"
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "20CA15A5168E6D99"
+				title: "mechanism"
+				type: "custom"
+			}]
+			title: "mysterious mechanism"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			id: "6D93789B2210338E"
+			tasks: [{
+				id: "5A7E52775C315034"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["182B453CBA6AA9F0"]
+			icon: "gtceu:coke_oven"
+			id: "43D769A3AE56D53A"
+			subtitle: "&5Your First Coke Oven!&r"
+			tasks: [
+				{
+					id: "44C260ABBE5BBB37"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					id: "28B6C84C90E1CCF4"
+					item: "gtceu:coke_oven_hatch"
+					type: "item"
+				}
+				{
+					id: "2E955D241BBFD657"
+					item: "gtceu:coke_oven_bricks"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5BE99D2C552F0688"]
+			id: "2568F0722921EE2D"
+			tasks: [{
+				id: "12403FC580CBCFFC"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			id: "5BE99D2C552F0688"
+			tasks: [{
+				id: "03D14643667333E9"
+				item: "minecraft:mud"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"6D93789B2210338E"
+				"5F737E0DF24942A0"
+			]
+			description: ["Better Take Good Care of it.&r"]
+			id: "73B6A86912FFF6F6"
+			subtitle: "&5Your First Smeltery!&r"
+			tasks: [
+				{
+					id: "041C00D06E4027CE"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "072611166CE661F6"
+					item: { Count: 20, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			id: "6CAA2F66237CAAC1"
+			tasks: [{
+				id: "7451E127B42AC0CF"
+				item: "tconstruct:obsidian_pane"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2568F0722921EE2D"]
+			id: "182B453CBA6AA9F0"
+			tasks: [{
+				id: "5B7E5679A245CD99"
+				item: "kubejs:clay_sheet"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["323196D95A0675D8"]
+			id: "2FB87EA016FF6C8A"
+			subtitle: "&6The Better Automation Varient&r"
+			tasks: [
+				{
+					id: "1390178BC3DF845B"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "2BE128BA88C6F87A"
+					item: "gtceu:firebricks"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			id: "64ED1F742BE5CB1D"
+			tasks: [{
+				id: "7A7FD15D1902B988"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -1.0d
+		}
+	]
+	title: "Electrical Starts"
+}

@@ -1,4 +1,10 @@
 
+#DO NOT EDIT THE SETTINGS IN THIS SECTION
+[Builtin]
+	#Range: 0 ~ 4
+	Difficulty = 2
+	Version = "2.3.8"
+
 [Difficulty]
 	#Defines the minimum habitable temperature
 	#Range: -Infinity ~ Infinity
@@ -14,6 +20,14 @@
 	"Temperature Damage" = 2.0
 	#Sets whether damage scales with difficulty
 	"Damage Scaling" = true
+
+[Items]
+	#Allow fire resistance to block overheating damage
+	"Fire Resistance Immunity" = true
+	#Allow ice resistance to block freezing damage
+	"Ice Resistance Immunity" = true
+	#Thermometer item is required to see detailed world temperature
+	"Require Thermometer" = true
 
 ["Temperature Effects"]
 
@@ -40,20 +54,6 @@
 		#Represented as a percentage
 		#Range: 0.0 ~ 1.0
 		"Chilled Mining Speed Reduction" = 0.5
-
-#DO NOT EDIT THE SETTINGS IN THIS SECTION
-[Builtin]
-	#Range: 0 ~ 4
-	Difficulty = 2
-	Version = "2.3.8"
-
-[Items]
-	#Allow fire resistance to block overheating damage
-	"Fire Resistance Immunity" = true
-	#Allow ice resistance to block freezing damage
-	"Ice Resistance Immunity" = true
-	#Thermometer item is required to see detailed world temperature
-	"Require Thermometer" = true
 
 ["Grace Period"]
 	#The amount of time (in ticks) after the player spawns during which they are immune to temperature effects
