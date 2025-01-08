@@ -38,10 +38,11 @@ GTCEuStartupEvents.registry('gtceu:world_gen_layer', event => {
     event.create('overworld_stone')
         .targets('ad_astra:moon_stone')
         .dimensions('ad_astra:moon') 
-    */
+    
 
     // Aether Islands
     event.create('aether_islands')
         .targets('aether:holystone','aether:mossy_holystone','aether:icestone')
         .dimensions('aether:the_aether') 
+    */
 })

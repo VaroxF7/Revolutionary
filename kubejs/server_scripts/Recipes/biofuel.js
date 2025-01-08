@@ -29,7 +29,7 @@ ServerEvents.recipes(e => {
 
     e.recipes.gtceu.chemical_reactor("refined_biofuel_three_oxide")
      .inputFluids([Fluid.of("createaddition:bioethanol", 100)])
-     .itemInputs("4x gtceu:aluminium_three_oxide_dust")
+     .itemInputs("4x gtceu:salt_dust")
      .outputFluids([Fluid.of("gtceu:refined_biofuel", 200)])
      .duration(220).EUt(20)
         

@@ -36,6 +36,7 @@ ServerEvents.recipes(e => {
   e.recipes.create.deploying(['gtceu:rubber_plate'], ['gtceu:rubber_ingot', 'gtceu:plate_casting_mold']).keepHeldItem()
   e.recipes.create.compacting(['gtceu:compressed_fireclay'], ['gtceu:fireclay_dust'])
   e.smelting('minecraft:glass', 'minecraft:sand')
+  e.smelting('create:andesite_alloy', 'kubejs:compound_base')
   e.recipes.create.mixing([Fluid.of("gtceu:steam", 500)], [Fluid.of("minecraft:water", 1000)]).heated()
   e.recipes.create.filling(["croptopia:water_bottle"], ["minecraft:glass_bottle", Fluid.of("minecraft:water", 250)])
   e.recipes.create.filling(["minecraft:glass_bottle"], ["gtceu:bottle_casting_mold", Fluid.of("gtceu:glass", 72)])

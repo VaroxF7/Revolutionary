@@ -1,41 +1,129 @@
 ServerEvents.recipes(e => {  
-    e.replaceInput(
-      { input: "ae2:certus_quartz_crystal" },
-      "ae2:certus_quartz_crystal",
-      "gtceu:certus_quartz_gem")
-    
-    e.replaceInput(
-      { input: "ae2:quartz_block" },
-      "ae2:quartz_block",
-      "gtceu:certus_quartz_block")
+  // Input & Output Changes
+  e.replaceInput(
+    {input: "ae2:certus_quartz_crystal"},
+    "ae2:certus_quartz_crystal",
+    "gtceu:certus_quartz_gem")
 
-    e.replaceInput(
-        { input: "gtceu:vacuum_tube" },
-        "gtceu:vacuum_tube",
-        "create:electron_tube")
-        
-    e.replaceInput(
-            { input: "ae2:sky_dust" },
-            "ae2:sky_dust",
-            "gtceu:sky_stone_dust")
+  e.replaceInput(
+    {input: "ae2:quartz_block"},
+    "ae2:quartz_block",
+    "gtceu:certus_quartz_block")
 
-            e.replaceInput(
-              { input: "gtceu:redstone_alloy_dust" },
-              "gtceu:redstone_alloy_dust",
-              "gtceu:red_alloy_dust")
+  e.replaceInput(
+    {input: "gtceu:vacuum_tube"},
+    "gtceu:vacuum_tube",
+    "create:electron_tube")
 
-    e.replaceOutput(
-      { output: "gtceu:red_alloy_ingot" },
-                "gtceu:red_alloy_ingot",
-                "enderio:redstone_alloy_ingot")
+  e.replaceInput(
+    {input: "ae2:sky_dust"},
+    "ae2:sky_dust",
+    "gtceu:sky_stone_dust")
 
-                e.replaceOutput(
-                  { output: "gtceu:redstone_alloy_dust" },
-                            "gtceu:redstone_alloy_dust",
-                            "gtceu:red_alloy_dust")
+  e.replaceInput(
+    {input: "gtceu:redstone_alloy_dust"},
+    "gtceu:redstone_alloy_dust",
+    "gtceu:red_alloy_dust")
 
-    e.smelting('create:andesite_alloy', 'kubejs:compound_base')
+  e.replaceOutput(
+    {output: "gtceu:red_alloy_ingot"},
+    "gtceu:red_alloy_ingot",
+    "enderio:redstone_alloy_ingot")
 
+  e.replaceOutput(
+    {output: "gtceu:redstone_alloy_dust"},
+    "gtceu:redstone_alloy_dust",
+    "gtceu:red_alloy_dust")
+
+
+  // Shaped & Shapeless Recipes
+  e.shaped('create:electron_tube',[
+    ' A ', 
+    ' C ', 
+    '   '  
+  ], {
+    A: 'create:polished_rose_quartz', 
+    C: 'gtceu:steel_plate'   
+  })
+
+  e.shaped('powah:capacitor_basic',[
+    'AAA', 
+    ' C ', 
+    ' B '  
+  ], {
+    A: 'powah:dielectric_paste', 
+    B: 'powah:steel_energized', 
+    C: 'gtceu:aluminium_block'   
+  })
+
+  e.shaped('gtceu:wrought_iron_ingot',[
+    'AAA', 
+    'AAA', 
+    'AAA'  
+  ], {
+    A: 'gtceu:wrought_iron_nugget'  
+  })
+
+  e.shaped('9x minecraft:iron_nugget',[
+    '   ', 
+    ' A ', 
+    '   '  
+  ], {
+    A: 'minecraft:iron_ingot'  
+  })
+
+  e.shaped('minecraft:sculk',[
+    'AAA', 
+    'AAA', 
+    'AAA'  
+  ], {
+    A: 'minecraft:echo_shard'  
+  })
+
+  e.shaped('gtceu:lv_electric_motor',[
+    'CDB',
+    'DAD',
+    'BDC'
+  ],
+    {
+      A: 'thermal:upgrade_augment_1',
+      B: "gtceu:iron_rod",
+      C: "gtceu:tin_single_wire",
+      D: "gtceu:copper_single_wire"
+  })
+
+  e.shaped('minecraft:paper',[
+    '   ',
+    'ABA',
+    '   '
+  ],
+    { A: "minecraft:sugar_cane",
+      B: "minecraft:sugar_cane"
+  })
+
+  e.shaped('gtceu:red_alloy_dust',[
+    ' A ',
+    'ABA',
+    ' A '
+  ],
+    {
+      A: 'minecraft:redstone',
+      B: "gtceu:copper_dust"
+  })
+
+  e.shaped('gtceu:vacuum_freezer',[
+    'AAA',
+    'CBC',
+    'DCD'
+  ],
+    {
+      A: 'gtceu:mv_electric_pump',
+      B: "gtceu:frostproof_machine_casing",
+      C: "gtceu:micro_processor", 
+      D: "gtceu:gold_single_wire"
+  })
+
+  // GTCEU Normal Machine Recipe Stack
     e.recipes.gtceu.alloy_smelter("new_pulsating_recipe")
      .itemInputs("2x gtceu:steel_ingot", "minecraft:ender_pearl")
      .itemOutputs("enderio:pulsating_alloy_ingot")
@@ -86,61 +174,6 @@ ServerEvents.recipes(e => {
       .itemOutputs('gtceu:stainless_steel_ingot')
       .duration(1200).EUt(512).circuit(6).blastFurnaceTemp(2000)
 
-    e.recipes.gtceu.assembler("supercoducting_coils_new")
-     .itemInputs("16x gtceu:indium_tin_barium_titanium_cuprate_double_wire", "16x gtceu:trinium_foil")
-     .inputFluids([Fluid.of("gtceu:naquadah", 2000)])
-     .itemOutputs("gtceu:superconducting_coil")
-     .duration(100).EUt(8192)
-    
-     e.recipes.gtceu.centrifuge("rare_earth_v2")
-      .itemInputs("gtceu:rare_earth_dust")
-      .itemOutputs("4x gtceu:small_cadmium_dust","4x gtceu:small_neodymium_dust","4x gtceu:small_samarium_dust","4x gtceu:small_cerium_dust","4x gtceu:small_yttrium_dust","4x gtceu:small_lanthanum_dust")
-      .inputFluids([Fluid.of("gtceu:fluoroantimonic_acid", 500)])
-      .duration(260).EUt(2048)
-
-  e.shaped('create:electron_tube', [
-    ' A ', 
-    ' C ', 
-    '   '  
-  ], {
-    A: 'create:polished_rose_quartz', 
-    C: 'gtceu:steel_plate'   
-  })
-
-  e.shaped('powah:capacitor_basic', [
-    'AAA', 
-    ' C ', 
-    ' B '  
-  ], {
-    A: 'powah:dielectric_paste', 
-    B: 'powah:steel_energized', 
-    C: 'gtceu:aluminium_block'   
-  })
-
-  e.shaped('gtceu:wrought_iron_ingot', [
-    'AAA', 
-    'AAA', 
-    'AAA'  
-  ], {
-    A: 'gtceu:wrought_iron_nugget'  
-  })
-
-  e.shaped('9x minecraft:iron_nugget', [
-    '   ', 
-    ' A ', 
-    '   '  
-  ], {
-    A: 'minecraft:iron_ingot'  
-  })
-
-  e.shaped('minecraft:sculk', [
-    'AAA', 
-    'AAA', 
-    'AAA'  
-  ], {
-    A: 'minecraft:echo_shard'  
-  })
-
     e.recipes.gtceu.electrolyzer("soul_sand_electrolazer_recipe")
      .itemInputs("minecraft:soul_sand")
      .itemOutputs("5x gtceu:gold_dust", 
@@ -149,11 +182,6 @@ ServerEvents.recipes(e => {
      "4x gtceu:zinc_dust", "5x gtceu:monazite_dust")
      .outputFluids([Fluid.of("minecraft:lava", 5000)])
      .duration(890).EUt(30)
-
-    e.recipes.gtceu.forming_press("livingrock_to_pool")
-     .itemInputs("5x botania:livingrock")
-     .itemOutputs("botania:mana_pool")
-     .duration(450).EUt(510)
 
     e.recipes.gtceu.cutter("log_to_cutter_recipe")
      .itemInputs("#minecraft:logs")
@@ -199,24 +227,15 @@ ServerEvents.recipes(e => {
      ["addData(java.lang.String,java.lang.String)"]("fluidB", "minecraft:lava")
      .duration(120).EUt(124).dimension("ad_astra:mars") 
 */
-    e.recipes.gtceu.combustion_generator('kubejs:biofuel_to_power_combustion')
+    e.recipes.gtceu.combustion_generator('bioethanol_to_power_combustion')
     .inputFluids([Fluid.of('createaddition:bioethanol', 15)])
+    .duration(20)
+    .EUt(-20)
+
+    e.recipes.gtceu.combustion_generator('refined_biofuel_to_power_combustion')
+    .inputFluids([Fluid.of('gtceu:refined_biofuel', 15)])
     .duration(80)
     .EUt(-32)
-
-    e.recipes.gtceu.gas_turbine('kubejs:hodbbg_to_power_gas_gen')
-    .inputFluids([Fluid.of('kubejs:high_octane_diesel_boosted_biofuel_gasoline', 100)])
-    .duration(120)
-    .EUt(-512)
-    
-    e.recipes.gtceu.large_chemical_reactor("kubejs:large_hodbbg_recipe") 
-    .itemInputs("36x thermal:frost_melon_slice")
-    .inputFluids([Fluid.of('gtceu:cetane_boosted_diesel', 4320)])
-    .inputFluids([Fluid.of('gtceu:high_octane_gasoline', 12021)])
-    .inputFluids([Fluid.of('gtceu:distilled_water', 4500)])
-    .inputFluids([Fluid.of('gtceu:refined_biofuel', 2200)])
-    .outputFluids([Fluid.of('kubejs:high_octane_diesel_boosted_biofuel_gasoline', 13500)])
-    .duration(3569).circuit(18).EUt(512)
 
     e.recipes.gtceu.forge_hammer("kubejs:forge_hammer_coal_dust_recipe")
     .itemInputs("minecraft:coal")
@@ -295,24 +314,6 @@ ServerEvents.recipes(e => {
        .outputFluids([Fluid.of('kubejs:clean_fluix', 144 )])
        .duration(460)
        .EUt(25)
-
-       e.recipes.gtceu.centrifuge("radon_extract_to_radon")
-        .itemInputs("kubejs:radon_extract_dust")
-        .itemOutputs("gtceu:thorium_dust")
-        .outputFluids([Fluid.of("gtceu:radon", 1000)])
-        .duration(160).EUt(25)
-
-      e.recipes.gtceu.chemical_reactor("radon_flouride_corosion_acid")
-       .itemInputs("4x kubejs:radon_extract_dust")
-       .inputFluids([Fluid.of("gtceu:hydrofluoric_acid", 250)])
-       .outputFluids([Fluid.of("gtceu:corosion_acid", 500)])
-       .duration(160).EUt(25)
-
-       e.recipes.gtceu.chemical_reactor("pyrotheum_corosion")
-       .itemInputs("4x kubejs:pyrotheum","4x kubejs:cryotheum")
-       .inputFluids([Fluid.of("gtceu:corosion_acid", 500)])
-       .outputFluids([Fluid.of("gtceu:etherion", 250)])
-       .duration(160).EUt(25)
 
       e.recipes.gtceu.chemical_bath("steel_to_manasteel")
        .itemInputs("gtceu:steel_ingot")
@@ -404,15 +405,7 @@ ServerEvents.recipes(e => {
        .itemInputs("8x gtceu:certus_quartz_dust")
        .itemOutputs("4x gtceu:silicon_dioxide_dust")
        .duration(182).EUt(32)
-      
-       e.recipes.gtceu.assembly_line('kubejs:super_compressed_cable')
-        .itemInputs('16x gtceu:blue_alloy_hex_wire', '16x gtceu:red_alloy_hex_wire', '16x gtceu:aluminium_hex_wire', '16x gtceu:platinum_hex_wire', '16x gtceu:tritanium_hex_wire', "16x gtceu:enriched_naquadah_trinium_europium_duranide_hex_wire", "16x gtceu:uranium_rhodium_dinaquadide_hex_wire", "16x gtceu:samarium_iron_arsenic_oxide_hex_wire", "16x gtceu:rtm_alloy_hex_wire", "16x gtceu:europium_hex_wire", "16x gtceu:electrum_hex_wire"  )
-        .itemOutputs('kubejs:ultimate_sup_wire')
-        .inputFluids([Fluid.of('gtceu:epoxy', 16500)])
-        .inputFluids([Fluid.of('gtceu:duranium', 13500)])
-        .inputFluids([Fluid.of('gtceu:plutonium', 12500)])
-        .duration(5600).EUt(524280)
-
+    
         e.recipes.gtceu.assembler("kubejs:ae2_pattern_recipe")
          .itemInputs("1x gtceu:stainless_steel_ingot", "3x minecraft:glowstone_dust", "3x ae2:quartz_glass" )
          .itemOutputs("2x ae2:blank_pattern")
@@ -445,11 +438,6 @@ ServerEvents.recipes(e => {
              .itemOutputs("4x gtceu:impure_iron_dust")
              .itemOutputs("2x gtceu:impure_tin_dust")
              .duration(50).EUt(6)
-     
-             e.recipes.gtceu.electrolyzer('heavy_water_to_salt_electrolyzer')
-             .itemOutputs('8x gtceu:salt_dust')
-             .inputFluids([Fluid.of('gtceu:heavy_water', 1200)]) 
-             .duration(320).EUt(30)
      
              e.recipes.gtceu.electrolyzer('kubejs:heavy_water_elec_heavy_water')
              .inputFluids([Fluid.of('minecraft:water', 2000)]) 
@@ -551,85 +539,11 @@ ServerEvents.recipes(e => {
              .outputFluids([Fluid.of('gtceu:rubber', 144)])
              .duration(60).EUt(8)
 
-            e.recipes.gtceu.mixer("mix_carbide_rare")
-             .itemInputs("4x gtceu:marian_crystal_dust","2x gtceu:tungsten_carbide_dust")
-             .itemOutputs("4x gtceu:rare_earth_dust")
-             .duration(120).EUt(120)
-
             e.recipes.gtceu.evaporation("brine_to_lithium")
              .inputFluids([Fluid.of("gtceu:hot_brine", 2000)])
              .outputFluids([Fluid.of("gtceu:lithium", 500)])
              .duration(340).EUt(512)
 
-            e.recipes.gtceu.electric_blast_furnace("mix_rare_2")
-             .itemInputs("4x gtceu:marian_crystal_dust","2x gtceu:titanium_silver_dust")
-             .itemOutputs("4x kubejs:rare_earth_2")
-             .inputFluids([Fluid.of("gtceu:nitrogen", 2000)])
-             .duration(320).EUt(512).blastFurnaceTemp(2700)
-
-             e.recipes.gtceu.electric_blast_furnace("uraninite_powah_to_gtceu")
-             .itemInputs("4x powah:uraninite")
-             .itemOutputs("2x gtceu:uranium_235_dust")
-             .inputFluids([Fluid.of("gtceu:oxygen", 2000)])
-             .duration(320).EUt(512).blastFurnaceTemp(2700)
-
-            e.recipes.gtceu.centrifuge("centri_rare_2")
-             .itemInputs("gtceu:tungsten_rare_dust")
-             .chancedOutput("gtceu:tiny_gallium_sulfide_dust", 1100, 400)
-             .chancedOutput("gtceu:tiny_europium_dust", 1100, 4)
-             .chancedOutput("gtceu:tiny_uranium_235_dust", 1100, 400)
-             .chancedOutput("gtceu:tiny_rhodium_dust", 1100, 400)
-             .chancedOutput("gtceu:tiny_indium_dust", 1100, 400)
-             .chancedOutput("gtceu:tiny_cadmium_dust", 1100, 400)
-             .duration(80).EUt(20)
-
-             e.recipes.gtceu.chemical_reactor("b72_chemical")
-              .itemInputs("4x kubejs:rare_earth_2", "2x gtceu:tungsten_dust")
-              .itemOutputs("2x gtceu:tungsten_rare_dust")
-              .inputFluids([Fluid.of("gtceu:nitric_acid", 2000)])
-              .duration(150).EUt(120)
-
-            e.recipes.gtceu.chemical_reactor("tung_rare_dust")
-             .itemInputs("2x gtceu:tungsten_rare_dust")
-             .inputFluids([Fluid.of("gtceu:sulfuric_acid", 1200)])
-             .outputFluids([Fluid.of("gtceu:rare_metal_mixture", 500)])
-             .duration(350).EUt(120)
-
-             e.custom({
-              "type": "powah:energizing",
-                "ingredients": [
-                  {"item": "kubejs:marian_crystal"}
-                ],
-                "energy": 50000,
-                "result": {
-                  "count": 2,
-                  "item": "gtceu:marian_crystal_dust"
-                }
-            })
-
-            e.custom({
-              "type": "powah:energizing",
-                "ingredients": [
-                  {"item": "thermal:blizz_powder"}
-                ],
-                "energy": 50000,
-                "result": {
-                  "count": 1,
-                  "item": "kubejs:cryotheum"
-                }
-            })
-
-            e.custom({
-              "type": "powah:energizing",
-                "ingredients": [
-                  {"item": "thermal:basalz_powder"}
-                ],
-                "energy": 50000,
-                "result": {
-                  "count": 1,
-                  "item": "kubejs:pyrotheum"
-                }
-            })
 
             e.custom({
               "type": "powah:energizing",
@@ -662,37 +576,7 @@ ServerEvents.recipes(e => {
               "burnTime": 20000,
               "superheated": false
             })
-     e.shaped('gtceu:lv_electric_motor',
-       [
-       'CDB',
-       'DAD',
-       'BDC'
-     ],
-       {
-         A: 'thermal:upgrade_augment_1',
-         B: "gtceu:iron_rod",
-         C: "gtceu:tin_single_wire",
-         D: "gtceu:copper_single_wire"
-     })
-     e.shaped('minecraft:paper',
-       [
-       '   ',
-       'ABA',
-       '   '
-     ],
-       { A: "minecraft:sugar_cane",
-         B: "minecraft:sugar_cane"
-     })
-     e.shaped('gtceu:red_alloy_dust',
-       [
-       ' A ',
-       'ABA',
-       ' A '
-     ],
-       {
-         A: 'minecraft:redstone',
-         B: "gtceu:copper_dust"
-     })
+     
 
      e.custom({
       "type": "powah:energizing",
@@ -1035,18 +919,7 @@ ServerEvents.recipes(e => {
           }
       })
 
-e.shaped('gtceu:vacuum_freezer',
-  [
-  'AAA',
-  'CBC',
-  'DCD'
-],
-  {
-    A: 'gtceu:mv_electric_pump',
-    B: "gtceu:frostproof_machine_casing",
-    C: "gtceu:micro_processor", 
-    D: "gtceu:gold_single_wire"
-})
+
 
 //////////////////////////
 // MV Electric Recipes  //

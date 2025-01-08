@@ -3,10 +3,6 @@ WorldgenEvents.remove((e) => {
 	    ores.blocks = [
 		'thermal:silver_ore',
         'thermal:deepslate_silver_ore',
-		'mysticalagriculture:prosperity_ore',
-        'mysticalagriculture:deepslate_prosperity_ore',
-        'mysticalagriculture:inferium_ore',
-        'mysticalagriculture:deepslate_inferium_ore',
         'thermal:tin_ore',
 		'thermal:deepslate_tin_ore',
         'thermal:niter_ore',
@@ -20,11 +16,7 @@ WorldgenEvents.remove((e) => {
         'thermal:sulfur_ore',
 		'thermal:deepslate_sulfur_ore',
         'thermal:apatite_ore',
-		'thermal:deepslate_apatite_ore',
-        'immersiveeengineering:ore_aluminum',
-        'immersiveeengineering:deepslate_ore_aluminum',
-        'immersiveeengineering:ore_uranium',
-        'immersiveeengineering:deepslate_ore_uranium'
+		'thermal:deepslate_apatite_ore'
 	     ]	
 	})
 })

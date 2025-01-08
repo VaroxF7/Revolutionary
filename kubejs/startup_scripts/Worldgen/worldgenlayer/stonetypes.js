@@ -24,7 +24,7 @@ GTCEuStartupEvents.registry('gtceu:tag_prefix', e => {
             .generationCondition(ItemGenerationCondition.hasOreProperty)
     }
 
-    createStoneTypeOre('aether:holystone', { blockState: () => UtilsJS.parseBlockState("aether:holystone[double_drops=true]")})
+    //createStoneTypeOre('aether:holystone', { blockState: () => UtilsJS.parseBlockState("aether:holystone[double_drops=true]")})
     
     createStoneTypeOre('ad_astra:moon_stone')
     createStoneTypeOre('ad_astra:mars_stone')
