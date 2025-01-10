@@ -1,0 +1,70 @@
+
+JEIAddedEvents.registerCategories((event) => {
+    // Securite V1 Addition
+  event.custom("kubejsadditions:information", (category) => {
+    const {
+      jeiHelpers,
+      jeiHelpers: { guiHelper },
+    } = category;
+
+    category
+      .title("Securite Information")
+      .background(guiHelper.createBlankDrawable(100, 50))
+      .icon(guiHelper.createDrawableItemStack(Item.of("gtceu:wetware_processor_computer")))
+      .isRecipeHandled((recipe) => {
+        return global["verifyRecipe"](jeiHelpers, recipe);
+      })
+      .handleLookup((builder, recipe, focuses) => {
+        global["handleLookup"](jeiHelpers, builder, recipe, focuses);
+      })
+      .setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
+        global["renderSECUINFO"](jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY);
+      });
+  });
+});
+
+
+  global["verifyRecipe"] = (jeiHelpers, recipe) => {
+    return !!(
+      recipe?.data?.name !== undefined &&
+      recipe?.data?.type !== undefined &&
+      recipe?.data?.description !== undefined
+    );
+  };
+  
+  global["handleLookup"] = (jeiHelpers, builder, recipe, focuses) => {
+    switch (recipe.data.type) {
+      case "item":
+      case "block":
+        builder.addSlot("INPUT", 35, 20).addItemStack(Item.of(recipe.data.name)).setSlotName("input");
+        builder.addInvisibleIngredients("OUTPUT").addItemStack(Item.of(recipe.data.name));
+        break;
+      case "fluid":
+        builder.addSlot("INPUT", 35, 20).addFluidStack(recipe.data.name, 1000).setSlotName("input");
+        builder.addInvisibleIngredients("OUTPUT").addFluidStack(recipe.data.name, 1000);
+        break;
+    }
+  };
+  
+  global["renderSECUINFO"] = (jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
+    guiGraphics.drawWordWrap(Client.font, Text.of(recipe.data.description), 0, 10, 100, 0);
+  };
+  
+
+  JEIAddedEvents.registerRecipes((event) => {
+    // .add([])
+    // .add("")
+    // .add(true)
+    // .add(50)
+    // .add(12.4)
+    // .add(()=> Item.of('steak'))
+    event
+    .custom("kubejsadditions:information")
+    .add({ name: "gtceu:nand_chip", type: "item", description: "ULV Voltage Circuit."})
+    .add({ name: "gtceu:basic_electronic_circuit", type: "item", description: "Low Voltage Circuit."})
+    .add({ name: "gtceu:good_electronic_circuit", type: "item", description: "Medium Voltage Circuit."})
+    .add({ name: "gtceu:basic_integrated_circuit", type: "item", description: "Low Voltage Circuit."})
+    .add({ name: "gtceu:advanced_integrated_circuit", type: "item", description: "High Voltage Circuit."})
+    .add({ name: "gtceu:microchip_processor", type: "item", description: "Low Voltage Circuit."})
+
+  });

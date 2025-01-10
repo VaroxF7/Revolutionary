@@ -1,0 +1,161 @@
+
+#Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
+[types]
+
+	[types.wood_type]
+
+		[types.wood_type.botania]
+			livingwood = true
+			dreamwood = true
+
+		[types.wood_type.thermal]
+			rubberwood = true
+
+		[types.wood_type.ad_astra]
+			aeronos = true
+			strophar = true
+			glacian = true
+
+		[types.wood_type.vinery]
+			dark_cherry = true
+
+		[types.wood_type.tconstruct]
+			greenheart = true
+			skyroot = true
+			bloodshroom = true
+			enderbark = true
+
+		[types.wood_type.gtceu]
+			rubber = true
+
+		[types.wood_type.biomesoplenty]
+			fir = true
+			pine = true
+			maple = true
+			redwood = true
+			mahogany = true
+			jacaranda = true
+			palm = true
+			willow = true
+			dead = true
+			magic = true
+			umbran = true
+			hellbark = true
+			empyreal = true
+
+	[types.leaves_type]
+
+		[types.leaves_type.thermal]
+			rubberwood = true
+
+		[types.leaves_type.croptopia]
+			cinnamon = true
+
+		[types.leaves_type.ad_astra]
+			glacian = true
+
+		[types.leaves_type.vinery]
+			grapevine = true
+			dark_cherry = true
+			apple = true
+
+		[types.leaves_type.tconstruct]
+			earth_slime = true
+			sky_slime = true
+			ender_slime = true
+
+		[types.leaves_type.gtceu]
+			rubber = true
+
+		[types.leaves_type.biomesoplenty]
+			origin = true
+			flowering_oak = true
+			red_maple = true
+			orange_maple = true
+			yellow_maple = true
+			rainbow_birch = true
+			snowblossom = true
+			null = true
+			cypress = true
+			fir = true
+			pine = true
+			redwood = true
+			mahogany = true
+			jacaranda = true
+			palm = true
+			willow = true
+			dead = true
+			magic = true
+			umbran = true
+			hellbark = true
+			empyreal = true
+
+		[types.leaves_type.dtbop]
+			yellow_maple = true
+			willow = true
+			umbran = true
+			spruce_undergrowth = true
+			spruce_twiglet = true
+			spruce_poplar = true
+			sparse_oak = true
+			sparse_acacia = true
+			snowblossom_twiglet = true
+			snowblossom = true
+			red_maple = true
+			redwood = true
+			rainbow_birch = true
+			poplar = true
+			pine = true
+			palm = true
+			orange_maple = true
+			oak_twiglet = true
+			mega_dark_oak = true
+			maple_twiglet = true
+			mangrove_twiglet = true
+			mahogany = true
+			magic_poplar = true
+			jungle_twiglet = true
+			jacaranda = true
+			hellbark_bush = true
+			hellbark = true
+			flowering_oak_undergrowth = true
+			flowering_oak = true
+			fir = true
+			dying = true
+			dark_poplar = true
+			dark_oak_twiglet = true
+			cypress_willow = true
+			cherry_twiglet = true
+			aspen = true
+			acacia_undergrowth = true
+			acacia_twiglet = true
+
+#Disables specific entries
+[entries]
+
+	[entries.wood_type]
+
+		[entries.wood_type.create]
+			window_pane = true
+			window = true
+
+		[entries.wood_type.handcrafted]
+			counter = true
+			corner_trim = true
+			fancy_bed = true
+			desk = true
+			couch = true
+			shelf = true
+			nightstand = true
+			table = true
+			chair = true
+			drawer = true
+			cupboard = true
+			pillar_trim = true
+			dining_bench = true
+			side_table = true
+			bench = true
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
