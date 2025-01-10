@@ -1,0 +1,1671 @@
+{
+	autofocus_id: "6FCAD016C795DE93"
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "mv__medium_voltage"
+	group: "693226878D58638A"
+	icon: "gtceu:micro_processor"
+	id: "43E779CEEB25D55B"
+	images: [{
+		height: 2.0d
+		image: "gtceu:item/mv_solar_panel"
+		rotation: 0.0d
+		width: 2.0d
+		x: 2.481824511054434d
+		y: -9.269364370748306d
+	}]
+	order_index: 2
+	quest_links: [{
+		id: "6FCAD016C795DE93"
+		linked_quest: "7567E885B7166603"
+		shape: "gear"
+		size: 1.2d
+		x: 1.2021768707482963d
+		y: -6.4586075680271975d
+	}]
+	quests: [
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"You will need to make the more advanced component now too for this one."
+				"So better be prepared and make sure you have enouhg of em."
+				"Familiar with the &aEmitter&r? This tier's Emitter requires a &dFlawless Emerald&r in its recipe, which'll be only attainable with the &3Sifting Machine&r for now."
+				""
+				"Conveyors, Pumps and Robot Arms are objective upgrades to &7LV&r versions if you use them as covers."
+				""
+				"&6This quest unlocks a new tutorial on Overclocking in the &lTips and Tricks&r&6 tab - check it out to learn more!&r"
+			]
+			icon: "gtceu:mv_electric_motor"
+			id: "1BE0349B8F3890D3"
+			size: 0.66d
+			subtitle: "Hated crafting these in the previous tier?"
+			tasks: [
+				{
+					id: "76A30E86C0FDF039"
+					item: "gtceu:mv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "569F6A8DF342E3F2"
+					item: "gtceu:mv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "22AA9FC8B94E4DC2"
+					item: "gtceu:mv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "63123E0DCB8D851C"
+					item: "gtceu:mv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "3DEEAA7FE50CC0E2"
+					item: "gtceu:mv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "57955AE7B270A891"
+					item: "gtceu:mv_emitter"
+					type: "item"
+				}
+			]
+			title: "MV Components"
+			x: 0.18176870748298768d
+			y: -6.4586075680271975d
+		}
+		{
+			dependencies: ["2973A486A2D923CF"]
+			description: [
+				"The &3MV Cutter&r is required to cut &7Silicon Boules&r to prepare them for &aLaser Engraving&r."
+				""
+				"We recommend you supply this machine with a steady stream of &dLubricant&r to cut down on the processing time."
+				""
+				"Lubricant can be &3brewed&r from &eOil&r and &aTalc&r, &2Soapstone&r or &cRedstone&r."
+			]
+			icon: "gtceu:mv_cutter"
+			id: "5CBBBFD1FBBE95CE"
+			rewards: [{
+				id: "6FD8201A5A3EF40C"
+				item: {
+					Count: 1
+					id: "gtceu:universal_fluid_cell"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "gtceu:lubricant"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.66d
+			subtitle: "Upgrades, people, upgrades!"
+			tasks: [{
+				id: "2AFB7F9BD4D82974"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			title: "Advanced Cutter"
+			x: 0.45180272108845543d
+			y: -5.488558673469367d
+		}
+		{
+			description: [
+				"&aBlue Alloy&r is an excellent Cable material for &6HV&r power."
+				""
+				"Nothing is preventing you from using it for &bMV&r power too! Make sure that you don't overvolt your machines, though."
+				""
+				"Superconductors for both &bMV&r and &6HV&r are unlocked... later."
+				""
+				"Furthermore, &aElectrotine&r can be separated for &dElectrum&r and &dRedstone&r."
+			]
+			hide_dependency_lines: true
+			icon: "gtceu:blue_alloy_ingot"
+			id: "1FCF2C103E25972B"
+			size: 0.66d
+			tasks: [{
+				id: "15C7369398FAB8DB"
+				item: "gtceu:blue_alloy_ingot"
+				type: "item"
+			}]
+			title: "Blue Alloy"
+			x: 8.91d
+			y: -5.61d
+		}
+		{
+			dependencies: ["5E91F30391D47B63"]
+			description: [
+				"No, but seriously."
+				""
+				"This is the &cu&6l&et&ai&bm&9a&5t&4e&r portable Fluid storage solution. &64,000 buckets of storage&r - in one single block!"
+				""
+				"Like Drums, Super Tanks &6keep their fluids when broken&r, and can be cleared in the crafting grid."
+				""
+				"If you hunger for &9even more&r storage, take a look at higher tier Super Tanks or AE2 Fluid Storage Cells."
+			]
+			icon: "gtceu:lv_super_tank"
+			id: "6C53B01A05FFF1DC"
+			shape: "square"
+			size: 0.75d
+			subtitle: "Super Tanks are OP!"
+			tasks: [{
+				id: "47EA273D728C158F"
+				item: "gtceu:lv_super_tank"
+				type: "item"
+			}]
+			title: "Super Tank"
+			x: 3.1131728316326672d
+			y: -12.420852465986375d
+		}
+		{
+			dependencies: [
+				"5E91F30391D47B63"
+				"060C5C0FEBE81B97"
+			]
+			description: [
+				"&aPolyvinyl Chloride (PVC)&r is the 3rd-most produced plastic in real life. Here in CEu, it can be substituted for Polyethylene in the production of &aPlastic Circuit Boards&r and other items to increase the yield. It is required from &5EV&r onwards to wrap Cables."
+				""
+				"PVC item pipes also have the &6highest throughput&r available for a while, but most of your setups right now won't need such speed. Still, it's good to keep this knowledge in your pocket."
+				""
+				"&9Pro tip:&r The fluid form of PVC is never used in base GTCEu, so feel free to solidify all of it into sheets."
+			]
+			icon: "gtceu:polyvinyl_chloride_plate"
+			id: "40408FFD02134148"
+			optional: true
+			shape: "square"
+			size: 0.75d
+			subtitle: "You've already made one polymer, what's two?"
+			tasks: [{
+				id: "72696AD2B77F805B"
+				item: "gtceu:polyvinyl_chloride_plate"
+				type: "item"
+			}]
+			title: "Polyvinyl Chloride"
+			x: 3.8682748724489926d
+			y: -12.420852465986378d
+		}
+		{
+			description: [
+				"&aSodium Persulfate&r can be used in &9Ore Processing&r in the &3Chemical Bath&r to get various bonus outputs you would not normally obtain. It is completely optional, but pretty rewarding."
+				""
+				"&lWait, stop! That's only a distraction&r - the real topic of this Quest is..."
+				""
+				"&aSodium Persulfate&r and &aIron III Chloride&r are used to make cheaper &9Good Circuit Boards&r, as their inclusion cuts Silver usage by a factor of four."
+				""
+				"They're also &drequired&r to make &9Plastic Circuit Boards&r."
+				"{@pagebreak}"
+				"Making &aSodium Persulfate&r will yield &aHydrochloric Acid&r as a coproduct, which you may re-use to make &aIron III Chloride&r. This should the best approach right now, but the decision is entirely yours."
+				""
+				"With more automation later in the game, Iron III Chloride will be the cheaper and more straight forward path."
+				""
+				"This Quest can be completed with &eeither&r Fluid."
+			]
+			icon: "gtceu:iron_iii_chloride_bucket"
+			id: "4353AB0E20601AEC"
+			rewards: [{
+				count: 20
+				id: "5A23AC1DA33FDC71"
+				item: "gtceu:salt_ore"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 0.75d
+			subtitle: "Let's etch some Copper off Circuit Boards!"
+			tasks: [
+				{
+					id: "3DF320B0BF83418B"
+					item: "gtceu:iron_iii_chloride_bucket"
+					type: "item"
+				}
+				{
+					id: "5C09AA1CF1B803F8"
+					item: "gtceu:sodium_persulfate_bucket"
+					type: "item"
+				}
+			]
+			title: "Sodium Persulfate / Iron III Chloride"
+			x: 7.5d
+			y: -12.375d
+		}
+		{
+			dependencies: ["064F8A0080C11E72"]
+			description: [
+				"We have thought about this, and we came to the conclusion that this might be useful for you!"
+				""
+				"Take these lenses and you can save yourself a bit of struggle and pain."
+				""
+				"&9Note:&r It will consume the Crushed Ores."
+			]
+			id: "20E8A789249B3245"
+			rewards: [
+				{
+					id: "2358029EE823F67C"
+					item: "gtceu:ruby_lens"
+					type: "item"
+				}
+				{
+					id: "111EF1D48A2FDC38"
+					item: "gtceu:sapphire_lens"
+					type: "item"
+				}
+			]
+			size: 0.75d
+			tasks: [
+				{
+					consume_items: true
+					count: 32L
+					id: "1B1B21FE07065013"
+					item: "gtceu:crushed_sapphire_ore"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 32L
+					id: "23FDEFB93EA00982"
+					item: "gtceu:crushed_ruby_ore"
+					type: "item"
+				}
+			]
+			title: "Lenses!"
+			x: 4.125d
+			y: -8.25d
+		}
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"&eElectric Version&r of the &0Coke Oven&r, basicall the same thing."
+				""
+				"Your task and goal for now is to reach &aEthylene&r, to do that you need &6Wood Tar&r which you can get with this beautiful machine. Simply just put &aWood and Power&r into it, then follow the further steps in this line in the quest book if you have questions!"
+			]
+			id: "318BF13F2ACD8140"
+			size: 0.75d
+			tasks: [{
+				id: "6CB99054A5769042"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			x: 1.1817687074829877d
+			y: -7.499423894557815d
+		}
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"It's quite the investment to own a &3Fluid Drilling Rig&r, but it is &oby far&r the most prominent &6source of Oil&r."
+				""
+				"It pumps fluids from underneath Bedrock itself. Note that the fluids aren't actually there, instead being simulated."
+				""
+				"Fluid veins are stored within regions of &48x8 chunks&r. Each vein has a different fluid, but they are mostly types of Oil."
+				""
+				"You are not able to carry out prospecting for fluid veins &oyet&r - this will come at &6HV&r."
+				"{@pagebreak}"
+				"Each vein generates with a different base yield. This is typically between &d150L&r to &d300L per second&r."
+				""
+				"When drained, fluid veins will slowly deplete. This will cause the fluid yield to decrease over time until it reaches its depletion yield. At that point, you should move the Rig to a different vein."
+				""
+				"A &3Basic Fluid Drilling Rig&r will last for 100,000 operations (with 1 second per operation) until depletion. This is enough for &6well over 10,000&r buckets of Oil. Higher tier Rigs will massively increase the yield, while also decreasing the depletion rate."
+				"{@pagebreak}"
+				"&lWhat you can find in the &2Overworld&r&l:&r"
+				""
+				"&9Oil:&r richer in &aLight Fuel&r, the most appreciated variant."
+				"&9Light Oil:&r richer in &aRefinery Gas&r, usable for power."
+				"&9Heavy Oil:&r richer in &aHeavy Fuel&r, which has uses that are more niche."
+				"&9Raw Oil:&r richer in &aNaphtha&r, the best source of the early-game oil products."
+				"&9Natural Gas:&r grants &aRefinery Gas&r with no distillation required."
+				"&l&9Salt Water:&r grants &aSodium&r and &aChlorine&r, useful later."
+				"{@pagebreak}"
+				"&lWhat you can find in the &cNether&r&l:&r"
+				""
+				"&9Natural Gas:&r grants &aRefinery Gas&r but with higher yield than the Overworld vein."
+				"&9Lava:&r hopefully, you know what this is."
+				""
+				"When starting out, you may have to tap randomly until you find something you like. Remember that whatever you pump could also be used to refuel your Fluid Rig."
+			]
+			id: "5B70A332D898FA2F"
+			size: 0.75d
+			tasks: [{
+				id: "55594A55F6A1464C"
+				item: "gtceu:mv_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: 0.19877551020408646d
+			y: -7.483097363945571d
+		}
+		{
+			dependencies: ["5B70A332D898FA2F"]
+			description: [
+				"Later you could also use &aFluid Drilling Rigs&r to &aPump&r up the &aDeposits&r in World."
+				""
+				"Each Oil deposit can have between &63,000&r and &69,200&r buckets of Oil, which is a LOT! Refining the Oil&r onsite into either &aLight Fuel&r or &aDiesel&r (or both) is perfectly viable. The next few Quests will explain each type's pros and cons."
+				""
+				"Store any obtained Oil in &3Drums&r, but you would do yourself a favour to use a &3Super Tank&r as soon as you can make them."
+				""
+				"&cWarning: &rDo not forget to &dchunkload&r with FTB Utilities (open the map in the top left corner, claim the chunks with left-click, and enable force loading with shift-left-click)."
+				"{@pagebreak}"
+				"&9&lNote:&r&l The Oil path is one path towards &9&lEthylene&r&l. The other paths involve getting natural with some Ethanol.&r"
+				""
+				"For now, Oil is &doptional&r. It becomes mandatory much later when you get to &5EV&r."
+				""
+				"Oil can also be refined in the form of &aLight Fuel&r, &aDiesel&r or even &aGasoline&r, which are excellent power options."
+				""
+				"If you chose this path, you should use it for both Power and Ethylene."
+			]
+			id: "3EAA074000851B9F"
+			size: 0.75d
+			tasks: [{
+				id: "6702CA8A5A4C226D"
+				item: "gtceu:oil_bucket"
+				type: "item"
+			}]
+			x: 0.20217687074828916d
+			y: -8.234117772108839d
+		}
+		{
+			dependencies: ["3EAA074000851B9F"]
+			description: [
+				"Distillating it will give you &eSulfuized Products&r, so you need to clean them!"
+				""
+				"You can &9Electrolyze some Water&r to get &aHydrogen Gas&r and put it to good use with our product."
+				""
+				"&aYou will find yourself with Hydroge Sulfuride byproduct, you can just electrolyze it again to recylce it if you like.&r"
+				""
+				""
+				"{@pagebreak}"
+				""
+				"&l&6Now you can use it to get power or move on to the next step!&r&r"
+			]
+			id: "532FF7680E411F9D"
+			size: 0.75d
+			tasks: [{
+				id: "538559DF3E584D99"
+				item: "gtceu:sulfuric_naphtha_bucket"
+				type: "item"
+			}]
+			x: 0.18176870748298057d
+			y: -8.989219812925164d
+		}
+		{
+			dependencies: ["532FF7680E411F9D"]
+			id: "280B6D880F8E5A3C"
+			size: 0.75d
+			tasks: [{
+				id: "1FBAC41142EF6004"
+				item: "gtceu:naphtha_bucket"
+				type: "item"
+			}]
+			x: 0.18176870748298057d
+			y: -9.74432185374149d
+		}
+		{
+			dependencies: [
+				"6D9720AB17E867FE"
+				"27BFFEE4DB806C5D"
+			]
+			description: [
+				"&aYou made it here and hopefully automated it on the way!&r"
+				""
+				"But, in case you &cdid not quiet make the jump yet&r, &ahere is the way of doing it.&r"
+				""
+				"Get the &aSeverly Steam Cracked&r into a &aDistillery&r and get&c Ethylene out of it&r. Yay."
+			]
+			id: "3DB1E90BC0AC028C"
+			size: 0.75d
+			tasks: [{
+				id: "3C544221647072A2"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
+			x: 0.17273809523809547d
+			y: -11.479015731292503d
+		}
+		{
+			dependencies: ["318BF13F2ACD8140"]
+			description: [
+				"&aBenzene&r is a &9Gas Fuel&r. To skip some frustration, let's check out the two best ways to obtain it."
+				""
+				"The first option is typically &dWood based&r. Put Logs in the &3Pyrolyse Oven&r for &9Wood Tar&r. The Charcoal you obtain can then be processed in &3Extractors&r for even more &9Wood Tar&r, which you &3distill&r for &aBenzene&r."
+				""
+				"Your second option is &dHeavy Oil based&r. Put Heavy Oil in a &3Distillery&r for &9Heavy Fuel&r, which you &aseverely steam-crack&r and &3distill&r again for &aBenzene&r."
+				"{@pagebreak}"
+				"For information on how to process Oil, check the Light Fuel and Naphtha Quests."
+				""
+				"In general, it is better to prioritize placing down more machines (&dparallelisation&r) over overclocking the recipes. That way, you end up losing less energy processing the resources."
+				""
+				"&aBenzene&r is burned in a &3Gas Turbine&r. This power source starts weaker than its &eDiesel&r cousin, but gets a big boost when refined to &6Nitrobenzene&r in &6HV&r. Ultimately, your power source is your choice."
+			]
+			id: "698E6B809EADAD59"
+			shape: "gear"
+			tasks: [{
+				id: "179FD3019EB7AC12"
+				item: "gtceu:benzene_bucket"
+				type: "item"
+			}]
+			title: "The Churche of Benzene"
+			x: 2.120544217687069d
+			y: -7.499423894557815d
+		}
+		{
+			dependencies: [
+				"016B80950FDFDBC1"
+				"69DEB2174200158D"
+			]
+			description: [
+				"Put your previously made &aBiomass&r into a &3MV Distillery&r to make &aEthanol&r."
+				""
+				"You will need this for &dEthylene&r by reacting it with &aSulfuric Acid&r in a &3MV Chemical Reactor&r... unless you chose to go down the Oil path."
+				""
+				"Once you have a hefty starting stock of Ethanol, consider making and distilling &9Fermented Biomass&r in a &3Distillation Tower&r (when you get there!) for extra chemicals."
+				""
+				"&cDo not try&r to use Ethanol as a Power source... it's quite possibly its worst use. If it's organic &9Power&r that you want, we suggest taking a look at &dBenzene&r instead!"
+				""
+				"{@pagebreak}"
+				"You will also be able to make &4Ethano&rl from Netherwart, you will just need to extract Nether Wart Juice and Centrifuge it. "
+			]
+			id: "6D9720AB17E867FE"
+			size: 0.75d
+			subtitle: "&aLook at the Second page!&r"
+			tasks: [{
+				id: "6B3B37BF38EDAE31"
+				item: "gtceu:ethanol_bucket"
+				type: "item"
+			}]
+			x: 1.1817687074829877d
+			y: -10.479015731292506d
+		}
+		{
+			dependencies: ["318BF13F2ACD8140"]
+			description: [
+				"This is the &agreen&r way of getting to &lEthylene&r!"
+				""
+				"For now you can put your &aSugarcane&r into the &1Brewery&r with some &1Water&r and get a good yield of &aBiomass&r from it, later on you will get a better yield so dont worry!"
+			]
+			id: "016B80950FDFDBC1"
+			size: 0.75d
+			tasks: [{
+				id: "6E2A91B77490E5B0"
+				item: "gtceu:biomass_bucket"
+				type: "item"
+			}]
+			x: 1.1613605442176862d
+			y: -8.213709608843523d
+		}
+		{
+			dependencies: ["3DB1E90BC0AC028C"]
+			description: [
+				"If you want to be less fancy, just call it plastic."
+				""
+				"For the polymerization process, add &aOxygen&r, which gives better returns than Air, then solidify like you would with Rubber."
+				""
+				"&aPolyethylene (PE)&r is the key to unlocking &6many new things&r. It's commonly used as &dSheets&r, or in &dFluid&r form."
+			]
+			icon: "gtceu:polyethylene_plate"
+			id: "5E91F30391D47B63"
+			shape: "gear"
+			size: 1.0d
+			tasks: [
+				{
+					id: "0511FD630388CC7C"
+					item: "gtceu:polyethylene_bucket"
+					type: "item"
+				}
+				{
+					id: "764081CBA7F39B4C"
+					item: "gtceu:polyethylene_plate"
+					type: "item"
+				}
+			]
+			x: 3.5d
+			y: -11.5d
+		}
+		{
+			description: ["You can get a lot of good stuff out of &cNetherwarts&r, the main Reason for it tho is &6Ethanol&r and &6Sulfuric Acid&r!"]
+			hide_dependency_lines: true
+			id: "597FD1C14601644C"
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "78DC5B945D728979"
+				item: "minecraft:nether_wart"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"If you're wanting to dive into &bMV&r, start here."
+				""
+				"The dusts created in an &3MV Mixer&r have great utility."
+			]
+			id: "31FBB73DEA5326C5"
+			size: 0.75d
+			tasks: [{
+				id: "1D7C9EDC23453495"
+				item: "gtceu:mv_mixer"
+				type: "item"
+			}]
+			x: 1.1987755102040865d
+			y: -5.483097363945571d
+		}
+		{
+			dependencies: ["175E4EBF6C8153DB"]
+			description: [
+				"You can get each of these Fluids Completly for Free basically by just using and running the MK2 and MK1 Chamber."
+				""
+				"You will just need a Pump Module for the Miner and then you can send it in and get out with and get it back in Solid Form, which then needs to be re-liquified with a EBF and your new Kanthal Coils!"
+			]
+			id: "3F2F431BC0421AB1"
+			size: 0.75d
+			tasks: [
+				{
+					id: "3F4AC2E2ED47C761"
+					item: "gtceu:green_sapphire_slurry_bucket"
+					type: "item"
+				}
+				{
+					id: "7D441A24904F6283"
+					item: "gtceu:sapphire_slurry_bucket"
+					type: "item"
+				}
+				{
+					id: "21748D662DE6B338"
+					item: "gtceu:ruby_slurry_bucket"
+					type: "item"
+				}
+			]
+			x: 1.2069047619047808d
+			y: -4.7742729591836515d
+		}
+		{
+			dependencies: ["3F2F431BC0421AB1"]
+			description: [
+				"Vanadiumsteel is required in small quantities in progression. It's &6nearly four times as durable&r as Steel if used in GregTech tools. The Vanadium comes from &aVanadium Magnetite&r, which you may have encountered in Magnetite veins."
+				""
+				"Other Steel alloys include Blue Steel, Red Steel, and Black Steel!"
+				""
+				"Take some Blue Steel free of charge - it's twice as durable as Steel."
+			]
+			id: "2973A486A2D923CF"
+			size: 0.75d
+			tasks: [{
+				id: "3D229282101E500E"
+				item: "gtceu:vanadium_steel_ingot"
+				type: "item"
+			}]
+			x: 0.45180272108845543d
+			y: -4.7742729591836515d
+		}
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"The &3Assembler&r is a staple for every Tier; an important goal to unlock more recipes and progress further into the Age. Many in the community see crafting a voltage tier's Assembler as a sign of &oproperly&r reaching said voltage."
+				""
+				"That being said, welcome to &bMV&r!"
+				""
+				"The &bMV &3Assembler&r unlocks &eTransistors&r, &eCapacitors&r and &eInductors&r, used for the next tiers of Circuits."
+			]
+			id: "0E6E75D22963DD8C"
+			size: 0.75d
+			tasks: [{
+				id: "66EF226C614D6D06"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"0E6E75D22963DD8C"
+				"5E91F30391D47B63"
+			]
+			description: [
+				"Plascrete will be needed for the &9Lithography Machines&r, and later on for the &aCleanroom&r!"
+				""
+				"However, you will rightnow just need it for a single thing and that is the &9Lithography Machine&r, it will grant you the ability to make your first Chips!"
+				""
+				"Welcome to the &9FAB&r &9(Fabrication Facility)&r let the Race begin!"
+			]
+			id: "5BCBE720A88B9D7A"
+			shape: "gear"
+			tasks: [{
+				id: "1189878A2CD279C9"
+				item: "gtceu:plascrete"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"32CC974FEDAA0CD4"
+				"0E6E75D22963DD8C"
+			]
+			description: [
+				"&3Kanthal Heating Coils&r are the next major step in progression. They increase the temperature of your &3Blast Furnace&r to &d2,700K&r, allowing you to process new materials. They may also &eaccelerate&r less hot recipes - check the quest to the top-left for details."
+				""
+				"You will need a staggering &a128 Ingots&r for a full set of Coils, which will easily take over an hour. We advise that you move on to other projects while your &3EBF&r is hard at work - that or build another one!"
+				""
+				"An &3MV Chemical Bath&r is required to cool &cHot Ingots&r down. They're &chot&r when held, as the name implies. &oMaybe you should save your hands and automate this...&r"
+				""
+				"With the construction of a &3Kanthal EBF&r, you're now able to make &dSilicon Ingots&r!"
+			]
+			id: "72177014C5CE7CFE"
+			size: 0.75d
+			tasks: [{
+				id: "524D399D392D1138"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3F2F431BC0421AB1"]
+			id: "1F35F1639AD5ECE0"
+			size: 0.75d
+			tasks: [
+				{
+					id: "4FA2E5E0694DA7EF"
+					item: "gtceu:chromium_dust"
+					type: "item"
+				}
+				{
+					id: "3480E21259D77350"
+					item: "gtceu:aluminium_dust"
+					type: "item"
+				}
+				{
+					id: "17B5CD8B58124F98"
+					item: "gtceu:iron_dust"
+					type: "item"
+				}
+			]
+			x: 2.5946598639455942d
+			y: -4.774272959183659d
+		}
+		{
+			dependencies: [
+				"1F35F1639AD5ECE0"
+				"31FBB73DEA5326C5"
+			]
+			id: "32CC974FEDAA0CD4"
+			size: 0.75d
+			tasks: [{
+				id: "25C8B95612D6B00C"
+				item: "gtceu:kanthal_dust"
+				type: "item"
+			}]
+			x: 2.6164285714285853d
+			y: -5.498082482993187d
+		}
+		{
+			dependencies: [
+				"68E0D0D2A03A4CBD"
+				"4353AB0E20601AEC"
+			]
+			description: [
+				"At this point, you have all the tools available to start making Plastic Boards."
+				""
+				"The recipe chains are starting to get pretty long, so we recommend processing large batches in two dedicated &3Chemical Reactors&r."
+			]
+			id: "031EE153A6D2B639"
+			size: 0.75d
+			tasks: [{
+				id: "66339CFD87011E12"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"5E91F30391D47B63"
+				"69DEB2174200158D"
+			]
+			id: "68E0D0D2A03A4CBD"
+			size: 0.75d
+			tasks: [{
+				id: "66B3DB8C5A6196CC"
+				item: "gtceu:plastic_circuit_board"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["597FD1C14601644C"]
+			description: [
+				"To get the &6Ethanol&r out of this, &aCentrifuge&r the &cNetherwart Juice&r, to get the &6Sulfuric Acid&r Distill the Netherwart Juice 2x."
+				""
+				"The &6Sulfuric Acid&r will be needed for the &aPlastic Circuit Board&r."
+			]
+			id: "69DEB2174200158D"
+			size: 0.75d
+			tasks: [
+				{
+					id: "607E3F249763F009"
+					item: "gtceu:nether_wart_juice_bucket"
+					type: "item"
+				}
+				{
+					id: "44A14F2A523BCBFB"
+					item: "gtceu:distilled_wart_juice_bucket"
+					type: "item"
+				}
+				{
+					id: "5F9C16CC90129939"
+					item: "gtceu:sulfuric_acid_bucket"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"0E6E75D22963DD8C"
+				"70460737E7A5CAEA"
+			]
+			description: ["A circuit component that you can now produce thanks to the &3MV Assembler&r and your shiny new &3Kanthal EBF&r."]
+			id: "3AA69A17EE26585C"
+			size: 0.75d
+			tasks: [{
+				id: "3FBC93D1F5CCB7EC"
+				item: "gtceu:transistor"
+				type: "item"
+			}]
+			x: 4.223775510204085d
+			y: -6.494576955782307d
+		}
+		{
+			dependencies: [
+				"3AA69A17EE26585C"
+				"41E429B527A27C62"
+				"78F838B47BF8D3E2"
+			]
+			description: [
+				"Alright... technically, obtaining &6HV&r Circuits and Stainless Steel lets you progress to &6HV&r - but let's not rush things."
+				""
+				"The first thing you should make with these is a &3MV Circuit Assembler&r to unlock the new tier of Circuits right away; cheaper recipes is the &dreal payoff&r here."
+			]
+			id: "5A9CF7C982621EDC"
+			size: 0.75d
+			tasks: [{
+				id: "484F035EE651EA7D"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5A9CF7C982621EDC"]
+			description: [
+				"As is common for every tier, the &3Circuit Assembler&r is an essential part of progression, always opening up a new Tier of circuits."
+				""
+				"At this point you should be placing an &3Extractor&r next to your Circuit Assembler. Send off dozens of stacks of &aSoldering Alloy&r Ingots, and you won't have to worry about refilling again."
+			]
+			id: "69C1DC75343DF4AC"
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "71D1D143C73F64EC"
+				item: "gtceu:mv_circuit_assembler"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["064F8A0080C11E72"]
+			description: ["&aRandom Access Memory&r is required for more advanced Electronic Components."]
+			id: "0A112EBE5C066435"
+			size: 0.75d
+			tasks: [{
+				id: "05871BAB75252114"
+				item: "gtceu:ram_chip"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"5BCBE720A88B9D7A"
+				"0A014CED9A30EC84"
+			]
+			description: [
+				"The &9Lithography Machine&r can be &aPerfectly Overclocked&r! It can also handle &9Parallel Hatches&r at &aMK2 Level&r!"
+				""
+				"The Quality of the Chips can be Increased by changing the Circuit inside of the Input Hatch of the Multiblock. "
+				""
+				"A &aHigher&r Number = &4More Power Consumption&r but &aLess Time&r, there are 2 Modes to Choose from in Every Case."
+			]
+			id: "064F8A0080C11E72"
+			shape: "gear"
+			tasks: [{
+				id: "05CC973056AFD848"
+				item: "gtceu:litho_machine"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["064F8A0080C11E72"]
+			description: [
+				"Using a Ruby Lens, engrave a Silicon Wafer into an ILC Wafer."
+				""
+				"This can be processed in a Cutter for IC Chips, which are important components that will be precious when improving upon your circuit crafting capabilities."
+			]
+			id: "36303C0906FD542D"
+			size: 0.75d
+			tasks: [{
+				id: "7D77837F109B21AF"
+				item: "gtceu:ilc_chip"
+				type: "item"
+			}]
+			x: 6.517993197278912d
+			y: -8.243216411564589d
+		}
+		{
+			description: [
+				"&9Silicon Boules&r are made in the &3EBF&r with half a stack of &aSilicon Dust&r, pinch of &aGallium Arsenide&r and &aNitrogen&r. Their primary purpose is engraving &6Circuit Wafers&r."
+				""
+				"After making the Boule, process it in the &3Cutter&r to get &a16 Silicon Wafers&r ready for the &9Lithography Machines&r."
+				""
+				"The recommended &aSilicon&r source at this point would be... hm, either &dGlass Dust&r or &dSodalite&r."
+				""
+				"&cWarning:&r Each Silicon Boule takes &47.5 minutes&r to make at 120 EU/t, or 1,080,000 EU! If the EBF loses power midway, the recipe will start to &close progress&r."
+				""
+				"With that being said, Silicon Boules take an absolute age to craft, so consider parallelizing the recipe in multiple &3EBF&rs and stockpiling them."
+			]
+			hide_dependency_lines: true
+			id: "0A014CED9A30EC84"
+			size: 0.75d
+			tasks: [
+				{
+					id: "7CC689556A8CE599"
+					item: "gtceu:silicon_boule"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "57BBEBEA9DBF7E1F"
+					item: { Count: 16, id: "gtceu:silicon_wafer" }
+					type: "item"
+				}
+			]
+			x: 4.875d
+			y: -8.25d
+		}
+		{
+			dependencies: ["36303C0906FD542D"]
+			description: [
+				"The Integrated Logic Circuit is an alternate &7LV &aCircuit&r, which is easier to mass-produce, and can be upgraded to &bMV&r (and then &6HV&r)."
+				""
+				"&9Note:&r This is not a strict upgrade to the cost of Circuits - you would need to get to the next Tier for that, just slightly further down in &bMV&r. It is still an important upgrade, and is required to get to &6HV circuits&r."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o The circuit progression in GTCEu is mostly based on GT5u's progression. It has been rebalanced to not be as painful. &lSpecifically&r this circuit tier, which was a trap!"
+			]
+			id: "735021E2E59507F5"
+			size: 0.75d
+			tasks: [{
+				id: "0805B9AC4728D4D7"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: 6.511190476190478d
+			y: -9.02723001700678d
+		}
+		{
+			dependencies: ["735021E2E59507F5"]
+			description: ["The &bMV&r Circuit for the Integrated Tier."]
+			id: "41E429B527A27C62"
+			size: 0.75d
+			tasks: [{
+				id: "673DCC69C12EDDE9"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: 5.511190476190471d
+			y: -9.02723001700678d
+		}
+		{
+			dependencies: [
+				"031EE153A6D2B639"
+				"69C1DC75343DF4AC"
+			]
+			description: [
+				"&6The best MV Circuits&r! You will be making these for the remainder of the game."
+				""
+				"Eventually (in &1IV&r), they will become even cheaper."
+			]
+			id: "439C84BA9606E447"
+			size: 0.75d
+			tasks: [{
+				id: "3C41417275642613"
+				item: "gtceu:micro_processor"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"69C1DC75343DF4AC"
+				"0A112EBE5C066435"
+			]
+			id: "1C5E12452E39AB40"
+			size: 0.75d
+			tasks: [{
+				id: "0EC2AE1BDAD0A077"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
+			x: 6.5049999999999955d
+			y: -4.746022534013598d
+		}
+		{
+			dependencies: [
+				"36303C0906FD542D"
+				"031EE153A6D2B639"
+			]
+			description: [
+				"&3Molecular Assemblers&r can be used to automate Crafting Table recipes, which means you can automate just about anything now."
+				""
+				"To maximise the number of recipes a single Molecular Assembler can do, make a 3D matrix of Molecular Assemblers and ME Interfaces - where each component is surrounded on 6 sides by the other."
+				""
+				"Using higher-tier materials in crafting will yield more Molecular Assemblers."
+				"{@pagebreak}"
+				"&cWarning:&r Try to avoid using GT tools in AE2 autocrafting! It causes AE2 to freak out... you may or may not destroy the TPS, or even worse, end up having thousands of tools being crafted as soon as one of them breaks."
+				""
+				"If you're stubborn enough to &oreally&r want to use GT tools in AE2 autocrafting, prioritise encoding recipes that use tools with high durability, but &4do not&r setup autocrafting for the tools themselves. Instead, use the alternate &3Assembling Machine&r recipes."
+			]
+			id: "15B258C204BC3384"
+			size: 0.75d
+			tasks: [
+				{
+					id: "3A584FE8A9601042"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+				{
+					id: "3C2BDD05854CAED3"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "53EEECA70F95F6A3"
+					item: "ae2:interface"
+					type: "item"
+				}
+			]
+			x: 7.500646258503387d
+			y: -8.250359268707477d
+		}
+		{
+			dependencies: [
+				"6CE7D9445F67E8A6"
+				"47B6F1F5FAE32CAB"
+				"33B11E3444917FA4"
+			]
+			id: "175E4EBF6C8153DB"
+			tasks: [{
+				id: "5368E20CF0320E3D"
+				item: "gtceu:sim_chamber"
+				type: "item"
+			}]
+			x: 1.2069047619047808d
+			y: -3.753864795918343d
+		}
+		{
+			description: ["You Probably already know where this comes from, if not go back to the LV Chapter and go through the Deuterium Section for the MK1 Miner."]
+			id: "6CE7D9445F67E8A6"
+			size: 0.75d
+			tasks: [{
+				id: "63C20E08DE6A3DE7"
+				item: "gtceu:tritium_bucket"
+				type: "item"
+			}]
+			x: 0.2413265306122483d
+			y: -3.7723171768707395d
+		}
+		{
+			id: "47B6F1F5FAE32CAB"
+			size: 0.75d
+			tasks: [{
+				id: "03AE4B1BA5EDEC8C"
+				item: "kubejs:miner_tier_2"
+				type: "item"
+			}]
+			x: 2.173299319727896d
+			y: -3.774017857142848d
+		}
+		{
+			description: ["You will need to Energize Diamonds, you can get the diamonds in dust form from processing Galena from the Simulation Chamber in LV."]
+			id: "33B11E3444917FA4"
+			size: 0.75d
+			tasks: [{
+				id: "7B21656665DD7EE3"
+				item: "powah:crystal_niotic"
+				type: "item"
+			}]
+			x: 0.7685374149659836d
+			y: -2.821636904761892d
+		}
+		{
+			dependencies: ["175E4EBF6C8153DB"]
+			description: [
+				"With this Upgraded Chamber and the Ability to now Craft the &aTier 2 Miner&r you have now unlocked the &arenewable&r way of getting:"
+				""
+				"- Dense Baxuite Ore"
+				"- Dense Tungsten Ore"
+				"- Dense Sphalerite Ore"
+				"- Dense Cassiterite Ore"
+				"- Pyrochlore Ore"
+				"- Pyrosulite Ore"
+				"- Copper Ore"
+				"- &6Beryllium Ore&r"
+				"- &6Diamond Ore&r"
+				"- Scheelite Ore"
+				"- &aMars Ostrum Ore&r"
+				"- &dRadon Extract Dust&r"
+				"- &aMars Sand&r"
+				""
+				"If you send in the Miner with a &aFluid Upgrade&r you can also get Liquids in a &aSolidified Form&r."
+			]
+			id: "48799665B32F5F8F"
+			rewards: [{
+				id: "77B744C06E9AAD56"
+				type: "xp"
+				xp: 1
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "47100DF96B6DB05E"
+				title: "Ore Simulation!"
+				type: "checkmark"
+			}]
+			x: 1.6971088435374213d
+			y: -2.8454464285714174d
+		}
+		{
+			dependencies: ["662E0A84D755064F"]
+			id: "70460737E7A5CAEA"
+			size: 0.75d
+			tasks: [{
+				id: "37C34962C14500BA"
+				item: "gtceu:silicon_plate"
+				type: "item"
+			}]
+			x: 4.192236394557817d
+			y: -3.29889721513603d
+		}
+		{
+			id: "78F838B47BF8D3E2"
+			size: 0.75d
+			tasks: [{
+				id: "62B0006752FB4D7A"
+				item: "gtceu:annealed_copper_ingot"
+				type: "item"
+			}]
+			x: 5.4922108843537245d
+			y: -5.68785926870747d
+		}
+		{
+			dependencies: [
+				"69C1DC75343DF4AC"
+				"031EE153A6D2B639"
+			]
+			description: [
+				"&6The best LV Circuits&r! You can start to churn these guys out, as you'll be making them for the rest of the game."
+				""
+				"Try to keep a stockpile of these crafted at all times - making these on-demand can take a while."
+				""
+				"Reaching &5EV&r will unlock methods to make them even cheaper."
+			]
+			id: "4EBBE191D88FE206"
+			size: 0.75d
+			tasks: [{
+				id: "75A792D333C4434C"
+				item: "gtceu:microchip_processor"
+				type: "item"
+			}]
+			x: 8.23777210884353d
+			y: -6.501464710884356d
+		}
+		{
+			dependencies: ["439C84BA9606E447"]
+			description: [
+				"Better &6HV&r Circuits - much &dcheaper&r and easier to make than before."
+				""
+				"&6You should now be ready to move on the HV Chapter&r, unless you're yet to scale up your Power Production."
+			]
+			id: "1E4B8D42BD1E3427"
+			size: 0.75d
+			tasks: [{
+				id: "09BECF1FE7712F70"
+				item: "gtceu:micro_processor_assembly"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -5.625d
+		}
+		{
+			dependencies: [
+				"1E4B8D42BD1E3427"
+				"1FCF2C103E25972B"
+			]
+			description: [
+				"Your first &5EV&r Circuit gets a unique texture."
+				""
+				"It'll be needed in &6HV&r."
+			]
+			id: "5F12D7FEBEDEA310"
+			size: 0.75d
+			tasks: [{
+				id: "4BCCE047D4872B6A"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: 8.25d
+			y: -5.625d
+		}
+		{
+			dependencies: [
+				"1FCF2C103E25972B"
+				"1C5E12452E39AB40"
+				"7BD953904C6A6794"
+				"6A3A2863AC3219FD"
+			]
+			id: "393324FAF9C97D6E"
+			tasks: [{
+				id: "2C587C7A24A16EBC"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 8.266904761904762d
+			y: -4.746022534013598d
+		}
+		{
+			dependencies: [
+				"393324FAF9C97D6E"
+				"7BD953904C6A6794"
+				"54DD3F15F8655A48"
+				"6A3A2863AC3219FD"
+				"4E83A771ED98A89D"
+			]
+			description: ["The Place where all the data is stored!"]
+			id: "6135BFD428F1007D"
+			shape: "gear"
+			size: 1.6d
+			tasks: [{
+				id: "71156721984DEC4B"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: 8.29107142857142d
+			y: -3.3245939625850127d
+		}
+		{
+			dependencies: ["554B5D01A0CF8708"]
+			description: ["Now we need to &aCentrifuge&r it to get all of the unwanted bits out of it. You will get some &bSodium Persulfate&r as a byproduct of this!"]
+			id: "24CFB5784B5FB5E5"
+			size: 0.75d
+			tasks: [{
+				id: "515BFACE1EFDBAF6"
+				item: "kubejs:liquid_fluix_bucket"
+				type: "item"
+			}]
+			x: 10.856037414965954d
+			y: -5.548403486394527d
+		}
+		{
+			dependencies: ["783C812F57147FE5"]
+			description: ["For this you just need to extract the &dFluix Dust&r into &aLiquid Form&r."]
+			id: "7CE88AF8CCCEA438"
+			size: 0.75d
+			tasks: [{
+				id: "2A04804058689129"
+				item: "kubejs:clean_fluix_bucket"
+				type: "item"
+			}]
+			x: 10.06011904761904d
+			y: -4.772893282312893d
+		}
+		{
+			description: [
+				"You need to &nCombind&r the &bCertus Quartz Dust&r, &7Nether Quartz Dust&r with the Liquid &4Redstone&r. "
+				""
+				"You will get the &dFluix&r from it!"
+			]
+			id: "554B5D01A0CF8708"
+			size: 0.75d
+			subtitle: "This is where it all begins!"
+			tasks: [
+				{
+					id: "2D8CB2C04E6A1793"
+					item: "gtceu:certus_quartz_dust"
+					type: "item"
+				}
+				{
+					id: "474CA8967BB12720"
+					item: "gtceu:nether_quartz_dust"
+					type: "item"
+				}
+				{
+					id: "33BA63E1F33AFA8D"
+					item: "gtceu:redstone_bucket"
+					type: "item"
+				}
+			]
+			x: 10.877950680272107d
+			y: -6.274731079931961d
+		}
+		{
+			dependencies: ["24CFB5784B5FB5E5"]
+			description: [
+				"Now you can use this for many different things, you can make your &dCrystals&r out of it!"
+				""
+				"You could make the &aAE2 Cores&r out of it or the &aAE2 Silicon&r that you need for the &6EnderIO Alloys!&r"
+			]
+			id: "783C812F57147FE5"
+			size: 0.75d
+			subtitle: "Hmm tasty."
+			tasks: [{
+				id: "61624B6AC2ED89C2"
+				item: "ae2:fluix_dust"
+				type: "item"
+			}]
+			x: 10.876445578231277d
+			y: -4.793301445578194d
+		}
+		{
+			dependencies: [
+				"783C812F57147FE5"
+				"7CE88AF8CCCEA438"
+			]
+			description: ["Now put the &dFluix Dust&r and the &dDistilled Clean Fluix&r into a &aAutoclave&r to get the Crystals!"]
+			id: "43B596A5F34B9DE2"
+			size: 0.75d
+			tasks: [{
+				id: "49F510CF8A9007ED"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			x: 10.871564625850333d
+			y: -3.5058864795918154d
+		}
+		{
+			dependencies: [
+				"7CE88AF8CCCEA438"
+				"43B596A5F34B9DE2"
+			]
+			description: ["Now if you combind all of this, you get your very well needed cables!"]
+			id: "54DD3F15F8655A48"
+			size: 0.75d
+			tasks: [{
+				id: "5089A3AFD813DDDF"
+				item: "ae2:fluix_glass_cable"
+				type: "item"
+			}]
+			x: 10.085850340136055d
+			y: -3.886838860544202d
+		}
+		{
+			dependencies: ["7CE88AF8CCCEA438"]
+			description: [
+				"Stainless Steel is the material for &6HV&r components, like Aluminium for &bMV&r and Steel for &7LV&r. It is also used in high quantities for the &3Distillation Tower&r."
+				""
+				"It requires &cChrome&r, obtained mainly from &cRuby&r, and &2Manganese&r, obtained from &2Pyrolusite&r and others in its vein."
+				""
+				"Or you can use our &nSecurite Recipe&r, check the &aQuest&r before this one for more!"
+				""
+				"{@pagebreak}"
+				"Smelting Stainless Steel requires &dHV Power&r, which you likely do not have at this point. Scaling Power Production is crucial."
+				""
+				"If you &9haven't already&r, it would be a good idea to get a second EBF going. They can share blocks, so that means your second EBF only requires &a10 Cupronickel Coils&r instead of 16."
+				""
+				"Have one EBF run off &bMV&r for Aluminium and any other recipes requiring &bMV&r Power, and one running off &6HV&r with &32 MV Energy Hatches&r."
+			]
+			id: "7BD953904C6A6794"
+			size: 0.75d
+			tasks: [{
+				id: "042B47CC251E4E65"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: 9.29107142857142d
+			y: -4.753165391156443d
+		}
+		{
+			dependencies: ["783C812F57147FE5"]
+			description: [
+				"These are used for most of the AE2 Recipes, like the Assembler or the Interface / Pattern Provider."
+				""
+				"But also for most of the AE2 Terminals that we have here."
+			]
+			id: "3EBA1368F06F21B0"
+			optional: true
+			size: 0.75d
+			tasks: [
+				{
+					id: "223D6547EA0BA948"
+					item: "ae2:annihilation_core"
+					type: "item"
+				}
+				{
+					id: "55E3095F2B0BABA0"
+					item: "ae2:formation_core"
+					type: "item"
+				}
+			]
+			x: 10.03971088435371d
+			y: -5.527995323129225d
+		}
+		{
+			dependencies: ["72177014C5CE7CFE"]
+			description: ["You need to &aEBF&r Smelt the &dFluix Dust&r with &bDistilled Water&r into &7Silicon&r!"]
+			id: "5BAC3775D7A725D3"
+			size: 0.75d
+			tasks: [
+				{
+					id: "754ED341C288D155"
+					item: "ae2:silicon"
+					type: "item"
+				}
+				{
+					id: "00983ED808B3BB3C"
+					item: "ae2:fluix_dust"
+					type: "item"
+				}
+			]
+			x: 3.4983588435374173d
+			y: -4.791737882653059d
+		}
+		{
+			dependencies: ["783C812F57147FE5"]
+			description: [
+				"You can Either use the Redstone Recipe Provided by the Mod, but thats a bit stupid to automate, hence why we have added out way!"
+				""
+				"Just Compress the Fluix Dust to get the Flux Dust."
+			]
+			id: "64640B99FB3E20A6"
+			size: 0.75d
+			tasks: [{
+				id: "44E16889E3583403"
+				item: "fluxnetworks:flux_dust"
+				type: "item"
+			}]
+			x: 11.579991496598645d
+			y: -4.809101296768688d
+		}
+		{
+			dependencies: ["64640B99FB3E20A6"]
+			description: ["Now combind both of them into the Dielectric Paste, this is not the only way, but a more efficient one."]
+			id: "662F1B786893B7B4"
+			size: 0.75d
+			tasks: [{
+				id: "7F19BD56584822B0"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			x: 11.579991496598652d
+			y: -4.09481558248298d
+		}
+		{
+			dependencies: ["43B596A5F34B9DE2"]
+			description: ["Now &aCraft some Blocks&r out of your freshly made &dFluix Crystals&r and you are good to go to Craft the &6AE2 Controller&r!"]
+			id: "4E83A771ED98A89D"
+			size: 0.75d
+			tasks: [{
+				id: "51A0393E987A4AF5"
+				item: "ae2:fluix_block"
+				type: "item"
+			}]
+			x: 10.085850340136055d
+			y: -3.172553146258487d
+		}
+		{
+			dependencies: ["2F8E861819D796BE"]
+			id: "48415375ED33F629"
+			size: 0.75d
+			tasks: [{
+				id: "1185F3CE6AD4FF40"
+				item: "gtceu:liquid_sky_stone_bucket"
+				type: "item"
+			}]
+			x: 6.334149659863954d
+			y: -3.3341177721088258d
+		}
+		{
+			dependencies: ["48415375ED33F629"]
+			id: "6A3A2863AC3219FD"
+			size: 0.75d
+			tasks: [{
+				id: "5FF3FDC96750F4EA"
+				item: "gtceu:refined_sky_stone_bucket"
+				type: "item"
+			}]
+			x: 7.150476190476191d
+			y: -3.3341177721088258d
+		}
+		{
+			description: ["Now its time to use the &dMoon Sand&r for another purpose that just &aDeuterium&r Farming!"]
+			icon: "ad_astra:moon_globe"
+			id: "2F8E861819D796BE"
+			shape: "gear"
+			tasks: [{
+				id: "71696CFE9F1994C4"
+				item: "ad_astra:moon_sand"
+				type: "item"
+			}]
+			x: 5.455956632653077d
+			y: -3.330784970238078d
+		}
+		{
+			dependencies: ["280B6D880F8E5A3C"]
+			description: [
+				"Now, you will need to crack it."
+				""
+				"For that you need to &1Steam Crack&r it for now, and move on, what that means, get yourself some &7Steam&r and a &aChemical Ractor&r."
+			]
+			id: "27BFFEE4DB806C5D"
+			size: 0.75d
+			tasks: [{
+				id: "1F0BFB991C128F66"
+				item: "gtceu:severely_steam_cracked_naphtha_bucket"
+				type: "item"
+			}]
+			x: 0.17273809523809547d
+			y: -10.540240221088425d
+		}
+		{
+			dependencies: [
+				"289BD1EB907285F7"
+				"1F0EEF66325B5F02"
+				"4AF44B820291332A"
+				"3FDCA1680B8BFB52"
+			]
+			description: [
+				"You can now craft &aAE2 Processors&r and you are one step closer to the &aAE2 Storage System&r!"
+				""
+				"You will notice that you need &9Soldering Alloy&r, which means you will need &aAntimony, Lead and Tin&r."
+			]
+			icon: "ae2:logic_processor"
+			id: "4AB709E61AF2088E"
+			size: 0.75d
+			subtitle: "&5Your First Digital Steps&r"
+			tasks: [
+				{
+					id: "435BE5423246225F"
+					item: "ae2:logic_processor"
+					type: "item"
+				}
+				{
+					id: "63FCCC85F65C867D"
+					item: "ae2:calculation_processor"
+					type: "item"
+				}
+				{
+					id: "2BF2D5D61F4F0D8E"
+					item: "ae2:engineering_processor"
+					type: "item"
+				}
+			]
+			x: 3.457542517006786d
+			y: -1.893778698979581d
+		}
+		{
+			dependencies: ["662E0A84D755064F"]
+			description: ["Now you can decide, either go with the &9Silicon Wafer&r and the &aPress&r which is only found on the &6Moon&r, or go with the &aSilicon Ingot&r and &aLaser&r Recipe."]
+			icon: "ae2:printed_silicon"
+			id: "1F0EEF66325B5F02"
+			size: 0.75d
+			tasks: [
+				{
+					id: "4617EC128F2BEA37"
+					item: "ae2:printed_silicon"
+					type: "item"
+				}
+				{
+					id: "45409696B0B96BD6"
+					item: "ae2:silicon_press"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "42ECE50C07E799AE"
+					item: "gtceu:silicon_ingot"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 3.4779506802720945d
+			y: -2.587656249999988d
+		}
+		{
+			dependencies: [
+				"43BD7A9C34B8C3A1"
+				"6958029B5514D4EC"
+			]
+			description: [
+				"In our Pack the &bVaccum Freezer&r has changed from &4HV&r to &6MV&r, so which means, you can technically use it already!"
+				""
+				"- Or you can just use &bDistilled Water&r and a &aChemical Bath&r."
+			]
+			id: "662E0A84D755064F"
+			size: 0.75d
+			tasks: [{
+				id: "1B2434CAA46B1B5E"
+				item: "gtceu:silicon_ingot"
+				type: "item"
+			}]
+			x: 3.498358843537396d
+			y: -3.2815338010204016d
+		}
+		{
+			dependencies: ["5BAC3775D7A725D3"]
+			id: "43BD7A9C34B8C3A1"
+			size: 0.75d
+			tasks: [{
+				id: "7745BE2E5BCDAAC8"
+				item: "gtceu:hot_silicon_ingot"
+				type: "item"
+			}]
+			x: 3.4779506802721016d
+			y: -4.033591092687054d
+		}
+		{
+			dependencies: ["0B5BC3501E364125"]
+			description: ["&0Stibnite Ore&r yields you &aAntimony&r, &6Galena&r an &6Silver Ore&r yields you &6Lead Dust&r for the Tin you will need to process the &6Cassiterite Ore&r, each of theses Ores can be farmed buy using the &aMK1 Simulation Chamber in LV&r."]
+			id: "00C04839DC161390"
+			size: 0.75d
+			tasks: [
+				{
+					id: "022AA913FF71389C"
+					item: "gtceu:antimony_dust"
+					type: "item"
+				}
+				{
+					id: "07140F971ACBCDAE"
+					item: "gtceu:lead_dust"
+					type: "item"
+				}
+				{
+					id: "1169E4F264307057"
+					item: "gtceu:tin_dust"
+					type: "item"
+				}
+			]
+			x: 1.875d
+			y: -1.875d
+		}
+		{
+			dependencies: ["00C04839DC161390"]
+			description: [
+				"You will now need to make Soldering Alloy Dust, use a mixer for it, later on you can use the more Advanced Blast Recipes."
+				""
+				"Its Important to Automate this, it will be needed VERY often."
+			]
+			id: "3FDCA1680B8BFB52"
+			size: 0.75d
+			tasks: [{
+				id: "52E9010344222F2E"
+				item: "gtceu:soldering_alloy_bucket"
+				type: "item"
+			}]
+			x: 2.625d
+			y: -1.875d
+		}
+		{
+			description: ["Now is the time to use the &8Stibnite&r for &7Antimon&ry, check JEI for your prefered way."]
+			id: "0B5BC3501E364125"
+			size: 0.75d
+			tasks: [{
+				id: "51C831F758F7CCC9"
+				item: "gtceu:raw_stibnite"
+				type: "item"
+			}]
+			x: 1.125d
+			y: -1.875d
+		}
+		{
+			description: [
+				"The &3Vacuum Freezer&r is a multiblock used to cool down &eHot Ingots&r. All ingots made in the EBF with a temperature above &d1750K&r will need it."
+				""
+				"Most of the time, your &3Electric Blast Furnace&r will be the bottleneck, so you don't need to worry about overclocking your freezer."
+				""
+				"Since &eHot Ingots&r &churt you&r when held, item routing will be very useful."
+			]
+			icon: "gtceu:vacuum_freezer"
+			id: "6958029B5514D4EC"
+			size: 1.0d
+			subtitle: "Did you know vacuums actually make things hotter?"
+			tasks: [
+				{
+					id: "784C1A8A77AD314E"
+					item: "gtceu:vacuum_freezer"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "4A879461B97464E0"
+					item: { Count: 18, id: "gtceu:frostproof_machine_casing" }
+					type: "item"
+				}
+			]
+			title: "Ice Cold"
+			x: 4.304936224489801d
+			y: -2.505069090136054d
+		}
+	]
+	subtitle: ["Venture into petrochemistry and refine electronics"]
+	title: "The Adventure Continues"
+}

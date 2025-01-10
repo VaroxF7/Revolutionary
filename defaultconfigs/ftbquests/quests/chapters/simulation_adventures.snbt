@@ -1,0 +1,287 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "simulation_adventures"
+	group: "2C2CAF0515DE6257"
+	icon: "gtceu:sim_chamber"
+	id: "113073E9BFD55C82"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"72C94EB5BB4EBBA2"
+				"1EFC92E265C8A8FD"
+				"556717880336664D"
+				"035A85AC069968DB"
+				"7D305A7E8639027A"
+			]
+			id: "31E534EED4ADC5F4"
+			tasks: [{
+				id: "73A4357B2732E10C"
+				item: "gtceu:sim_chamber_lv"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7C0FAFB58E391362"]
+			id: "72C94EB5BB4EBBA2"
+			tasks: [{
+				id: "606E45E04D9F3CBC"
+				item: "gtceu:rocket_refined_fuel_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			id: "4CC774FC7A1D1409"
+			tasks: [{
+				id: "6D3462C5F35AF8EB"
+				item: "gtceu:double_magnalium_plate"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4CC774FC7A1D1409"
+				"1341103E404216F8"
+			]
+			id: "1EFC92E265C8A8FD"
+			tasks: [{
+				id: "50EF4C452600603E"
+				item: "kubejs:multi_verse_casing"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			id: "1341103E404216F8"
+			tasks: [{
+				id: "6AD2E0FEAC6A9F20"
+				item: "gtceu:double_chromium_plate"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31E534EED4ADC5F4"]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "5FB1669EDF38B2FF"
+			tasks: [{
+				id: "53E4F88D302F481E"
+				title: "Information"
+				type: "checkmark"
+			}]
+			title: "Resource Generation"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3015CCD7CAFAC425"]
+			id: "556717880336664D"
+			tasks: [{
+				id: "1C40F7C323AC691B"
+				item: "kubejs:miner_tier_1"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["78F9C8C27777C772"]
+			id: "3015CCD7CAFAC425"
+			tasks: [{
+				id: "1FF1B25F30704027"
+				item: "kubejs:fluxium"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"013C74C13E87032E"
+				"0386982CE158AAC8"
+			]
+			id: "78F9C8C27777C772"
+			tasks: [{
+				id: "3BB7F47CCCD29264"
+				item: "gtceu:deuterium_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "0386982CE158AAC8"
+			tasks: [{
+				id: "2B8BCB30E00A96D3"
+				item: "ad_astra:moon_sand"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			id: "013C74C13E87032E"
+			tasks: [{
+				id: "66979DCCFF3843A1"
+				item: "gtceu:hydrogen_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["78F9C8C27777C772"]
+			id: "706BFC2F16A2E6F1"
+			tasks: [{
+				id: "6E1199FD6111E796"
+				item: "gtceu:tritium_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2068C746F0A710B5"
+				"503FB5F44144FB80"
+			]
+			id: "035A85AC069968DB"
+			tasks: [{
+				id: "542C9F8BD7FE3233"
+				item: "gtceu:liquid_computex_selection_bucket"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			icon: "ae2:logic_processor"
+			id: "2068C746F0A710B5"
+			tasks: [{
+				id: "57CA5AAF9FDB48F6"
+				title: "Got it."
+				type: "checkmark"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "75BBDF73FEC166C1"
+			tasks: [{
+				id: "7A5267A2BE1AE11D"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			id: "3A32579A88837E6E"
+			tasks: [{
+				id: "15554036875F6D45"
+				item: "gtceu:lithium_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3A32579A88837E6E"
+				"75BBDF73FEC166C1"
+			]
+			id: "7C0FAFB58E391362"
+			tasks: [{
+				id: "166DDC1728C0ADC7"
+				item: "gtceu:refined_biofuel_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["48C785FBB3BBCAC9"]
+			id: "503FB5F44144FB80"
+			tasks: [{
+				id: "1DB3B06C9AE82777"
+				item: "gtceu:phosphoric_acid_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22DD5BD03DEB4EBF"]
+			id: "48C785FBB3BBCAC9"
+			tasks: [{
+				id: "443624B7A57DEE09"
+				item: "gtceu:phosphorus_pentoxide_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			id: "6F00790EEC16FE6E"
+			tasks: [{
+				id: "212F474813AA362E"
+				item: "gtceu:monazite_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F00790EEC16FE6E"]
+			id: "60677BA5622D90A5"
+			tasks: [{
+				id: "2B22059B72A1270D"
+				item: "gtceu:phosphate_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["60677BA5622D90A5"]
+			id: "22DD5BD03DEB4EBF"
+			tasks: [{
+				id: "34233E50D68C2F1A"
+				item: "gtceu:phosphorus_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"This Whole Quest Line Shows new and returning players on &2How To Operate the Quantum Simulation Chamber&r, the purpose of this Machine is to &2Generate Resources out of Thin Air&r. "
+				""
+				"However, its self fed, so it does not need any Outside Resources to operate. All things needed to Produce the Parts for the Drone or the Chamber Fuel and so on can be made with the Machine Itself."
+				""
+				"It only needs &2Fuel, The Drone and a Crate&r to put the things into. It can later on be Upgraded Upon and make even more Ores or other things, which in return need new resources tho. "
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "7D305A7E8639027A"
+			tasks: [{
+				id: "1614F3C5E4AB3E0A"
+				title: "Understood."
+				type: "checkmark"
+			}]
+			title: "So, how to Operate it?"
+			x: 1.0d
+			y: -1.0d
+		}
+	]
+	title: "Simulation Adventures"
+}
