@@ -8,6 +8,25 @@ ServerEvents.recipes(e => {
             e.recipes.create.deploying('create:incomplete_precision_mechanism',['create:precision_mechanism','create:wrench']).keepHeldItem()
         ]).transitionalItem('create:incomplete_precision_mechanism').loops(1) 
 
+    e.recipes.create.sequenced_assembly([Item.of("gtceu:certus_quartz_gem")],"kubejs:certus_seed",[
+      e.recipes.create.filling("kubejs:certus_seed",["kubejs:certus_seed",{fluid:"gtceu:distilled_water",amount:500}]),
+      e.recipes.create.filling("kubejs:certus_seed",["kubejs:certus_seed",{fluid:"gtceu:distilled_water",amount:500}]),
+      e.recipes.create.filling("kubejs:certus_seed",["kubejs:certus_seed",{fluid:"gtceu:distilled_water",amount:500}]),
+      e.recipes.create.filling("kubejs:certus_seed",["gtceu:certus_quartz_gem",{fluid:"gtceu:distilled_water",amount:500}]),
+    ]).transitionalItem("kubejs:certus_seed").loops(4)
+
+    // Sky Stone from Solid
+    e.recipes.create.mixing(["kubejs:certus_seed"],["gtceu:potassium_dust",Fluid.of("gtceu:liquid_sky_stone", 72)])
+    e.recipes.gtceu.extractor("sky_stone_1")
+     .itemInputs("ae2:sky_stone_block")
+     .outputFluids([Fluid.of("gtceu:liquid_sky_stone", 576)])
+     .duration(200).EUt(32)
+
+     e.recipes.gtceu.extractor("sky_stone_2")
+     .itemInputs("ae2:sky_dust")
+     .outputFluids([Fluid.of("gtceu:liquid_sky_stone", 144)])
+     .duration(50).EUt(17)
+
     e.recipes.create.mechanical_crafting('gtceu:greenhouse', [
           '  AAAAA  ',
           ' FACACAF ',

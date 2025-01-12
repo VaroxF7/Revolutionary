@@ -129,11 +129,6 @@ ServerEvents.recipes(e => {
      .itemOutputs("enderio:pulsating_alloy_ingot")
      .duration(50).EUt(16)
 
-    e.recipes.gtceu.extractor("silicon_ae2_to_liquid")
-     .itemInputs("ae2:silicon")
-     .outputFluids([Fluid.of("gtceu:silicon", 144)])
-     .duration(50).EUt(8)
-
     e.recipes.gtceu.chemical_reactor("new_ammonia_recipe")
      .inputFluids([
       Fluid.of("gtceu:hydrogen", 3000),
@@ -147,13 +142,6 @@ ServerEvents.recipes(e => {
      .inputFluids([Fluid.of("gtceu:distilled_water", 144)])
      .itemOutputs("gtceu:aluminium_three_oxide_dust")
      .duration(120).EUt(18)
-
-    e.recipes.gtceu.electric_blast_furnace("silicon_boule_new")
-     .itemInputs("32x gtceu:silicon_dust", "gtceu:tiny_gallium_arsenide_dust")
-     .itemOutputs("gtceu:silicon_boule")
-     .inputFluids([Fluid.of("gtceu:nitrogen", 250)])
-     .outputFluids([Fluid.of("gtceu:nitrogen_dioxide", 125)])
-     .duration(9000).EUt(125).circuit(2).blastFurnaceTemp(1800)
 
     e.recipes.gtceu.electric_blast_furnace("realgar_to_arsenic_trioxide")
      .itemInputs("gtceu:raw_realgar")
@@ -340,17 +328,6 @@ ServerEvents.recipes(e => {
        .duration(95)
        .EUt(124)
 
-       // Silicon Line - Fluix to Silicon Recipe
-
-       e.recipes.gtceu.electric_blast_furnace("kubejs:fluix_to_silicon_recipe")
-       .itemInputs("2x ae2:fluix_dust")
-       .inputFluids([Fluid.of('gtceu:distilled_water', 450 )])
-       .itemOutputs('1x ae2:silicon')
-       .duration(350)
-       .EUt(124)
-       .circuit(13)
-       .blastFurnaceTemp(1300)
-
        // AE Processor - Interface - Pattern - Cores - Assembler Recipes
        
        e.recipes.gtceu.assembler("kubejs:fluix_cable_recipe")
@@ -400,11 +377,6 @@ ServerEvents.recipes(e => {
      .inputFluids([Fluid.of('gtceu:liquid_ender_air', 4320)])
      .itemOutputs("4x gtceu:ender_pearl_dust")
      .duration(800).circuit(12).EUt(124)
-     
-       e.recipes.gtceu.electrolyzer("kubejs:certus_bulk_to_silicon_I_Guess")
-       .itemInputs("8x gtceu:certus_quartz_dust")
-       .itemOutputs("4x gtceu:silicon_dioxide_dust")
-       .duration(182).EUt(32)
     
         e.recipes.gtceu.assembler("kubejs:ae2_pattern_recipe")
          .itemInputs("1x gtceu:stainless_steel_ingot", "3x minecraft:glowstone_dust", "3x ae2:quartz_glass" )
@@ -502,8 +474,8 @@ ServerEvents.recipes(e => {
      
              e.recipes.gtceu.ore_washer('soul_sand_washer')
              .itemInputs("minecraft:soul_sand")
-             .chancedOutput("4x minecraft:quartz", 52, 0.11)
-             .chancedOutput("minecraft:gold_nugget", 15, 0.11)
+             .chancedOutput("4x minecraft:quartz", 52, 0.1)
+             .chancedOutput("minecraft:gold_nugget", 15, 0.1)
              .inputFluids([Fluid.of('minecraft:water', 144)])
              .duration(50).circuit(4).EUt(15) 
          
@@ -863,16 +835,6 @@ ServerEvents.recipes(e => {
           "energy": 9000000,
           "result": {
             "item": "ae2:annihilation_core"
-          }
-      })
-      e.custom({
-        "type": "powah:energizing",
-          "ingredients": [
-            {"item": "gtceu:silicon_ingot"}
-          ],
-          "energy": 250000,
-          "result": {
-            "item": "ae2:printed_silicon"
           }
       })
       e.custom({

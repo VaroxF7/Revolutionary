@@ -4,7 +4,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
          .setEUIO('in')
          .setMaxIOSize(1, 4, 2, 6)// Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
          .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.MOTOR)
+         .setSound(GTSoundEntries.MOTOR)
 })
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
          .setEUIO('in')
          .setMaxIOSize(3, 9, 3, 3)// Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
          .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
-        .setSound(GTSoundEntries.MOTOR)
+         .setSound(GTSoundEntries.MOTOR)
 })
 
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {

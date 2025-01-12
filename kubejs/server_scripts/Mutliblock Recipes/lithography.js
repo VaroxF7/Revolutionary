@@ -1,93 +1,93 @@
 ServerEvents.recipes(e => {
     // Silicon RAM
-    e.recipes.gtceu.litho_machine("silicon_wafer_ram")
+    e.recipes.gtceu.litho_machine_mk1("silicon_wafer_ram")
      .itemInputs("gtceu:silicon_wafer")
      .itemOutputs("gtceu:ram_wafer")
      .inputFluids([Fluid.of("gtceu:tin", 144), Fluid.of("gtceu:nitrogen", 500)])
      .notConsumable("#forge:lenses/green")
-     .duration(540).EUt(2048).circuit(1)
+     .duration(540).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
 
-     e.recipes.gtceu.litho_machine("silicon_wafer_ram_2")
+     e.recipes.gtceu.litho_machine_mk1("silicon_wafer_ram_2")
      .itemInputs("gtceu:silicon_wafer")
      .itemOutputs("gtceu:ram_wafer")
      .inputFluids([Fluid.of("gtceu:tin", 288), Fluid.of("gtceu:oxygen", 1000)])
      .notConsumable("#forge:lenses/green")
-     .duration(340).EUt(2048).circuit(2)
+     .duration(340).EUt(2048).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Silicon CPU
-    e.recipes.gtceu.litho_machine("silicon_wafer_cpu")
+    e.recipes.gtceu.litho_machine_mk1("silicon_wafer_cpu")
     .itemInputs("gtceu:silicon_wafer")
     .itemOutputs("gtceu:cpu_wafer")
     .inputFluids([Fluid.of("gtceu:tin", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/light_blue")
-    .duration(540).EUt(2048).circuit(1)
+    .duration(540).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
 
-    e.recipes.gtceu.litho_machine("silicon_wafer_cpu_2")
+    e.recipes.gtceu.litho_machine_mk1("silicon_wafer_cpu_2")
      .itemInputs("gtceu:silicon_wafer")
      .itemOutputs("gtceu:cpu_wafer")
      .inputFluids([Fluid.of("gtceu:tin", 288), Fluid.of("gtceu:oxygen", 1000)])
      .notConsumable("#forge:lenses/light_blue")
-     .duration(340).EUt(2048).circuit(2)
+     .duration(340).EUt(2048).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Silicon ULPIC
-    e.recipes.gtceu.litho_machine("silicon_wafer_ulpic")
+    e.recipes.gtceu.litho_machine_mk1("silicon_wafer_ulpic")
     .itemInputs("gtceu:silicon_wafer")
     .itemOutputs("gtceu:ulpic_wafer")
     .inputFluids([Fluid.of("gtceu:tin", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/blue")
-    .duration(540).EUt(2048).circuit(1)
+    .duration(540).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
 
-    e.recipes.gtceu.litho_machine("silicon_wafer_ulpic_2")
+    e.recipes.gtceu.litho_machine_mk1("silicon_wafer_ulpic_2")
      .itemInputs("gtceu:silicon_wafer")
      .itemOutputs("gtceu:ulpic_wafer")
      .inputFluids([Fluid.of("gtceu:tin", 288), Fluid.of("gtceu:oxygen", 1000)])
      .notConsumable("#forge:lenses/blue")
-     .duration(340).EUt(2048).circuit(2)
+     .duration(340).EUt(2048).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Silicon Simple SoC 
-    e.recipes.gtceu.litho_machine("silicon_wafer_simple_soc")
+    e.recipes.gtceu.litho_machine_mk1("silicon_wafer_simple_soc")
     .itemInputs("gtceu:silicon_wafer")
     .itemOutputs("gtceu:simple_soc_wafer")
     .inputFluids([Fluid.of("gtceu:tin", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/cyan")
-    .duration(540).EUt(2048).circuit(1)
+    .duration(540).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
 
-    e.recipes.gtceu.litho_machine("silicon_wafer_simple_soc_2")
+    e.recipes.gtceu.litho_machine_mk1("silicon_wafer_simple_soc_2")
      .itemInputs("gtceu:silicon_wafer")
      .itemOutputs("gtceu:simple_soc_wafer")
      .inputFluids([Fluid.of("gtceu:tin", 288), Fluid.of("gtceu:oxygen", 1000)])
      .notConsumable("#forge:lenses/cyan")
-     .duration(340).EUt(2048).circuit(2)
+     .duration(340).EUt(2048).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Silicon LPIC
-    e.recipes.gtceu.litho_machine("silicon_wafer_lpic")
+    e.recipes.gtceu.litho_machine_mk1("silicon_wafer_lpic")
     .itemInputs("gtceu:silicon_wafer")
     .itemOutputs("gtceu:lpic_wafer")
     .inputFluids([Fluid.of("gtceu:tin", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/orange")
-    .duration(540).EUt(2048).circuit(1)
+    .duration(540).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
 
-    e.recipes.gtceu.litho_machine("silicon_wafer_lpic_2")
+    e.recipes.gtceu.litho_machine_mk1("silicon_wafer_lpic_2")
      .itemInputs("gtceu:silicon_wafer")
      .itemOutputs("gtceu:lpic_wafer")
      .inputFluids([Fluid.of("gtceu:tin", 288), Fluid.of("gtceu:oxygen", 1000)])
      .notConsumable("#forge:lenses/orange")
-     .duration(340).EUt(2048).circuit(2)
+     .duration(340).EUt(2048).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Silicon ILC
-    e.recipes.gtceu.litho_machine("silicon_wafer_ilc")
+    e.recipes.gtceu.litho_machine_mk1("silicon_wafer_ilc")
     .itemInputs("gtceu:silicon_wafer")
     .itemOutputs("gtceu:ilc_wafer")
     .inputFluids([Fluid.of("gtceu:tin", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/red")
-    .duration(540).EUt(2048).circuit(1)
+    .duration(540).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
 
-    e.recipes.gtceu.litho_machine("silicon_wafer_ilc_2")
+    e.recipes.gtceu.litho_machine_mk1("silicon_wafer_ilc_2")
      .itemInputs("gtceu:silicon_wafer")
      .itemOutputs("gtceu:ilc_wafer")
      .inputFluids([Fluid.of("gtceu:tin", 288), Fluid.of("gtceu:oxygen", 1000)])
      .notConsumable("#forge:lenses/red")
-     .duration(340).EUt(2048).circuit(2)
+     .duration(340).EUt(2048).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 })
 
 ServerEvents.recipes(e => {
@@ -105,14 +105,14 @@ ServerEvents.recipes(e => {
 
 ServerEvents.recipes(e => {
     // Phosphorus-doped MPIC
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_mpic")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_mpic")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("gtceu:mpic_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/brown")
     .duration(540).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
 
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_mpic_2")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_mpic_2")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("gtceu:mpic_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 288), Fluid.of("gtceu:oxygen", 1000)])
@@ -120,14 +120,14 @@ ServerEvents.recipes(e => {
     .duration(340).EUt(8192).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Phosphorus-doped SOC
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_soc")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_soc")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("gtceu:soc_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/yellow")
     .duration(540).EUt(8192).circuit(1).cleanroom(CleanroomType.CLEANROOM)
 
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_soc_2")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_soc_2")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("gtceu:soc_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 288), Fluid.of("gtceu:oxygen", 1000)])
@@ -135,14 +135,14 @@ ServerEvents.recipes(e => {
     .duration(340).EUt(8192).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Phosphorus-doped CPU
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_cpu")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_cpu")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("4x gtceu:cpu_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/light_blue")
     .duration(340).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
     
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_cpu_2")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_cpu_2")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("6x gtceu:cpu_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 288), Fluid.of("gtceu:oxygen", 1000)])
@@ -150,14 +150,14 @@ ServerEvents.recipes(e => {
     .duration(240).EUt(8192).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Phosphorus-doped LPIC
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_lpic")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_lpic")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("4x gtceu:lpic_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/orange")
     .duration(340).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
         
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_lpic_2")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_lpic_2")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("6x gtceu:lpic_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 288), Fluid.of("gtceu:oxygen", 1000)])
@@ -165,14 +165,14 @@ ServerEvents.recipes(e => {
     .duration(240).EUt(8192).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Phosphorus-doped NAND
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_nand")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_nand")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("gtceu:nand_memory_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/gray")
     .duration(540).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
             
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_nand_2")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_nand_2")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("gtceu:nand_memory_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 288), Fluid.of("gtceu:oxygen", 1000)])
@@ -180,14 +180,14 @@ ServerEvents.recipes(e => {
     .duration(340).EUt(8192).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Phosphorus-doped ULPIC
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_ulpic")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_ulpic")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("4x gtceu:ulpic_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/blue")
     .duration(340).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
                 
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_ulpic_2")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_ulpic_2")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("6x gtceu:ulpic_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 288), Fluid.of("gtceu:oxygen", 1000)])
@@ -195,14 +195,14 @@ ServerEvents.recipes(e => {
     .duration(240).EUt(8192).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Phosphorus-doped ILC
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_ilc")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_ilc")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("4x gtceu:ilc_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/red")
     .duration(340).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
                     
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_ilc_2")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_ilc_2")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("6x gtceu:ilc_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 288), Fluid.of("gtceu:oxygen", 1000)])
@@ -210,14 +210,14 @@ ServerEvents.recipes(e => {
     .duration(240).EUt(8192).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Phosphorus-doped NOT
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_nor")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_nor")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("gtceu:nor_memory_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/pink")
     .duration(540).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
                         
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_nor_2")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_nor_2")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("gtceu:nor_memory_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 288), Fluid.of("gtceu:oxygen", 1000)])
@@ -225,14 +225,14 @@ ServerEvents.recipes(e => {
     .duration(340).EUt(8192).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Phosphorus-doped RAM
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_ram")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_ram")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("4x gtceu:ram_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/green")
     .duration(340).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
                             
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_ram_2")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_ram_2")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("6x gtceu:ram_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 288), Fluid.of("gtceu:oxygen", 1000)])
@@ -240,14 +240,14 @@ ServerEvents.recipes(e => {
     .duration(240).EUt(8192).circuit(2).cleanroom(CleanroomType.CLEANROOM)
 
     // Phosphorus-doped Simple SOC
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_simple_soc")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_simple_soc")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("4x gtceu:simple_soc_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 144), Fluid.of("gtceu:nitrogen", 500)])
     .notConsumable("#forge:lenses/cyan")
     .duration(340).EUt(2048).circuit(1).cleanroom(CleanroomType.CLEANROOM)
                                 
-    e.recipes.gtceu.litho_machine("phosphorus_wafer_simple_soc_2")
+    e.recipes.gtceu.litho_machine_mk1("phosphorus_wafer_simple_soc_2")
     .itemInputs("gtceu:phosphorus_wafer")
     .itemOutputs("6x gtceu:simple_soc_wafer")
     .inputFluids([Fluid.of("gtceu:silver", 288), Fluid.of("gtceu:oxygen", 1000)])
@@ -315,11 +315,121 @@ ServerEvents.recipes(e => {
 
    e.recipes.gtceu.assembler("mk1_controller")
     .itemInputs("2x kubejs:casing_litho", "32x gtceu:redstone_alloy_single_wire", "2x #gtceu:circuits/mv")
-    .itemOutputs("gtceu:litho_machine")
+    .itemOutputs("gtceu:litho_machine_mk1")
     .duration(250).EUt(120).circuit(1)
 
     e.recipes.gtceu.assembler("mk2_controller")
      .itemInputs("4x kubejs:casing_advanced_litho", "32x gtceu:energetic_alloy_single_wire", "4x #gtceu:circuits/ev")
      .itemOutputs("gtceu:litho_machine_mk2")
      .duration(200).EUt(510).circuit(2)
+})
+
+
+
+// Lenses for Lithography Machines
+ServerEvents.recipes(e => {
+  e.recipes.gtceu.chemical_bath("lens_1")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:orange_dye", 144)])
+   .itemOutputs("gtceu:orange_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_2")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:magenta_dye", 144)])
+   .itemOutputs("gtceu:magenta_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_3")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:light_blue_dye", 144)])
+   .itemOutputs("gtceu:light_blue_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_4")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:yellow_dye", 144)])
+   .itemOutputs("gtceu:yellow_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_5")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:lime_dye", 144)])
+   .itemOutputs("gtceu:lime_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_6")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:pink_dye", 144)])
+   .itemOutputs("gtceu:pink_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_7")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:gray_dye", 144)])
+   .itemOutputs("gtceu:gray_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_8")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:light_gray_dye", 144)])
+   .itemOutputs("gtceu:light_gray_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_9")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:cyan_dye", 144)])
+   .itemOutputs("gtceu:cyan_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_10")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:purple_dye", 144)])
+   .itemOutputs("gtceu:purple_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_11")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:blue_dye", 144)])
+   .itemOutputs("gtceu:blue_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_12")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:brown_dye", 144)])
+   .itemOutputs("gtceu:brown_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_13")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:green_dye", 144)])
+   .itemOutputs("gtceu:green_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_14")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:red_dye", 144)])
+   .itemOutputs("gtceu:red_glass_lens")
+   .duration(200).EUt(128)
+
+   e.recipes.gtceu.chemical_bath("lens_15")
+   .itemInputs("gtceu:glass_lens")
+   .inputFluids([Fluid.of("gtceu:black_dye", 144)])
+   .itemOutputs("gtceu:black_glass_lens")
+   .duration(200).EUt(128)
+
+  const toRemoveId = [
+      'gtceu:chemical_bath/cyan_lens','gtceu:chemical_bath/black_lens',
+      'gtceu:chemical_bath/red_lens','gtceu:chemical_bath/green_lens',
+      'gtceu:chemical_bath/brown_lens','gtceu:chemical_bath/blue_lens',
+      'gtceu:chemical_bath/purple_lens','gtceu:chemical_bath/cyan_lens',
+      'gtceu:chemical_bath/light_gray_lens','gtceu:chemical_bath/pink_lens',
+      'gtceu:chemical_bath/lime_lens','gtceu:chemical_bath/yellow_lens',
+      'gtceu:chemical_bath/light_blue_lens','gtceu:chemical_bath/magenta_lens',
+      'gtceu:chemical_bath/orange_lens','gtceu:chemical_bath/colorless_lens',
+      'gtceu:chemical_bath/gray_lens'
+  ];
+  toRemoveId.forEach(element => {
+  e.remove({ id: element});
+})
 })

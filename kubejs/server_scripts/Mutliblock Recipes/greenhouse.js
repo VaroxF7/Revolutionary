@@ -98,15 +98,5 @@ ServerEvents.recipes((event) => {
       .duration(900)
       .EUt(60)
       .circuit(2);
-    gregtech
-      .greenhouse("menril_wood_fertiliser")
-      .notConsumable("integrateddynamics:menril_sapling")
-      .inputFluids("gtceu:oxyclone 1000")
-      .itemOutputs(
-        "32x integrateddynamics:menril_log"
-      )
-      .duration(900)
-      .EUt(60)
-      .circuit(3);
 })
   

@@ -7,6 +7,10 @@ ServerEvents.tags('fluid', securite => {
       'createaddition:bioethanol','createaddition:flowing_bioethanol'])
 })
 
+ServerEvents.tags("item", event => {
+  event.removeAllTagsFrom('enderio:silicon')
+})
+
 ServerEvents.tags("fluid", event => {
   event.removeAllTagsFrom('ad_astra:fuel')
   event.removeAllTagsFrom('ad_astra:cryo_fuel')

@@ -9,10 +9,19 @@ StartupEvents.registry('item', e => {
      e.create("raw_nano_cpu_wafer").displayName("Raw Nano CPU Wafer") 
      e.create("carbon_vial").displayName("Captured Carbon Vial")
      e.create("compound_base").displayName("Compound Base")
+     e.create("xylium_dust").displayName("Xylium Dust")
+     e.create("radium_dust").displayName("Radium Dust")
+     e.create("certus_seed").displayName("Tiny Certus Seed")
+     e.create("circuit_scrap")
+     e.create("processor_scrap")
+     e.create("metal_scrap")
      e.create("nether_star_mold").displayName("Nether Star Mold")
      e.create("reinforced_steel_beam").displayName("Reinforced Steel Beam")
      e.create("nano_mask").displayName("Nano Light Mask")
-     e.create("kelp_fiber").displayName("Kelp Fiber")
+     e.create("dirty_silicon_wafer").displayName("Contaminated Silicon Wafer")
+     e.create("dirty_phosphorus_wafer").displayName("Contaminated Phosphorus Wafer")
+     e.create("dirty_naquadah_wafer").displayName("Contaminated Naquadah Wafer")
+     e.create("dirty_neutronium_wafer").displayName("Contaminated Neutronium Wafer")
 
      e.create("1k_component_wafer").displayName("1k Component Wafer")
      e.create("4k_component_wafer").displayName("4k Component Wafer")
@@ -22,11 +31,10 @@ StartupEvents.registry('item', e => {
      e.create("calculation_processor_wafer").displayName("Calculation Processor Wafer")
      e.create("engineering_processor_wafer").displayName("Engineering Processor Wafer")
 
-     // Biofuel Rework
+    // Biofuel & Andesite BIO 
      e.create("compressed_plant_ball").displayName("Compressed Plant Ball")
      e.create("purified_biomass_pallet").displayName("Purified Biomass")
-
-
+     e.create("kelp_fiber").displayName("Kelp Fiber")
 })
 
 // Quantum Mining Simulations
@@ -96,10 +104,38 @@ StartupEvents.registry('item', e => {
 */
 });
 
+StartupEvents.registry('block', event => {
+    event.create('energized_steel_coil_block','gtceu:coil')
+         .temperature(2000)
+         .level(2)
+         .tier(2)
+         .energyDiscount(4) 
+         //.texture('gtceu:block/casings/coils/prismatic_tungsten_coil')
+         .hardness(5)
+         .requiresTool(true)
+         .soundType(SoundType.NETHERITE_BLOCK)
+         .tagBlock('forge:mineable/wrench')
+})
+
 GTCEuStartupEvents.registry('gtceu:material', event => {
         event.create('slag')
         .fluid()
         .color(0x320736) 
+
+        event.create("photo_resist")
+        .fluid()
+        .color(0x320726)
+
+        event.create("xylum_acid")
+        .fluid()
+        .color(0x320726)
+
+        event.create("xylium")
+        .fluid()
+
+        event.create("cleaning_solution")
+        .fluid()
+        .color(0x320726)
 
         event.create('clean_fluix')
         .fluid()

@@ -1,16 +1,16 @@
-const $RecipeIO = Java.loadClass('com.gregtechceu.gtceu.api.capability.recipe.IO');
+
 const $ItemStackHashStrategy = Java.loadClass('com.gregtechceu.gtceu.utils.ItemStackHashStrategy');
 const $ItemRecipeCapability = Java.loadClass('com.gregtechceu.gtceu.api.capability.recipe.ItemRecipeCapability');
-const $GTHashMaps = Java.loadClass('com.gregtechceu.gtceu.utils.GTHashMaps');
-
-const $Collections = Java.loadClass('java.util.Collections');
 const $Object2IntOpenCustomHashMap = Java.loadClass('it.unimi.dsi.fastutil.objects.Object2IntOpenCustomHashMap');
 const $Objects = Java.loadClass('java.util.Objects');
+const $GTHashMaps = Java.loadClass('com.gregtechceu.gtceu.utils.GTHashMaps');
+const $Collections = Java.loadClass('java.util.Collections');
+const $RecipeIO = Java.loadClass('com.gregtechceu.gtceu.api.capability.recipe.IO');
 
-
+// Testing Stuff - WIP
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
-    event.create('litho_machine')
-           .category('litho_machine')
+    event.create('litho_machine_mk1')
+           .category('litho_machine_mk1')
            .setEUIO('in')
            .setMaxIOSize(4, 4, 4, 4) // Max Item Inputs, Max Item Outputs, Max Fluid Inputs, Max Fluid Outputs
            .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
@@ -29,9 +29,9 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 });
 
 GTCEuStartupEvents.registry('gtceu:machine', event => {
-    event.create('litho_machine', 'multiblock')
+    event.create('litho_machine_mk1', 'multiblock')
         .rotationState(RotationState.NON_Y_AXIS)
-        .recipeType('litho_machine')
+        .recipeType('litho_machine_mk1')
         .appearanceBlock(() => Block.getBlock('kubejs:casing_litho'))
         .recipeModifiers([GTRecipeModifiers.ELECTRIC_OVERCLOCK.apply(OverclockingLogic.PERFECT_OVERCLOCK)])
         .pattern(definition => FactoryBlockPattern.start()
