@@ -54,6 +54,12 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "pipez": {
+    "pipe": true
+  },
   "gtceu": {
     "primitive_pump": true,
     "auto_output_info": true,
@@ -75,6 +81,20 @@
     "cable_info": true,
     "parallel_info": true
   },
+  "supplementaries": {
+    "hat_stand": true
+  },
+  "create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "crafting_blueprint": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "dynamictrees": {
     "rooty_water": true,
     "pod": true,
@@ -89,10 +109,6 @@
     "coordinates": false,
     "registry_name": "OFF",
     "mod_name": true
-  },
-  "expatternprovider": {
-    "jade_chamber": true,
-    "jade_wireless": true
   },
   "gravestone": {
     "grave": true

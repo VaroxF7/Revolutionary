@@ -1,0 +1,616 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "simulation_adventures"
+	group: "2C2CAF0515DE6257"
+	icon: "gtceu:sim_chamber"
+	id: "113073E9BFD55C82"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"72C94EB5BB4EBBA2"
+				"1EFC92E265C8A8FD"
+				"556717880336664D"
+				"035A85AC069968DB"
+				"7D305A7E8639027A"
+			]
+			icon: "gtceu:sim_chamber_lv"
+			id: "31E534EED4ADC5F4"
+			rewards: [{
+				id: "48A6B50E75A20FC2"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "&2Your First Quantum Simulations!&r"
+			tasks: [
+				{
+					id: "73A4357B2732E10C"
+					item: "gtceu:sim_chamber_lv"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "71226FC5647E9DA3"
+					item: { Count: 14, id: "kubejs:multi_verse_casing" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "1CBE404D8D1DAF18"
+					item: { Count: 4, id: "gtceu:tempered_glass" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"013C74C13E87032E"
+				"3A32579A88837E6E"
+				"573132E429E498A7"
+				"75BBDF73FEC166C1"
+			]
+			id: "72C94EB5BB4EBBA2"
+			tasks: [{
+				id: "606E45E04D9F3CBC"
+				item: "gtceu:rocket_refined_fuel_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			id: "4CC774FC7A1D1409"
+			tasks: [{
+				id: "6D3462C5F35AF8EB"
+				item: "gtceu:double_magnalium_plate"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"4CC774FC7A1D1409"
+				"1341103E404216F8"
+				"634532C9AD60591C"
+			]
+			id: "1EFC92E265C8A8FD"
+			tasks: [{
+				id: "50EF4C452600603E"
+				item: "kubejs:multi_verse_casing"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			id: "1341103E404216F8"
+			tasks: [{
+				id: "6AD2E0FEAC6A9F20"
+				item: "gtceu:double_chromium_plate"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["31E534EED4ADC5F4"]
+			description: [
+				"So you chose this to &2Generate your Ores&r, Good. Lets get to the Details."
+				""
+				"Also Check the &2Second Page&r for more Detail and other Missions."
+				""
+				"From the &2First Quantum Simulator&r you will get following Ores:"
+				""
+				"- Dense &cRedstone&r"
+				"- Dense &7Iron&r"
+				"- Dense &eNickel&r"
+				"- Dense &6Cassiterite&r "
+				"- Dense &6Ilmenite&r"
+				"- Dense &4Tungstate&r"
+				"- Galena"
+				"- Silver"
+				"- Rock Salt"
+				"- Uraninite"
+				"- Molybdenum"
+				""
+				"- Moon Sand"
+				"- &6Moon Desh&r "
+				"- &cXylium Dust&r"
+				""
+				"{@pagebreak}"
+				""
+				"This Page is Dedicated to the &2Liquid Sapphire Mission(s)&r"
+				"From this Mission you can get the following things:"
+				""
+				"- &9Sapphire Slurry&r"
+				"- &2Green Sapphire Slurry&r"
+				"- &cRuby Slurry&r"
+				"- &5Radium Dust&r"
+				""
+				"The Second Missions will give you &5Sky Stone Slurry&r and &5Radium Dust&r. This is a Efficient Way of getting Radium and Sky Stone from the Moon."
+				""
+				"{@pagebreak}"
+				""
+				"This Page is Dedicated to the &2Scrapped Mission&r."
+				"You can Configure the Drones to Scrap old Installations in the Quantum Universe, which is turned into 3 different types of Scraps. "
+				""
+				"- Processor Scrap"
+				"- Circuit Scrap"
+				"- Metal Scrap"
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "5FB1669EDF38B2FF"
+			rewards: [{
+				id: "3E537005C643A50A"
+				type: "xp"
+				xp: 10
+			}]
+			subtitle: "&2Everything you need inside of these Pages!&r"
+			tasks: [{
+				id: "53E4F88D302F481E"
+				title: "Got it."
+				type: "checkmark"
+			}]
+			title: "Resource Generation"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3015CCD7CAFAC425"]
+			id: "556717880336664D"
+			tasks: [{
+				id: "1C40F7C323AC691B"
+				item: "kubejs:miner_tier_1"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["78F9C8C27777C772"]
+			id: "3015CCD7CAFAC425"
+			tasks: [{
+				id: "1FF1B25F30704027"
+				item: "kubejs:fluxium"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"013C74C13E87032E"
+				"0386982CE158AAC8"
+			]
+			id: "78F9C8C27777C772"
+			tasks: [{
+				id: "3BB7F47CCCD29264"
+				item: "gtceu:deuterium_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "0386982CE158AAC8"
+			tasks: [{
+				id: "2B8BCB30E00A96D3"
+				item: "ad_astra:moon_sand"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			id: "013C74C13E87032E"
+			optional: true
+			tasks: [{
+				id: "66979DCCFF3843A1"
+				item: "gtceu:hydrogen_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["78F9C8C27777C772"]
+			id: "706BFC2F16A2E6F1"
+			tasks: [{
+				id: "6E1199FD6111E796"
+				item: "gtceu:tritium_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"503FB5F44144FB80"
+				"65AEBA543C7C1E64"
+			]
+			id: "035A85AC069968DB"
+			tasks: [{
+				id: "542C9F8BD7FE3233"
+				item: "gtceu:liquid_computex_selection_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			id: "75BBDF73FEC166C1"
+			tasks: [{
+				id: "7A5267A2BE1AE11D"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			id: "3A32579A88837E6E"
+			tasks: [{
+				id: "15554036875F6D45"
+				item: "gtceu:lithium_dust"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["48C785FBB3BBCAC9"]
+			id: "503FB5F44144FB80"
+			tasks: [{
+				id: "1DB3B06C9AE82777"
+				item: "gtceu:phosphoric_acid_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["22DD5BD03DEB4EBF"]
+			id: "48C785FBB3BBCAC9"
+			tasks: [{
+				id: "443624B7A57DEE09"
+				item: "gtceu:phosphorus_pentoxide_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			id: "6F00790EEC16FE6E"
+			tasks: [{
+				id: "212F474813AA362E"
+				item: "gtceu:monazite_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6F00790EEC16FE6E"]
+			id: "60677BA5622D90A5"
+			tasks: [{
+				id: "2B22059B72A1270D"
+				item: "gtceu:phosphate_dust"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["60677BA5622D90A5"]
+			id: "22DD5BD03DEB4EBF"
+			tasks: [{
+				id: "34233E50D68C2F1A"
+				item: "gtceu:phosphorus_dust"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"This Whole Quest Line Shows new and returning players on &2How To Operate the Quantum Simulation Chamber&r, the purpose of this Machine is to &2Generate Resources out of Thin Air&r. "
+				""
+				"However, its self fed, so it does not need any Outside Resources to operate. All things needed to Produce the Parts for the Drone or the Chamber Fuel and so on can be made with the Machine Itself."
+				""
+				"It only needs &2Fuel, The Drone and a Crate&r to put the things into. It can later on be Upgraded Upon and make even more Ores or other things, which in return need new resources tho. "
+			]
+			icon: "botania:cosmetic_questgiver_mark"
+			id: "7D305A7E8639027A"
+			tasks: [{
+				id: "1614F3C5E4AB3E0A"
+				title: "Understood."
+				type: "checkmark"
+			}]
+			title: "So, how to Operate it?"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["08E496F04954CF81"]
+			description: [
+				"So, to Process these &2Dense Ore Varients&r you will need &5Xylum Acid&r which is made out of Xylium. You can get &5Xylium&r out of the &2Quantum Simulation Missions&r, you will get it in Dust Form, which means you will need to Liquify it."
+				""
+				"After you've gotten the Liquid, you just need to Disolve the Ores into the Liquid and you get the Broken down Ores."
+			]
+			id: "638CB1B008C6522C"
+			tasks: [{
+				id: "0FE1C36CF761BF0D"
+				title: "Processing the Ores"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			id: "573132E429E498A7"
+			tasks: [{
+				id: "25D06D537B788538"
+				item: "gtceu:natural_gas_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			id: "634532C9AD60591C"
+			tasks: [{
+				id: "3EE29C82D49127EC"
+				item: "gtceu:liquid_sky_stone_bucket"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["31E534EED4ADC5F4"]
+			id: "39A530B27B425C10"
+			tasks: [{
+				id: "0FBB9487C988BC2D"
+				item: "kubejs:xylium_dust"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["39A530B27B425C10"]
+			id: "08E496F04954CF81"
+			tasks: [{
+				id: "5B186291FCE214EC"
+				item: "gtceu:xylum_acid_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			description: ["These are the &2Crystals&r you will need to &2Dissolve in Acid&r to make the Computex Solution. Each Higher Tier of Crystal gives you a 2x Multiplier on Production."]
+			icon: "powah:crystal_spirited"
+			id: "65AEBA543C7C1E64"
+			tasks: [
+				{
+					id: "5B6A4BE93CCB462C"
+					item: "powah:crystal_blazing"
+					type: "item"
+				}
+				{
+					id: "1D233319C96B2066"
+					item: "powah:crystal_niotic"
+					type: "item"
+				}
+				{
+					id: "1B26102DACE7BC4E"
+					item: "powah:crystal_spirited"
+					type: "item"
+				}
+				{
+					id: "4125414A1D6588B2"
+					item: "powah:crystal_nitro"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"59D08DE3EE7EA3DE"
+				"14A0D387F5DF8320"
+			]
+			id: "1A7C69922F6B40F5"
+			tasks: [{
+				id: "0D92BF430849DC5A"
+				item: "gtceu:sim_chamber"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"66DE21B814BBBACC"
+				"4C758F4AB7BF58E0"
+			]
+			id: "5DBFD6BCC6E591D0"
+			tasks: [{
+				id: "2BA219DEF3977442"
+				item: "gtceu:quantum_chamber"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			id: "59D08DE3EE7EA3DE"
+			tasks: [{
+				id: "342C73DED9D05383"
+				item: "gtceu:tritium_bucket"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			id: "66DE21B814BBBACC"
+			tasks: [{
+				id: "0053220DB798664D"
+				item: "gtceu:helium_plasma_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1A7C69922F6B40F5"]
+			description: [
+				"With this Upgraded Chamber and the Ability to now Craft the &aTier 2 Miner&r you have now unlocked the &arenewable&r way of getting:"
+				""
+				"- Dense Baxuite Ore"
+				"- Dense Tungsten Ore"
+				"- Dense Sphalerite Ore"
+				"- Dense Cassiterite Ore"
+				"- Pyrochlore Ore"
+				"- Pyrosulite Ore"
+				"- Copper Ore"
+				"- &6Beryllium Ore&r"
+				"- &6Diamond Ore&r"
+				"- Scheelite Ore"
+				"- &aMars Ostrum Ore&r"
+				"- &dRadon Extract Dust&r"
+				"- &aMars Sand&r"
+			]
+			id: "5A7CC75E2A707B3F"
+			tasks: [{
+				id: "394BDEB37AD7D1FC"
+				title: "Generated Ores"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5DBFD6BCC6E591D0"]
+			id: "59DA9B9D9C04B4A8"
+			tasks: [{
+				id: "59AC1526E8D09E6F"
+				title: "Generated Ores"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"471BBE70EE4DEB6E"
+				"70DC5AB052102EF1"
+			]
+			id: "14A0D387F5DF8320"
+			tasks: [{
+				id: "6205D56E53622AF6"
+				item: "kubejs:miner_tier_2"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1DBBEA5442F65794"
+				"70DC5AB052102EF1"
+			]
+			id: "4C758F4AB7BF58E0"
+			tasks: [{
+				id: "7B05ADC66D89588F"
+				item: "kubejs:miner_tier_3"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			id: "471BBE70EE4DEB6E"
+			tasks: [
+				{
+					id: "5658A9E9CBE60CAC"
+					item: "powah:energizing_rod_blazing"
+					type: "item"
+				}
+				{
+					id: "4D8EFFE7B3EA1027"
+					item: "gtceu:advanced_power_thruster"
+					type: "item"
+				}
+				{
+					id: "73212619A4C50D1B"
+					item: "gtceu:mv_combustion"
+					type: "item"
+				}
+				{
+					id: "2C38618E174FE0DF"
+					item: "gtceu:mv_sensor"
+					type: "item"
+				}
+				{
+					id: "781347CAD09D14B3"
+					item: "gtceu:double_stainless_steel_plate"
+					type: "item"
+				}
+			]
+			x: 6.5d
+			y: 0.5d
+		}
+		{
+			id: "1DBBEA5442F65794"
+			tasks: [
+				{
+					id: "1DB7FB557FB08175"
+					item: "powah:energizing_rod_nitro"
+					type: "item"
+				}
+				{
+					id: "24002BF50E06A039"
+					item: "gtceu:advanced_power_thruster"
+					type: "item"
+				}
+				{
+					id: "01BD46EAA2719168"
+					item: "gtceu:hv_combustion"
+					type: "item"
+				}
+				{
+					id: "3A176412C8CFE95F"
+					item: "gtceu:double_titanium_plate"
+					type: "item"
+				}
+				{
+					id: "62ED273CC2E8A43A"
+					item: "gtceu:ev_sensor"
+					type: "item"
+				}
+			]
+			x: 5.5d
+			y: 0.5d
+		}
+		{
+			id: "70DC5AB052102EF1"
+			tasks: [{
+				id: "5D741C541E8FAF4C"
+				item: "kubejs:drone_chassi"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -0.5d
+		}
+	]
+	title: "Quantum Simulations"
+}

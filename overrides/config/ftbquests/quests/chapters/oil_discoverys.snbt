@@ -1,0 +1,566 @@
+{
+	autofocus_id: "57D2631AAD1BB173"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "oil_discoverys"
+	group: "2C2CAF0515DE6257"
+	icon: "thermal:crude_oil_bucket"
+	id: "0A419E4A7C83DACB"
+	order_index: 3
+	quest_links: [{
+		id: "73E65B78165A825F"
+		linked_quest: "7567E885B7166603"
+		shape: "gear"
+		size: 1.5d
+		x: 0.0d
+		y: -1.5d
+	}]
+	quests: [
+		{
+			description: [
+				"&aSodium Persulfate&r can be used in &9Ore Processing&r in the &3Chemical Bath&r to get various bonus outputs you would not normally obtain. It is completely optional, but pretty rewarding."
+				""
+				"&lWait, stop! That's only a distraction&r - the real topic of this Quest is..."
+				""
+				"&aSodium Persulfate&r and &aIron III Chloride&r are used to make cheaper &9Good Circuit Boards&r, as their inclusion cuts Silver usage by a factor of four."
+				""
+				"They're also &drequired&r to make &9Plastic Circuit Boards&r."
+				"{@pagebreak}"
+				"Making &aSodium Persulfate&r will yield &aHydrochloric Acid&r as a coproduct, which you may re-use to make &aIron III Chloride&r. This should the best approach right now, but the decision is entirely yours."
+				""
+				"With more automation later in the game, Iron III Chloride will be the cheaper and more straight forward path."
+				""
+				"This Quest can be completed with &eeither&r Fluid."
+			]
+			icon: "gtceu:iron_iii_chloride_bucket"
+			id: "363A548D7820B66D"
+			rewards: [{
+				count: 20
+				id: "4BE7F941D3F60F6D"
+				item: "gtceu:salt_ore"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "Let's etch some Copper off Circuit Boards!"
+			tasks: [
+				{
+					id: "7644CD54DBF04CAE"
+					item: "gtceu:iron_iii_chloride_bucket"
+					type: "item"
+				}
+				{
+					id: "62D0FA0FCC63C704"
+					item: "gtceu:sodium_persulfate_bucket"
+					type: "item"
+				}
+			]
+			title: "Sodium Persulfate / Iron III Chloride"
+			x: -2.4d
+			y: -4.8d
+		}
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"It's quite the investment to own a &3Fluid Drilling Rig&r, but it is &oby far&r the most prominent &6source of Oil&r."
+				""
+				"It pumps fluids from underneath Bedrock itself. Note that the fluids aren't actually there, instead being simulated."
+				""
+				"Fluid veins are stored within regions of &48x8 chunks&r. Each vein has a different fluid, but they are mostly types of Oil."
+				""
+				"You are not able to carry out prospecting for fluid veins &oyet&r - this will come at &6HV&r."
+				"{@pagebreak}"
+				"Each vein generates with a different base yield. This is typically between &d150L&r to &d300L per second&r."
+				""
+				"When drained, fluid veins will slowly deplete. This will cause the fluid yield to decrease over time until it reaches its depletion yield. At that point, you should move the Rig to a different vein."
+				""
+				"A &3Basic Fluid Drilling Rig&r will last for 100,000 operations (with 1 second per operation) until depletion. This is enough for &6well over 10,000&r buckets of Oil. Higher tier Rigs will massively increase the yield, while also decreasing the depletion rate."
+				"{@pagebreak}"
+				"&lWhat you can find in the &2Overworld&r&l:&r"
+				""
+				"&9Oil:&r richer in &aLight Fuel&r, the most appreciated variant."
+				"&9Light Oil:&r richer in &aRefinery Gas&r, usable for power."
+				"&9Heavy Oil:&r richer in &aHeavy Fuel&r, which has uses that are more niche."
+				"&9Raw Oil:&r richer in &aNaphtha&r, the best source of the early-game oil products."
+				"&9Natural Gas:&r grants &aRefinery Gas&r with no distillation required."
+				"&l&9Salt Water:&r grants &aSodium&r and &aChlorine&r, useful later."
+				"{@pagebreak}"
+				"&lWhat you can find in the &cNether&r&l:&r"
+				""
+				"&9Natural Gas:&r grants &aRefinery Gas&r but with higher yield than the Overworld vein."
+				"&9Lava:&r hopefully, you know what this is."
+				""
+				"When starting out, you may have to tap randomly until you find something you like. Remember that whatever you pump could also be used to refuel your Fluid Rig."
+			]
+			id: "57D2631AAD1BB173"
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "3B618D5B149DF37C"
+				item: "gtceu:mv_fluid_drilling_rig"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"742E738BE98A4598"
+				"058FF8A3CE0351A9"
+			]
+			description: [
+				"Store any obtained Oil in &3Drums&r, but you would do yourself a favour to use a &3Super Tank&r as soon as you can make them."
+				""
+				"{@pagebreak}"
+				"&9&lNote:&r&l The Oil path is one path towards &9&lEthylene&r&l. The other paths involve getting natural with some Ethanol.&r"
+				""
+				"For now, Oil is &doptional&r. It becomes mandatory much later when you get to &5EV&r."
+				""
+				"Oil can also be refined in the form of &aLight Fuel&r, &aDiesel&r or even &aGasoline&r, which are excellent power options."
+				""
+				"If you chose this path, you should use it for both Power and Ethylene."
+			]
+			id: "0F7347890CE7829B"
+			tasks: [{
+				id: "56E85104784EAB66"
+				item: "gtceu:oil_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["0F7347890CE7829B"]
+			description: [
+				"Distillating it will give you &eSulfuized Products&r, so you need to clean them!"
+				""
+				"You can &9Electrolyze some Water&r to get &aHydrogen Gas&r and put it to good use with our product."
+				""
+				"&aYou will find yourself with Hydroge Sulfuride byproduct, you can just electrolyze it again to recylce it if you like.&r"
+				""
+				""
+				"{@pagebreak}"
+				""
+				"&l&6Now you can use it to get power or move on to the next step!&r&r"
+			]
+			id: "616F973A94B4B8C2"
+			tasks: [{
+				id: "278F0C253ACC467D"
+				item: "gtceu:sulfuric_naphtha_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["616F973A94B4B8C2"]
+			id: "4A22A12C6312FCF1"
+			tasks: [{
+				id: "3CF7C7CC2961BAE9"
+				item: "gtceu:naphtha_bucket"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4A22A12C6312FCF1"]
+			description: [
+				"Now, you will need to crack it."
+				""
+				"For that you need to &1Steam Crack&r it for now, and move on, what that means, get yourself some &7Steam&r and a &aChemical Ractor&r."
+			]
+			id: "37D861396B0C233A"
+			tasks: [{
+				id: "15EE7D025316E42B"
+				item: "gtceu:severely_steam_cracked_naphtha_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"37D861396B0C233A"
+				"0D9A8F76D51203A2"
+			]
+			id: "7F666795E4745FCC"
+			tasks: [{
+				id: "40BEDF59DCF19ADD"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7F666795E4745FCC"]
+			description: [
+				"If you want to be less fancy, just call it plastic."
+				""
+				"For the polymerization process, add &aOxygen&r, which gives better returns than Air, then solidify like you would with Rubber."
+				""
+				"&aPolyethylene (PE)&r is the key to unlocking &6many new things&r. It's commonly used as &dSheets&r, or in &dFluid&r form."
+			]
+			id: "1118476F79885739"
+			tasks: [{
+				id: "2C5C2E4E172E4B6B"
+				item: "gtceu:polyethylene_plate"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1118476F79885739"]
+			description: [
+				"&aPolyvinyl Chloride (PVC)&r is the 3rd-most produced plastic in real life. Here in CEu, it can be substituted for Polyethylene in the production of &aPlastic Circuit Boards&r and other items to increase the yield. It is required from &5EV&r onwards to wrap Cables."
+				""
+				"PVC item pipes also have the &6highest throughput&r available for a while, but most of your setups right now won't need such speed. Still, it's good to keep this knowledge in your pocket."
+				""
+				"&9Pro tip:&r The fluid form of PVC is never used in base GTCEu, so feel free to solidify all of it into sheets."
+			]
+			icon: "gtceu:polyvinyl_chloride_plate"
+			id: "6C6CD9F4E4277687"
+			tasks: [
+				{
+					id: "0A0FE4CCF16ACB69"
+					item: "gtceu:polyvinyl_acetate_bucket"
+					type: "item"
+				}
+				{
+					id: "5EE00E0EEEA766D6"
+					item: "gtceu:polyvinyl_chloride_plate"
+					type: "item"
+				}
+			]
+			x: 0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"&eElectric Version&r of the &0Coke Oven&r, basicall the same thing."
+				""
+				"Your task and goal for now is to reach &aEthylene&r, to do that you need &6Wood Tar&r which you can get with this beautiful machine. Simply just put &aWood and Power&r into it, then follow the further steps in this line in the quest book if you have questions!"
+			]
+			id: "06389C6598365FC7"
+			tasks: [{
+				id: "7D6CBB68199EF807"
+				item: "gtceu:pyrolyse_oven"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["06389C6598365FC7"]
+			description: [
+				"This is the &agreen&r way of getting to &lEthylene&r!"
+				""
+				"For now you can put your &aSugarcane&r into the &1Brewery&r with some &1Water&r and get a good yield of &aBiomass&r from it, later on you will get a better yield so dont worry!"
+			]
+			id: "15017FC67956EEE8"
+			tasks: [{
+				id: "0FF2C16E5FB0737E"
+				item: "gtceu:biomass_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["15017FC67956EEE8"]
+			description: [
+				"Put your previously made &aBiomass&r into a &3MV Distillery&r to make &aEthanol&r."
+				""
+				"You will need this for &dEthylene&r by reacting it with &aSulfuric Acid&r in a &3MV Chemical Reactor&r... unless you chose to go down the Oil path."
+				""
+				"Once you have a hefty starting stock of Ethanol, consider making and distilling &9Fermented Biomass&r in a &3Distillation Tower&r (when you get there!) for extra chemicals."
+				""
+				"&cDo not try&r to use Ethanol as a Power source... it's quite possibly its worst use. If it's organic &9Power&r that you want, we suggest taking a look at &dBenzene&r instead!"
+				""
+				"{@pagebreak}"
+				"You will also be able to make &4Ethano&rl from Netherwart, you will just need to extract Nether Wart Juice and Centrifuge it. "
+			]
+			id: "0D9A8F76D51203A2"
+			tasks: [{
+				id: "01286F45D2C753FE"
+				item: "gtceu:ethanol_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6C6CD9F4E4277687"]
+			id: "403A0115EB3CA399"
+			tasks: [{
+				id: "56711686E57EC46F"
+				item: "gtceu:plastic_circuit_board"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: [
+				"403A0115EB3CA399"
+				"363A548D7820B66D"
+			]
+			description: [
+				"At this point, you have all the tools available to start making Plastic Boards."
+				""
+				"The recipe chains are starting to get pretty long, so we recommend processing large batches in two dedicated &3Chemical Reactors&r."
+			]
+			id: "05624E4669E3D502"
+			tasks: [{
+				id: "55F8981EFFA174F5"
+				item: "gtceu:plastic_printed_circuit_board"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["06389C6598365FC7"]
+			description: [
+				"&aBenzene&r is a &9Gas Fuel&r. To skip some frustration, let's check out the two best ways to obtain it."
+				""
+				"The first option is typically &dWood based&r. Put Logs in the &3Pyrolyse Oven&r for &9Wood Tar&r. The Charcoal you obtain can then be processed in &3Extractors&r for even more &9Wood Tar&r, which you &3distill&r for &aBenzene&r."
+				""
+				"Your second option is &dHeavy Oil based&r. Put Heavy Oil in a &3Distillery&r for &9Heavy Fuel&r, which you &aseverely steam-crack&r and &3distill&r again for &aBenzene&r."
+				"{@pagebreak}"
+				"For information on how to process Oil, check the Light Fuel and Naphtha Quests."
+				""
+				"In general, it is better to prioritize placing down more machines (&dparallelisation&r) over overclocking the recipes. That way, you end up losing less energy processing the resources."
+				""
+				"&aBenzene&r is burned in a &3Gas Turbine&r. This power source starts weaker than its &eDiesel&r cousin, but gets a big boost when refined to &6Nitrobenzene&r in &6HV&r. Ultimately, your power source is your choice."
+			]
+			id: "5A6FB46158F7822A"
+			shape: "gear"
+			size: 1.0d
+			tasks: [{
+				id: "7B005B76B6292D3E"
+				item: "gtceu:benzene_bucket"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"The &3Assembler&r is a staple for every Tier; an important goal to unlock more recipes and progress further into the Age. Many in the community see crafting a voltage tier's Assembler as a sign of &oproperly&r reaching said voltage."
+				""
+				"That being said, welcome to &bMV&r!"
+				""
+				"The &bMV &3Assembler&r unlocks &eTransistors&r, &eCapacitors&r and &eInductors&r, used for the next tiers of Circuits."
+			]
+			id: "7B7701FEE264A21B"
+			tasks: [{
+				id: "74E213D48CF4B01B"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4B936BAA54C1E689"]
+			description: [
+				"So for this Mission its very simple, we have &0Discovered OIL&r on the &2Moons Inner Circles&r. You will need to Drill it up on the Moon and Bring it back to Earth for Processing. "
+				""
+				"Get yourself ready with a &2Space Suit, Oxygen Tanks and a Drilling Rig&r. However, don't forget you will need to Power the Drilling Rig somehow, so, what kind of fuel should it be? "
+			]
+			icon: "ad_astra:moon_globe"
+			id: "20D37EED7D7D2275"
+			tasks: [{
+				id: "1173CED194D336FB"
+				title: "Let's go!"
+				type: "checkmark"
+			}]
+			title: "Mission: O.I.L"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"0494E2F697C9AEE3"
+				"75E7B97F73B1E4DC"
+				"34BD8F08D0541B0A"
+			]
+			id: "4B936BAA54C1E689"
+			tasks: [{
+				id: "1E32E7D22868E524"
+				item: {
+					Count: 1
+					id: "ad_astra:tier_1_rocket"
+					tag: {
+						BotariumData: {
+							StoredFluids: [{
+								Amount: 0L
+								Fluid: "minecraft:empty"
+							}]
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.5d
+		}
+		{
+			id: "39491CBFC6B69051"
+			tasks: [{
+				id: "11F7A687CBD46BEC"
+				item: "kubejs:mys_mechanism"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"39491CBFC6B69051"
+				"3518F090836FA671"
+			]
+			id: "759B71475CF454F6"
+			tasks: [{
+				id: "0409ACFC2E110C1B"
+				item: "gtceu:steel_plate"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+		{
+			id: "3518F090836FA671"
+			tasks: [{
+				id: "24527838CA8BBFC6"
+				item: "kubejs:energized_bolt"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"00EB79BB5C6A1739"
+				"1B8BA30ADDFAE3F1"
+			]
+			id: "0494E2F697C9AEE3"
+			tasks: [{
+				id: "3BB0DCF1B344E6F8"
+				item: "ad_astra:launch_pad"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["55AFCF0A3F1ADDC7"]
+			id: "75E7B97F73B1E4DC"
+			tasks: [{
+				id: "55EC187F581FBAC4"
+				item: "gtceu:rocket_refined_fuel_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["759B71475CF454F6"]
+			id: "34BD8F08D0541B0A"
+			tasks: [{
+				id: "4A0E9B14FE665947"
+				item: "kubejs:navigation_mechanism"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["20D37EED7D7D2275"]
+			description: [
+				"So, you decided to get into the &0OIL Business&r, you can find &0OIL&r in its Crude form inside of the &2Moon&r. You will need to Drill it up and Process it down. Further on that is explained in th next few Quests. "
+				""
+				"&cWarning: &rDo not forget to &dchunkload&r with FTB Utilities (open the map in the top left corner, claim the chunks with left-click, and enable force loading with shift-left-click)."
+			]
+			id: "3847BC9B7A60E7D6"
+			tasks: [{
+				id: "7DE1B9013B6929A4"
+				item: "gtceu:dirty_crude_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"3847BC9B7A60E7D6"
+				"7B180D46BD30A6C8"
+			]
+			description: ["So now you will need to Purify the Crude OIL into a useful product which is this. Then after that is done you will need to un-slag it, meaning you will need put it into a Centrifuge to get the OIL Out."]
+			id: "742E738BE98A4598"
+			tasks: [{
+				id: "502CF96B151EEEFD"
+				item: "gtceu:puri_crude_bucket"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			id: "00EB79BB5C6A1739"
+			tasks: [{
+				id: "07A76C3D9DCE65F0"
+				item: "enderio:reinforced_obsidian_block"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.5d
+		}
+		{
+			id: "1B8BA30ADDFAE3F1"
+			tasks: [{
+				id: "17845F00C199320E"
+				item: "kubejs:reinforced_steel_beam"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.5d
+		}
+		{
+			id: "55AFCF0A3F1ADDC7"
+			tasks: [{
+				id: "5C3A20CB1DEAD863"
+				item: "gtceu:aluminium_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			id: "7B180D46BD30A6C8"
+			tasks: [{
+				id: "4FB2D509BC5E631A"
+				item: "gtceu:mv_distillery"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.5d
+		}
+		{
+			id: "058FF8A3CE0351A9"
+			tasks: [{
+				id: "5EC5D58D247C0488"
+				item: "gtceu:mv_centrifuge"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+	]
+	title: "Oil Discoverys"
+}

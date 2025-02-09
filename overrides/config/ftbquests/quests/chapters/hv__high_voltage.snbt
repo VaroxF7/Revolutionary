@@ -1,0 +1,840 @@
+{
+	autofocus_id: "1C94FFE25CEB032E"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hv__high_voltage"
+	group: "0C37D4F6292067DB"
+	icon: "gtceu:nano_processor"
+	id: "62BFD0E603B98D89"
+	order_index: 0
+	quest_links: [
+		{
+			id: "1C94FFE25CEB032E"
+			linked_quest: "0CEBDA0945F85A37"
+			shape: "hexagon"
+			x: 16.5d
+			y: -16.5d
+		}
+		{
+			id: "14AE4D7A782296B9"
+			linked_quest: "45A85AFBA370BB9C"
+			x: 16.5d
+			y: -9.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["0CEBDA0945F85A37"]
+			description: [
+				"When your power generation allows for it, &3HV machines&r are well worth using for on-demand processing. The quadrupled energy cost compared to their &7LV&r counterparts shouldn't bother you too much."
+				""
+				"&9Note:&r Crafting Hulls in the &3Assembler&r is slightly more efficient. Prioritise this recipe!"
+			]
+			icon: "gtceu:hv_machine_casing"
+			id: "1F97B4D22F3A55B8"
+			rewards: [{
+				count: 6
+				id: "3EB08D090C711549"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [{
+				count: 6L
+				id: "40918251FA8CF4D6"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			title: "High Voltage Machines"
+			x: 16.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["0CEBDA0945F85A37"]
+			description: [
+				"Just like &bMV&r, you'll need to make higher-tier components."
+				""
+				"The painful &dFlawless Gems&r have been replaced with slightly-more-painful &dEyes of Ender&r. Also notice that the &aMotors&r require &d2x Silver Cables&r."
+				""
+				"&aHulls&r and &aMachines&r use &dGold Cables&r."
+				"{@pagebreak}"
+				"&9&lTips to make life less painful:&r"
+				""
+				"- Consider using &dElectrotine decomposition&r and &dOre Processing&r for &eElectrum&r."
+				"- Consider using the &3Chemical Bath&r with &dMercury&r for &eGold&r from a wide variety of ores."
+			]
+			icon: "gtceu:hv_electric_motor"
+			id: "2296638D2636BCFD"
+			shape: "hexagon"
+			size: 1.0d
+			tasks: [
+				{
+					id: "2CAF52FF74BF8D01"
+					item: "gtceu:hv_electric_motor"
+					type: "item"
+				}
+				{
+					id: "54782083A84EC5B8"
+					item: "gtceu:hv_electric_piston"
+					type: "item"
+				}
+				{
+					id: "1EA3C7E8AE007414"
+					item: "gtceu:hv_conveyor_module"
+					type: "item"
+				}
+				{
+					id: "2AD0071643AD1013"
+					item: "gtceu:hv_electric_pump"
+					type: "item"
+				}
+				{
+					id: "4536B3A87052F50A"
+					item: "gtceu:hv_robot_arm"
+					type: "item"
+				}
+				{
+					id: "39BE0B4540579D4E"
+					item: "gtceu:hv_emitter"
+					type: "item"
+				}
+				{
+					id: "2328C08369C9A0F9"
+					item: "gtceu:hv_sensor"
+					type: "item"
+				}
+			]
+			title: "We call this \"fun\""
+			x: 17.0d
+			y: -17.0d
+		}
+		{
+			dependencies: ["45A85AFBA370BB9C"]
+			description: [
+				"&aPolytetrafluoroethylene (PTFE)&r is a &7Carbon&r-&bFluorine&r polymer. Similarly to PVC, PTFE can be used to increase the yield of Plastic Circuit Boards and other crafts. Presently, it is used to make the walls of &3Large Chemical Reactors&r."
+				""
+				"&3Chlorine&r is required in the process, which is fully recycled if you electrolyze the &aHydrochloric Acid&r waste."
+				""
+				"&bFluorine&r will also be used in the &aUranium&r and &7Naquadah&r refinement processes."
+				""
+				"&9Tip:&r From this point onwards, you should be solidifying Polymers as &dBar&r (Ingot) form, as they can easily be shaped to whichever form you will need using the &3Extruder&r."
+			]
+			icon: "gtceu:polytetrafluoroethylene_plate"
+			id: "5D730697F3F958DB"
+			size: 1.0d
+			subtitle: "A.K.A - Go To Hell"
+			tasks: [{
+				id: "62C0D8E62DC90BD5"
+				item: "gtceu:polytetrafluoroethylene_plate"
+				type: "item"
+			}]
+			title: "Polytetrafluoroethylene"
+			x: 16.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3E5B23FF45873B92"]
+			description: [
+				"&aLiquid Air&r is a great way to get large amounts of &aNitrogen&r and &aOxygen&r at the cost of using more energy than &3LV Centrifuges&r."
+				""
+				"However, this will also give you both &6Helium&r and &6Argon&r - which are great to boost smelting in the &3Electric Blast Furnace&r."
+				""
+				"&cNote:&r You will need at least &3HV Input and Output Hatches&r to be able to run this recipe."
+			]
+			id: "23541E3BC688FA6C"
+			shape: "gear"
+			tasks: [
+				{
+					id: "4D02C5FD13B8360B"
+					item: "gtceu:nitrogen_bucket"
+					type: "item"
+				}
+				{
+					id: "17B7BDB19D7D4907"
+					item: "gtceu:carbon_dioxide_bucket"
+					type: "item"
+				}
+				{
+					id: "6F61442352B0BC4B"
+					item: "gtceu:oxygen_bucket"
+					type: "item"
+				}
+				{
+					id: "76363F0DF667E6F5"
+					item: "gtceu:argon_bucket"
+					type: "item"
+				}
+				{
+					id: "6D6F52201236727E"
+					item: "gtceu:helium_bucket"
+					type: "item"
+				}
+			]
+			title: "Air Distillation"
+			x: 17.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["3E5B23FF45873B92"]
+			description: [
+				"This Quest requires the &3Pyrolyse Oven&r and is &doptional&r, yet convenient."
+				""
+				"The first four fluids are the important products of &aWood Tar&r Distillation:"
+				"&9-&r Phenol: useful for Epoxy and PBI"
+				"&9-&r Benzene: an important hydrocarbon"
+				"&9-&r Toluene: useful for TNT"
+				"&9-&r Dimethylbenzene: useful for PBI"
+				""
+				"Unlike Oil, putting &aWood Tar&r in the &3Distillation Tower&r for the byproducts, and using &dNitrobenzene&r for power is arguably worth it."
+				"{@pagebreak}"
+				"The bottom three are the important products from &aWood Vinegar&r Distillation:"
+				"&9-&r Acetic Acid: useful to make more Acetone"
+				"&9-&r Methanol: a moderately important hydrocarbon"
+				"&9-&r Acetone: useful for Epoxy and Gasoline"
+				"{@pagebreak}"
+				"It's also possible to use a \"full combo\" of 4 &3DTs&r -  input &aCharcoal Byproducts&r into a first tower, splitting into &aWood Tar&r, &aWood Gas&r and &aWood Vinegar&r."
+				""
+				"This isn't the most efficient cost-to-production ratio, but the option is there if you get bored."
+			]
+			icon: "gtceu:seed_oil_bucket"
+			id: "4785A433DCE94769"
+			shape: "gear"
+			size: 1.0d
+			tasks: [
+				{
+					id: "31C914B02B6A0507"
+					item: "gtceu:phenol_bucket"
+					type: "item"
+				}
+				{
+					id: "4F81D78AE1D6E186"
+					item: "gtceu:benzene_bucket"
+					type: "item"
+				}
+				{
+					id: "78015AADCC74DF87"
+					item: "gtceu:toluene_bucket"
+					type: "item"
+				}
+				{
+					id: "72B309995798EE7A"
+					item: "gtceu:dimethylbenzene_bucket"
+					type: "item"
+				}
+				{
+					id: "3D16B473A5E00EC3"
+					item: "gtceu:acetic_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "0355E097F54FA906"
+					item: "gtceu:methanol_bucket"
+					type: "item"
+				}
+				{
+					id: "291BC7CBD872DF87"
+					item: "gtceu:acetone_bucket"
+					type: "item"
+				}
+			]
+			title: "True Distillation: Organic"
+			x: 15.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["3E5B23FF45873B92"]
+			description: [
+				"Some specific fluids are &dCryogenic&r, which are too cold for ordinary pipes. "
+				""
+				"Thus... you need to pick the right pipe for the job."
+				""
+				"Not many pipes support cold fluids, so you'll want to give &aStainless Steel&r or &aIridium&r a try. Later on you can use &aNaquadah&r or most of the fusion materials when you get there."
+				""
+				"&cWARNING:&r&r Cryogenics in the wrong pipes will cause &cvoiding&r, &cpipe freezing&r, and high rates of &cdeath&r! Be careful."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o This is the first time GregTech has cryogenic mechanics, a GTCEu-original feature!"
+			]
+			icon: "gtceu:stainless_steel_large_fluid_pipe"
+			id: "57B4AE2584D0AD5A"
+			shape: "circle"
+			size: 0.66d
+			tasks: [{
+				id: "5E63FC225BE70323"
+				type: "checkmark"
+			}]
+			title: "This isn't Cryotheum!"
+			x: 15.583630952380958d
+			y: -11.504931972789088d
+		}
+		{
+			dependencies: ["3E5B23FF45873B92"]
+			description: [
+				"Here are the four most relevant &dHydrocarbons&r you will be obtaining from distilling Steam-Cracked Fuels."
+				""
+				"You will want to set this up &lbefore&r moving to &1IV&r."
+				""
+				"&aSteam-Cracked Light Fuel&r as input is probably the most favorable, but you are free to experiment."
+				""
+				"We know what you're thinking - something along the lines of \"&7&oThat Carbon output is just SO infuriating! It's ruining my automation!&r\"."
+				""
+				"Enable Item Voiding (in the controller GUI) if you don't want to build an Output Bus."
+			]
+			icon: "gtceu:oil_bucket"
+			id: "054B481673FD7B6C"
+			shape: "gear"
+			size: 1.0d
+			tasks: [
+				{
+					id: "2691D604DD0DF6F6"
+					item: "gtceu:benzene_bucket"
+					type: "item"
+				}
+				{
+					id: "55E37109EBEA84EC"
+					item: "gtceu:butadiene_bucket"
+					type: "item"
+				}
+				{
+					id: "19CC99FE7A48DE8C"
+					item: "gtceu:ethylene_bucket"
+					type: "item"
+				}
+				{
+					id: "2B859B1A21A4DA9D"
+					item: "gtceu:methane_bucket"
+					type: "item"
+				}
+			]
+			title: "True Distillation: Fuel"
+			x: 16.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["3E5B23FF45873B92"]
+			description: [
+				"The &3Cracker&r is a multiblock built with the sole purpose of cracking fluids. It comes with all the recipes of &3Chemical Reactor&r Cracking, but it is &6lossless&r."
+				""
+				"This is a great way to save a lot of Fuel in the long term!"
+				""
+				"Higher Coil tiers provide a small energy discount - up to 70% with the best Coils available."
+			]
+			id: "7A708A1B5265F899"
+			shape: "hexagon"
+			size: 1.0d
+			subtitle: "You Crack Me Up"
+			tasks: [{
+				id: "638C6BA76835CD29"
+				item: "gtceu:cracker"
+				type: "item"
+			}]
+			title: "Multiblock Cracking"
+			x: 17.5d
+			y: -11.5d
+		}
+		{
+			dependencies: ["7CAFCA978A2DD2D3"]
+			description: [
+				"&aGasoline&r is an extremely powerful Combustion Fuel. It's over &63 times&r as energy dense as &dDiesel&r!"
+				""
+				"&9Note:&r This Combustion Fuel exists solely as a &echallenge&r for you to overcome if you desire to take on it."
+				""
+				"It's completely &doptional&r, so we'll let you figure out how to obtain it, without any further tips."
+			]
+			id: "6D269F5966EEE0F4"
+			size: 1.0d
+			tasks: [{
+				id: "595285B3FAA1696F"
+				item: "gtceu:gasoline_bucket"
+				type: "item"
+			}]
+			title: "Gasoline"
+			x: 15.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["6D269F5966EEE0F4"]
+			description: [
+				"&6Multiply the energy density by 2&r and you have &aHigh Octane Gasoline&r."
+				""
+				"&9Note:&r Automating this requires a lot of &3Distillation Towers&r! A huge portion of your base would be dedicated to producing this constantly without anything bottlenecking."
+				""
+				"If you are actually &aautomating&r this and your &awhole base is running&r of it, flex on our discord!"
+			]
+			id: "371C2FC589372325"
+			size: 1.0d
+			tasks: [{
+				id: "4D9E77A280814CD7"
+				item: "gtceu:high_octane_gasoline_bucket"
+				type: "item"
+			}]
+			title: "High Octane Gasoline"
+			x: 14.5d
+			y: -13.5d
+		}
+		{
+			dependencies: ["7CAFCA978A2DD2D3"]
+			description: [
+				"Silicone Rubber has its uses in Cable insulation, Conveyor recipes, and more."
+				""
+				"You may want to shelve this quest for now, as tackling Silicone Rubber can be a pretty severe &dChlorine&r sink."
+				"{@pagebreak}"
+				"&9Note:&r Rubber will eventually be usurped by either &aSilicone Rubber&r or &aStyrene-Butadienne Rubber&r for &1IV&r Cables."
+				""
+				"Both these rubbers will be required once you make it to &dLuV&r."
+			]
+			icon: "gtceu:silicone_rubber_plate"
+			id: "01DAB713ECE2EDBA"
+			size: 1.0d
+			subtitle: "An alternate rubber"
+			tasks: [
+				{
+					id: "1A0CB8E82BF888B6"
+					item: "gtceu:silicon_plate"
+					type: "item"
+				}
+				{
+					id: "65F173D0332CC862"
+					item: "gtceu:rubber_ingot"
+					type: "item"
+				}
+				{
+					id: "16FA1FDD9E0F08FE"
+					item: "gtceu:silicone_rubber_bucket"
+					type: "item"
+				}
+			]
+			title: "Silicone Rubber"
+			x: 15.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["7CAFCA978A2DD2D3"]
+			description: [
+				"&7Styrene-Butadiene Rubber (SBR)&r is an enhanced type of Rubber."
+				""
+				"It can be used in place of Rubber in most recipes, and is &6four times more efficient&r at &ainsulating Cables&r. It is also strictly required for certain higher-tier recipes."
+				""
+				"This isn't exactly worth making until you get the &3Distillation Tower&r, but it eventually becomes easier with &dFuel Cracking&r."
+				"{@pagebreak}"
+				"&9Note:&r Rubber will eventually be usurped by either &aSilicone Rubber&r or &aStyrene-Butadienne Rubber&r for &1IV&r Cables."
+				""
+				"Both these rubbers will be required once you make it to &dLuV&r."
+			]
+			id: "26287C116387ACD5"
+			size: 1.0d
+			subtitle: "Steel Ball Run"
+			tasks: [{
+				id: "1D8FEB60BB7F659C"
+				item: "gtceu:styrene_butadiene_rubber_plate"
+				type: "item"
+			}]
+			title: "Styrene-Butadiene Rubber"
+			x: 14.5d
+			y: -12.5d
+		}
+		{
+			dependencies: ["0CEBDA0945F85A37"]
+			description: ["The &3HV Assembling Machine&r is the next step in progression, but also unlocks a handful of useful utilities - check around this quest for more."]
+			id: "468993353EB6F5B4"
+			shape: "hexagon"
+			tasks: [{
+				id: "2AD20A5E09346A02"
+				item: "gtceu:hv_assembler"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["0CEBDA0945F85A37"]
+			description: [
+				"You now have access to two &3new Maintenance Hatches&r. Both hatches &6do not require Maintenance&r when first placed in a Multiblock."
+				""
+				"The &3Automatic Maintenance Hatch&r is pretty simple - it eliminates the need for Maintenance, &6forever&r."
+				""
+				"The &3Configurable Maintenance Hatch&r is more interesting. You can configure it to cut off &a10% duration&r on recipes, at the cost of making Maintenance happen three times as fast. That is &d16 real hours&r of activity."
+				""
+				"&9Reminder:&r You can put Tape in the maintenance Hatch to automatically fix problems."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o The Automatic Maintenance Hatch texture and mechanic comes from TecTech, an addon mod originally made for GregTech: New Horizons. "
+				""
+				"&oYou'll see more from TecTech if you stick with us with the late game."
+			]
+			id: "1C39BC9B6BD378C3"
+			shape: "hexagon"
+			tasks: [{
+				id: "07DA497DEDCD4A0B"
+				item: "gtceu:auto_maintenance_hatch"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["0CEBDA0945F85A37"]
+			description: [
+				"The &3HV Autoclave&r - despite being optional - is a machine you'll definitively want to grab."
+				""
+				"This unlocks unique Batteries that are &6far superior&r to their standard counterparts."
+			]
+			id: "5095C10198D448D5"
+			shape: "hexagon"
+			tasks: [{
+				id: "11710E2F9DA39C36"
+				item: "gtceu:hv_autoclave"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["5095C10198D448D5"]
+			id: "2E0CE1C909053BB0"
+			tasks: [{
+				id: "6ABCCCE2C8DF0A31"
+				item: "gtceu:energy_crystal"
+				type: "item"
+			}]
+			x: 18.5d
+			y: -16.5d
+		}
+		{
+			dependencies: ["0CEBDA0945F85A37"]
+			description: [
+				"The &3HV Macerator&r finally unlocks more of the slots shown in JEI. With this, the first &9three&r slots are now available. This allows you to receive the &6unique ore Byproduct&r from macerating &dThermal &dCentrifuged Ore&r."
+				""
+				"Macerating Ores costs &a32 EU/t&r with &5two overclocks&r, which makes this machine able to fit in &7LV&r lines - very, very convenient."
+				""
+				"Despite the signicant improvements this machine provides, it still isn't completely worth it to set up advanced processing for every single ore. Energy and time are still things to consider, so only process the ores that produce &6Byproducts&r you care for."
+				"{@pagebreak}"
+				"&l&3Lore:&r&o In GregTech 5u, the &6HV&r&o Macerator only gave two slots. Urgh... we weren't planning on using that Stone Dust, anyway..."
+			]
+			id: "0B084398C29D3E27"
+			shape: "hexagon"
+			tasks: [{
+				id: "38CC841B3AE43C6C"
+				item: "gtceu:hv_macerator"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -17.5d
+		}
+		{
+			dependencies: ["468993353EB6F5B4"]
+			description: [
+				"The &aLow Power Integrated Circuit&r requires an &3HV Cutting Machine&r inside your &3Cleanroom&r."
+				""
+				"&3HV Energy Hatches&r will be nice additions so you can run your Multiblocks (mainly your Electric Blast Furnace and Large Chemical Reactor) directly off a &6HV&r line."
+				""
+				"This time around, you won't need to upgrade your EBF with 2 Energy Hatches to progress to &5EV&r - phew!"
+			]
+			id: "321D4F6FE16A8CF8"
+			shape: "hexagon"
+			tasks: [{
+				id: "39F99C382576512F"
+				item: "gtceu:hv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["321D4F6FE16A8CF8"]
+			description: ["&a4A&r of &bMV&r energy transmission may be appealing, but you probably don't need these at this point. The option is always there if you need it."]
+			id: "339B7B98A6F28200"
+			tasks: [{
+				id: "62A2D4538F39427D"
+				item: "gtceu:magnesium_diboride_single_wire"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["321D4F6FE16A8CF8"]
+			id: "7A8AF0DFE9F8FF89"
+			tasks: [{
+				id: "3F64217D9287EACD"
+				item: "gtceu:nichrome_dust"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["7A8AF0DFE9F8FF89"]
+			id: "7AFFD48A34E294A0"
+			tasks: [{
+				id: "05F884751FB3FD3C"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["468993353EB6F5B4"]
+			description: [
+				"The &3HV Chemical Reactor&r unlocks a ton of new recipes. Ah, who doesn't love the ever-growing demand on more advanced Chemistry?"
+				""
+				"&9Note:&r We've actually unlocked a ton of new content by reaching &6HV&r. However, not every processing line or item is crucial right now. It'd make the &6HV&r chapter far too dense if we included everything!"
+				""
+				"You could still check out the &5EV&r Chapter if you want to push yourself."
+			]
+			id: "7CAFCA978A2DD2D3"
+			tasks: [{
+				id: "6FEC2D39535B779F"
+				item: "gtceu:hv_chemical_reactor"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -14.5d
+		}
+		{
+			dependencies: ["7CAFCA978A2DD2D3"]
+			description: [
+				"The &3Distillation Tower&r is a multiblock that will help you extract the most out of fluids. In &3Distilleries&r, you had to pick only one product to output. DTs output &6all of it at once&r!"
+				""
+				"&9Note the special placement rules:&r Energy, Items, and Fluid Inputs can only be placed on the bottom layer. Maintenance can be placed anywhere. Fluid Outputs can only be placed starting on the second vertical layer, and only allow one per layer as well."
+				"{@pagebreak}"
+				"The &3DT&r can form at any height from &c&c3&r to &c13&r blocks, allowing 2 to 12 Fluid Outputs. Fluid will always output on the layer corresponding to the recipe in &2JEI&r."
+				""
+				"The &3DT&r has one more &9special&r rule. You can deliberately build it too short, and it will &cvoid&r whichever Fluid should have been output at the top layers that were removed. This can be useful in some very niche situations."
+				""
+				"It is a good idea to use &3Super Tanks&r as the output for every layer."
+				"{@pagebreak}"
+				"&cNote:&r Using the &3Distillation Tower&r for Oil -> Fuel -> Diesel is &cnot&r worth it! You will spend more energy overclocking the Multiblock than what you would get back from the products. It would be better to wait until you can make the &3Processing Array&r (&1IV&r) for large scale Diesel production. "
+				""
+				"However, the DT is &6very valuable&r when extracting Cracked Fuels and Pyrolyse products."
+			]
+			id: "3E5B23FF45873B92"
+			tasks: [{
+				id: "03C8CE0DE502EFEB"
+				item: "gtceu:distillation_tower"
+				type: "item"
+			}]
+			x: 16.5d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"7CAFCA978A2DD2D3"
+				"12C791B73A8FCA8D"
+			]
+			description: [
+				"Now use the &cRutile&r, &8Carbon&r and &9Chlorine&r to get the first step towards &dTitanium&r!"
+				""
+				"Then you will need to combind the &6Titanium Tetrachloride&r with some &6Magnesium&r to get the Hot Titanium Ingot, after that just put it into the Freezer and you are good to go!"
+				""
+				"The &dCarbon&r, &dChlorine&r, &dOxygen&r, and &dMagnesium&r used in the process can be &6perfectly recovered&r from the byproduct &dCarbon Monoxide&r and &dMagnesium Chloride&r with no loss."
+				""
+				"{@pagebreak}"
+				""
+				"&aTitanium Tetrachloride&r also acts as a catalyst in the production of plastics. A touch of &aTiCl₄&r in the polymerisation process can increase the polymer yield to &6133%&r&r. Naturally, this is completely optional."
+			]
+			id: "011A966950F85212"
+			tasks: [{
+				id: "4D1B74FEFF348445"
+				item: "gtceu:titanium_tetrachloride_bucket"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -14.5d
+		}
+		{
+			id: "12C791B73A8FCA8D"
+			tasks: [{
+				id: "6A5C72E0FE0B283E"
+				item: "gtceu:rutile_dust"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -15.5d
+		}
+		{
+			dependencies: ["011A966950F85212"]
+			id: "4348D56840174D7D"
+			tasks: [{
+				id: "6C710E2DEE675D6F"
+				item: "gtceu:hot_titanium_ingot"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -13.5d
+		}
+		{
+			dependencies: [
+				"4348D56840174D7D"
+				"35FF8AAA7A43D354"
+			]
+			description: ["&aTitanium&r has the highest corrosion resistance and strength-to-density ratio of any metallic element, so it's only natural that we'll be using it as the main material in our &5EV&r machinery."]
+			id: "5D270B0E549E6169"
+			tasks: [{
+				id: "77FDE141B14761A4"
+				item: "gtceu:titanium_ingot"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -12.5d
+		}
+		{
+			id: "2E6DB613A81CAFE5"
+			tasks: [{
+				id: "75BA63A6385DD723"
+				item: "thermal:blizz_rod"
+				type: "item"
+			}]
+			x: 18.5d
+			y: -14.0d
+		}
+		{
+			dependencies: ["2E6DB613A81CAFE5"]
+			id: "35FF8AAA7A43D354"
+			tasks: [{
+				id: "527FC267836FA76F"
+				item: "thermal:blizz_powder"
+				type: "item"
+			}]
+			x: 18.5d
+			y: -13.0d
+		}
+		{
+			dependencies: ["5D730697F3F958DB"]
+			description: [
+				"The &3Large Chemical Reactor (LCR)&r is a multiblock &3Chemical Reactor&r with more input/output slots. Its Teflon casings allow it to process extra recipes."
+				""
+				"The &3LCR&r can perform some exclusive reactions which allow you to combine multiple normal &3Chemical Reactor&r steps into a &6single step&r. Examples below:"
+				""
+				"&9-&r &aNitrogen Dioxide&r (for Nitric Acid and Dinitrogen Tetroxide)"
+				"&9-&r &aSulfuric Acid&r"
+				"&9-&r &aPhenol&r"
+				"&9-&r &aEpichlorohydrin&r (you need it for Epoxy!)"
+				"&9-&r &aEpoxy&r"
+				"{@pagebreak}"
+				"There are also &3LCR&r exclusive recipes. For example, &dRadon&r can only be made in the LCR right now."
+				""
+				"All &dOverclocks&r in the &3LCR&r are &6100% efficient&r (known as Perfect overclocks); each overclock will &5quadruple the speed&r, as opposed to doubling it."
+				""
+				"The &3LCR&r has yet another &6advantage&r. You can use &32 Energy Hatches&r to allow it to run recipes of the &5next tier&r, similar to the &3Electric Blast Furnace&r."
+				"{@pagebreak}"
+				"&9Tip:&r Given the amount of LCRs you may end up using, why not try utilising &dwallsharing&r to its full potential?"
+				""
+				"You could share one 2A (standard) &3Energy Hatch&r between 2 LCRs."
+				""
+				"You might want to share &3Input/Output Hatches&r, but make sure each LCR is running the correct recipe."
+				""
+				"Keep in mind Maintenance hatches are not sharable."
+			]
+			id: "452EAA11699E69F7"
+			tasks: [{
+				id: "2C5E96617BFE3C00"
+				item: "gtceu:large_chemical_reactor"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"5D730697F3F958DB"
+				"55A9B8080165FCDA"
+			]
+			description: [
+				"The &9Ore Synthetics Chamber (ORC)&r is a brand new Technology Developed by &9Eden™ Technologies&r who found a way to Synthesis Resources in Form of Raw Ore."
+				""
+				"In the Old days we had the &6Simulation Chambers&r which were very cost inefectiv, now we have the much better version on hand!"
+				""
+				"It can be &aPerfectly Overclocked&r and can also handle &aParrallel Processing Hatches&r, it only need the &6Hydrogen Fuel&r as Input and Energy after that, you got your Ores!"
+				""
+				"&7Have fun Programming.&r "
+			]
+			id: "4B880D79E679C5D1"
+			tasks: [{
+				id: "57F66F3A881C7778"
+				item: "gtceu:ore_laser"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"2F7287B0D396866C"
+				"4FC6B590725AF05C"
+			]
+			id: "55A9B8080165FCDA"
+			tasks: [{
+				id: "37C1A7AD029B5186"
+				item: "gtceu:dense_hydrogen_bucket"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -7.0d
+		}
+		{
+			description: [
+				"The &9Eden™ Introgen Compressor (ITC)&r is a Very large Compressor that is to be used to &aCompress Gases&r and &aLiquids&r into much more Energy Dense Versions. "
+				""
+				"It can be &aPerfectly Overclocked&r and can handle &aParrallel Hatches&r for the future! Its a bit more Expensiv tho."
+				""
+				"And now you have yet Another use for your new &dShiny Titanium&r!"
+				""
+				"&7Have fun Compessing!&r"
+			]
+			id: "5E3BA6D509A6FB26"
+			tasks: [{
+				id: "6CB9BE7D00A7CC73"
+				item: "gtceu:intro_compressor"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["452EAA11699E69F7"]
+			description: [
+				"Making &aNitrobenzene&r will boost the energy efficiency of &aBenzene&r roughly &6fourfold&r. You love to see it."
+				""
+				"The catch here is that it takes &dDistilled Water&r, and consumes a bit of &dSulfur&r with every step."
+			]
+			id: "4FC6B590725AF05C"
+			tasks: [{
+				id: "5E507A7A8A88D337"
+				item: "gtceu:nitrobenzene_bucket"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["452EAA11699E69F7"]
+			description: [
+				"&aCetane-Boosted Diesel&r is &650% more energy dense&r than regular &aDiesel&r, and only requires 1 part &dTetranitromethane (TNM)&r for every 50 parts &aDiesel&r. What a steal, right?"
+				""
+				"The catch comes in the complexity of making &dTNM&r. In order to concoct it, you must react &aNitric Acid&r with either &dEthenone&r or &aMethyl Acetate&r, both of which have quite an involved process themselves!"
+			]
+			id: "2E1DFDBA90F8506A"
+			tasks: [{
+				id: "047A7951864D5D28"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5E3BA6D509A6FB26"]
+			id: "2F7287B0D396866C"
+			tasks: [{
+				id: "193D494491C3B074"
+				item: "gtceu:cracked_hydrogen_bucket"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -6.0d
+		}
+	]
+	subtitle: ["Scale up your power and begin advanced chemistry"]
+	title: "Technological Advancements - HV"
+}

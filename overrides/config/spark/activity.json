@@ -1,0 +1,41 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Vera_ix",
+      "uniqueId": "0da5d9e6-6d96-4bec-8693-9bd749473fa4"
+    },
+    "time": 1738697268528,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/Ouz9X0UBcE"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Vera_ix",
+      "uniqueId": "0da5d9e6-6d96-4bec-8693-9bd749473fa4"
+    },
+    "time": 1738662013597,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/bsD9KzcnSX"
+    }
+  },
+  {
+    "user": {
+      "type": "player",
+      "name": "Vera_ix",
+      "uniqueId": "0da5d9e6-6d96-4bec-8693-9bd749473fa4"
+    },
+    "time": 1738585991778,
+    "type": "Profiler",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/2VHbvg0tzH"
+    }
+  }
+]

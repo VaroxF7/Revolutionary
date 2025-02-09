@@ -1,0 +1,10 @@
+{
+	chapter_groups: [
+		{ id: "26721A7382570C98", title: "Starting Off" }
+		{ id: "2C2CAF0515DE6257", title: "Chapter 1" }
+		{ id: "0C37D4F6292067DB", title: "Chapter 2" }
+		{ id: "4C9C85DF39CFFC55", title: "Chapter 3" }
+		{ id: "1DD7806DF47F7856", title: "Chapter 4" }
+		{ id: "471451F84A9BD3EB", title: "WIP TITELS" }
+	]
+}

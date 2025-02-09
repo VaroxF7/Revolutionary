@@ -1,0 +1,4 @@
+#Fri Feb 07 23:18:32 CET 2025
+ambient_brightness=0.5
+MIN_LIGHT_AMOUNT=0.1
+ambient_temp=5000

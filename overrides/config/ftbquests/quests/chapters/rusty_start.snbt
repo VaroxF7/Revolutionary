@@ -1,0 +1,370 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "rusty_start"
+	group: "26721A7382570C98"
+	icon: {
+		Count: 1
+		id: "notreepunching:flint_pickaxe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "66D7275978504F1E"
+	images: [
+		{
+			height: 1.0d
+			image: "minecraft:block/cave_vines_lit"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.519047619047626d
+			y: 0.36785714285717575d
+		}
+		{
+			height: 1.0d
+			image: "minecraft:item/nether_star"
+			rotation: 0.0d
+			width: 1.0d
+			x: -0.0013605442176896076d
+			y: -1.8127551020408035d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["079C58F8ACB8EC15"]
+			icon: {
+				Count: 1
+				id: "notreepunching:flint_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7C08F4A3FE595C88"
+			tasks: [{
+				id: "2BB12AE5C77841E1"
+				item: {
+					Count: 1
+					id: "notreepunching:flint_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C72D39F41567E03"]
+			id: "079C58F8ACB8EC15"
+			size: 2.0d
+			tasks: [{
+				id: "5F5477AAB17DF8EA"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C08F4A3FE595C88"]
+			id: "6F6AC0F728DE5DE6"
+			tasks: [{
+				id: "0101F8A1A64134D4"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6F6AC0F728DE5DE6"]
+			description: ["Now try to find some form of Ore that will yield you Iron."]
+			id: "0F46E3E92D10AC45"
+			tasks: [{
+				id: "1139157B2FA32567"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["079C58F8ACB8EC15"]
+			description: ["These are some of the Basics you can use to make your Food for the Day!"]
+			icon: "farmersdelight:cooking_pot"
+			id: "24C94EF7B5A95B99"
+			subtitle: "Some Basics to Start!"
+			tasks: [
+				{
+					id: "6C357488A5C07742"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					id: "5A9B1F2E76620BEA"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "0DD535E2E6FA05CA"
+					item: {
+						Count: 1
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Food Essentials"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["079C58F8ACB8EC15"]
+			description: [
+				"Thanks for the &aGTCEU Team&r for providing the base for the quest book of the &aGT Quests&r. "
+				""
+				"We have changed everything quiet a bit, however all of the other Quests are made by us!"
+			]
+			icon: "ftbquests:book"
+			id: "578A8272ACAC9EB6"
+			rewards: [{
+				id: "59085421D5400DEB"
+				item: "ftbquests:book"
+				type: "item"
+			}]
+			subtitle: "You also have this in your Inventory on the top left!"
+			tasks: [{
+				id: "7DEF3D542DEBDCBC"
+				title: "Okay."
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["079C58F8ACB8EC15"]
+			description: [
+				"Weather is a thing here, you will see that its quiet different from the normal vanilla way of weather."
+				""
+				"There are Sandstorms, Snowstorms, Tornados and so on. This also effects you body temperature and wellbeing, make sure to protect yourself!"
+			]
+			icon: "weather2:weather_item"
+			id: "017AB192AB8E397F"
+			tasks: [{
+				id: "0235A2E606A426F3"
+				title: "Got it!"
+				type: "checkmark"
+			}]
+			title: "WEATHER"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["079C58F8ACB8EC15"]
+			description: [
+				"&aFood&r has seen many additions in this pack, there are &aNutrients&r now, so you need a healthy diet and meal plan to keep yourself nice and fed. Make sure to keep all of it in the good range."
+				""
+				"You will also see, that the &aSeasons&r also have a say in this, some crops can only be grown in &6Summer or Fall&r. "
+				""
+				"To Combat this you may need to build up a Greenhouse for the start. Later on you can make a Mechanical Greenhouse, this needs Electronic Circuits tho so this a bit further away from now."
+				""
+				"To Build your first &aGreenhouse&r you will need to build glass around 4 blocks above the farmland and keep it secured from the outside, then you can grow your crops. Or you just go undergrund...."
+			]
+			icon: "minecraft:carrot"
+			id: "1D303A5017C276EE"
+			tasks: [{
+				id: "6D21618EAB1F0588"
+				title: "Got it!"
+				type: "checkmark"
+			}]
+			title: "FOOD"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0F46E3E92D10AC45"]
+			id: "4501A51564B0419A"
+			subtitle: "Your First Pickaxe!"
+			tasks: [{
+				id: "189D72DE8D3998D4"
+				item: {
+					Count: 1
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2BC81C06B58335B6"]
+			id: "40855B34295E7938"
+			tasks: [{
+				id: "76B330C1B4489389"
+				item: "notreepunching:flint_shard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			id: "2BC81C06B58335B6"
+			tasks: [{
+				id: "31F819C9DEF7B341"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["40855B34295E7938"]
+			id: "3F771058BFF43680"
+			tasks: [{
+				id: "1A5AB66C2B603B31"
+				item: {
+					Count: 1
+					id: "notreepunching:flint_knife"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3F771058BFF43680"]
+			id: "2C72D39F41567E03"
+			tasks: [{
+				id: "226F3002AB68A485"
+				item: {
+					Count: 1
+					id: "notreepunching:flint_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["079C58F8ACB8EC15"]
+			description: ["Yes, we have cooking for blockheads in here, you can make yourself a whole kitchen to make some funny and good food!"]
+			icon: "cookingforblockheads:recipe_book"
+			id: "49CEED6BC603D588"
+			tasks: [
+				{
+					id: "1598B161A076BE6B"
+					item: "cookingforblockheads:no_filter_edition"
+					type: "item"
+				}
+				{
+					id: "79BDE738B03902F3"
+					item: "cookingforblockheads:recipe_book"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"079C58F8ACB8EC15"
+				"15BF4B1069C97213"
+			]
+			id: "46A819DBDD3EAA75"
+			shape: "gear"
+			tasks: [{
+				id: "3B1A8258C222A774"
+				item: "create:wrench"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57C9253ABF057F24"]
+			description: ["There you go, you made your first &6Alloy&r! "]
+			id: "15BF4B1069C97213"
+			tasks: [{
+				count: 16L
+				id: "439DC08340EF0C6B"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "&6Andesite Alloy&r"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			description: ["This is the Holy Start of it all, the &2Andesite Alloy&r is the &6GOAL&r here. You will need to Automate this, we have got you covered, theses quests explain exactly how you will go about it."]
+			id: "3CEC9E5B9255658C"
+			tasks: [{
+				id: "4A00CEFFA0EE7B13"
+				item: "minecraft:kelp"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["3CEC9E5B9255658C"]
+			description: ["There are 2 ways of getting this Material, you can either do it &2by Hand&r and use a &2Knife&r and a &2Cutting Board&r, or you can use a &6Mixer to Automate it&r."]
+			id: "3F41099DF13474A6"
+			tasks: [{
+				id: "39C826674914B514"
+				item: "kubejs:kelp_fiber"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3F41099DF13474A6"]
+			description: ["Now you will need to Combind it all and after that you can go and put it into the Oven!"]
+			id: "57C9253ABF057F24"
+			tasks: [{
+				count: 16L
+				id: "5D63CD0240DD8E45"
+				item: "kubejs:compound_base"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["2C72D39F41567E03"]
+			icon: "gtceu:rubber_sapling"
+			id: "3E7C7ED58AC64993"
+			rewards: [{
+				count: 8
+				id: "6E5578299711C8C1"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				count: 32L
+				id: "04B882C6AEBB5F17"
+				item: { Count: 32, id: "minecraft:oak_log" }
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+	]
+	title: "Rusty Start"
+}

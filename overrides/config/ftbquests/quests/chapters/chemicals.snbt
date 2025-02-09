@@ -1,0 +1,809 @@
+{
+	autofocus_id: "1FA23BBE91023546"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chemicals"
+	group: "0C37D4F6292067DB"
+	icon: "gtceu:hot_vanadium_gallium_ingot"
+	id: "72241B3FD215DEA9"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["You will need some &7Sodium Hydroxide Dust&r, &6Seed Oil&r and &6Ethanol&r to get &aGlycerol&r. "]
+			id: "32E9B33C9D7981ED"
+			size: 0.75d
+			tasks: [{
+				id: "4319527D23F45B63"
+				item: "gtceu:glycerol_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["62E7B8817D22678F"]
+			description: [""]
+			id: "46542F4A273E64EB"
+			size: 0.75d
+			tasks: [{
+				count: 16L
+				id: "5134D69523321A94"
+				item: "gtceu:epoxy_printed_circuit_board"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.25d
+		}
+		{
+			dependencies: ["56B7CC072B8E9B48"]
+			description: [""]
+			id: "62E7B8817D22678F"
+			rewards: [{
+				count: 8
+				id: "2C444C91EA2DF79E"
+				item: "gtceu:epoxy_printed_circuit_board"
+				type: "item"
+			}]
+			size: 0.75d
+			tasks: [{
+				id: "0FF97EF9CC8D0F44"
+				item: "gtceu:epoxy_circuit_board"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["32E9B33C9D7981ED"]
+			description: [""]
+			id: "2A32CA82627E5FA7"
+			size: 0.75d
+			tasks: [{
+				id: "6E63FE29D8A9A884"
+				item: "gtceu:epichlorohydrin_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["13FBAF40F7083F62"]
+			description: [""]
+			id: "61210AF910F2C0DD"
+			size: 0.75d
+			subtitle: "Bio or Oil?"
+			tasks: [{
+				id: "5D377FA3ACCFD60C"
+				item: "gtceu:acetic_acid_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["61210AF910F2C0DD"]
+			description: [""]
+			id: "646918F4D700749B"
+			size: 0.75d
+			tasks: [{
+				id: "1A05D01D8AD64CFC"
+				item: "gtceu:dissolved_calcium_acetate_bucket"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["646918F4D700749B"]
+			description: [""]
+			id: "05F0FCBBEADA8489"
+			size: 0.75d
+			tasks: [{
+				id: "58219164CA17C0ED"
+				item: "gtceu:acetone_bucket"
+				type: "item"
+			}]
+			x: 0.75d
+			y: -0.75d
+		}
+		{
+			description: [""]
+			id: "13FBAF40F7083F62"
+			size: 0.75d
+			tasks: [{
+				id: "4F742760535E9639"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
+			title: "Ethylene"
+			x: 0.0d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"225F77308C834EA8"
+				"05F0FCBBEADA8489"
+			]
+			description: [""]
+			id: "79E97623309DEF84"
+			shape: "gear"
+			size: 0.75d
+			tasks: [{
+				id: "7D13ABA27E15B6A3"
+				item: "gtceu:bisphenol_a_bucket"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05ACA5341BFDD99B"]
+			description: [""]
+			id: "56B7CC072B8E9B48"
+			size: 0.75d
+			tasks: [{
+				id: "722CEDC6467CBF31"
+				item: "gtceu:epoxy_plate"
+				type: "item"
+			}]
+			title: "Raw Epoxy Boards"
+			x: 1.5d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"4AE3A2326EA07B7A"
+				"74D47A8DF93294E4"
+			]
+			description: [""]
+			id: "1D9194E89D14BA85"
+			shape: "gear"
+			size: 0.75d
+			subtitle: "PBI"
+			tasks: [{
+				id: "02B34C5571D15E05"
+				item: "gtceu:polybenzimidazole_bucket"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 0.75d
+		}
+		{
+			dependencies: [
+				"225F77308C834EA8"
+				"38BD153513DC2334"
+			]
+			description: [""]
+			id: "4AE3A2326EA07B7A"
+			size: 0.75d
+			tasks: [{
+				id: "07267D8026DD87B4"
+				item: "gtceu:diphenyl_isophthalate_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.75d
+		}
+		{
+			dependencies: ["0D68FA968FD2BEF4"]
+			description: [""]
+			id: "74D47A8DF93294E4"
+			min_width: 300
+			size: 0.75d
+			tasks: [{
+				id: "2F89534B88E0DF3F"
+				item: "gtceu:diaminobenzidine_bucket"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2483DD28AC6E7EA2"]
+			description: [""]
+			id: "0D68FA968FD2BEF4"
+			size: 0.75d
+			tasks: [{
+				id: "12F0E44FF6E412B9"
+				item: "gtceu:dichlorobenzidine_bucket"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -0.75d
+		}
+		{
+			dependencies: [
+				"72DC025BC059DF96"
+				"6F8E6D84D31651D5"
+			]
+			description: [""]
+			id: "2483DD28AC6E7EA2"
+			size: 0.75d
+			tasks: [{
+				id: "4DAAE03F1A961070"
+				item: "gtceu:nitrochlorobenzene_bucket"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["39B625FA20EAA025"]
+			description: [""]
+			id: "72DC025BC059DF96"
+			size: 0.75d
+			subtitle: "Yummy"
+			tasks: [{
+				id: "70F5FC5B8C666064"
+				item: "gtceu:nitration_mixture_bucket"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -2.25d
+		}
+		{
+			description: [""]
+			id: "39B625FA20EAA025"
+			size: 0.75d
+			subtitle: "Let that Sink in!"
+			tasks: [{
+				id: "68D0BF02B52C546A"
+				item: "gtceu:nitric_acid_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.25d
+		}
+		{
+			description: [""]
+			id: "6F8E6D84D31651D5"
+			size: 0.75d
+			tasks: [{
+				id: "061565CB40A69AB3"
+				item: "gtceu:chlorobenzene_bucket"
+				type: "item"
+			}]
+			x: -0.75d
+			y: -0.75d
+		}
+		{
+			description: [
+				"Now you will need to make some &3Napthalene&r."
+				""
+				"You will need to get a &aPyrolyse Oven&r Started and Burn some Logs down into some more Coal, Charcoal or even Coal Gas."
+				""
+				"You will also need the &3Napthalene&r later on for some more recipes! So be sure to automate it."
+			]
+			id: "38BD153513DC2334"
+			size: 0.75d
+			tasks: [
+				{
+					id: "70C9A799B2294DAC"
+					item: "gtceu:phthalic_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "633F48909C77A693"
+					item: "gtceu:naphthalene_bucket"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			description: [""]
+			id: "225F77308C834EA8"
+			size: 0.75d
+			tasks: [{
+				id: "4E39727CD1515BC8"
+				item: "gtceu:phenol_bucket"
+				type: "item"
+			}]
+			x: 0.75d
+			y: 0.75d
+		}
+		{
+			dependencies: ["1D9194E89D14BA85"]
+			id: "590263FA29E95A03"
+			size: 0.75d
+			tasks: [{
+				count: 16L
+				id: "5D2FCAB165427A9D"
+				item: "gtceu:carbon_fibers"
+				type: "item"
+			}]
+			x: -0.75d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"79E97623309DEF84"
+				"2A32CA82627E5FA7"
+			]
+			id: "05ACA5341BFDD99B"
+			size: 0.75d
+			tasks: [{
+				id: "1823B61C554EC4B5"
+				item: "gtceu:epoxy_bucket"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"105A8169A9C7AD0D"
+				"6C3E898BD5E6397A"
+				"3FDE27D792F84634"
+			]
+			id: "19437EA0FA9170A3"
+			size: 0.75d
+			tasks: [{
+				id: "05AF0EC19855987A"
+				item: "gtceu:dimethylhydrazine_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.20918367346939d
+		}
+		{
+			dependencies: ["49B0E435C28AAF8F"]
+			id: "105A8169A9C7AD0D"
+			size: 0.75d
+			tasks: [{
+				id: "1C1AB3759372B77C"
+				item: "gtceu:hypochlorous_acid_bucket"
+				type: "item"
+			}]
+			x: 3.75d
+			y: -2.20918367346939d
+		}
+		{
+			id: "6C3E898BD5E6397A"
+			size: 0.75d
+			tasks: [{
+				id: "0DF329134FC5E8CC"
+				item: "gtceu:ammonia_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -1.45918367346939d
+		}
+		{
+			id: "3FDE27D792F84634"
+			size: 0.75d
+			tasks: [{
+				id: "6AB184CA36D342CE"
+				item: "gtceu:methanol_bucket"
+				type: "item"
+			}]
+			x: 5.25d
+			y: -1.45918367346939d
+		}
+		{
+			id: "49B0E435C28AAF8F"
+			size: 0.75d
+			tasks: [{
+				id: "0399FB631BB4E69F"
+				item: "gtceu:chlorine_bucket"
+				type: "item"
+			}]
+			x: 3.75d
+			y: -1.45918367346939d
+		}
+		{
+			dependencies: [
+				"18FD202BD447C089"
+				"0E7501AC23D30155"
+			]
+			id: "0016FB683F4A44F4"
+			size: 0.75d
+			tasks: [{
+				id: "737D5D9AE27D0837"
+				item: "gtceu:chloroform_bucket"
+				type: "item"
+			}]
+			x: 5.25d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"76555AE163DE4523"
+				"05FB73C7588827B8"
+			]
+			id: "03B7ABAE7529C2FF"
+			size: 0.75d
+			tasks: [{
+				id: "72A2ABB48B4E5F59"
+				item: "gtceu:hydrofluoric_acid_bucket"
+				type: "item"
+			}]
+			x: 5.25d
+			y: 0.75d
+		}
+		{
+			id: "05FB73C7588827B8"
+			size: 0.75d
+			tasks: [{
+				id: "1FD6B80DDD6A0890"
+				item: "gtceu:hydrogen_bucket"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 0.75d
+		}
+		{
+			id: "76555AE163DE4523"
+			size: 0.75d
+			tasks: [{
+				id: "233A6ED79B27B156"
+				item: "gtceu:fluorine_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 1.125d
+		}
+		{
+			dependencies: ["05FB73C7588827B8"]
+			id: "18FD202BD447C089"
+			size: 0.75d
+			tasks: [{
+				id: "7822F53454FBF222"
+				item: "gtceu:methane_bucket"
+				type: "item"
+			}]
+			x: 3.75d
+			y: 0.0d
+		}
+		{
+			id: "0E7501AC23D30155"
+			size: 0.75d
+			tasks: [{
+				id: "2DDD0D7C4D8DE317"
+				item: "gtceu:chlorine_bucket"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -0.375d
+		}
+		{
+			dependencies: [
+				"7CAFCA978A2DD2D3"
+				"0016FB683F4A44F4"
+				"03B7ABAE7529C2FF"
+			]
+			id: "45A85AFBA370BB9C"
+			tasks: [{
+				id: "10AF4E884BCBBDAB"
+				item: "gtceu:tetrafluoroethylene_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["19437EA0FA9170A3"]
+			id: "011345C98A7F3C88"
+			tasks: [{
+				id: "5B8D5A34D4F956FE"
+				item: "gtceu:rocket_fuel_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			id: "0C33ECEA8CE1E3CA"
+			tasks: [{
+				id: "63EE2A82824D9ED7"
+				item: "gtceu:epoxy_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			id: "2F7495B4A39AF030"
+			tasks: [{
+				id: "60AD78FD5F310531"
+				item: "gtceu:nitrobenzene_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 3.5d
+		}
+		{
+			id: "04AA2E904950CA00"
+			tasks: [{
+				id: "1C75E4E207CE8FCB"
+				item: "gtceu:cetane_boosted_diesel_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 5.0d
+		}
+		{
+			id: "1EC3CF41B8E4B0E9"
+			tasks: [{
+				id: "66E3F14954947E10"
+				item: "gtceu:ethylene_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 6.5d
+		}
+		{
+			id: "55399AB136B71F29"
+			tasks: [{
+				id: "375F17FF6FD6115E"
+				item: "gtceu:cleaning_solution_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 8.0d
+		}
+		{
+			id: "0DAFAB2DF496FE3B"
+			tasks: [{
+				id: "159E0AF0C09EFA17"
+				item: "gtceu:photo_resist_bucket"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["24C7FD2776A33299"]
+			id: "6F83CE7A964C4B12"
+			tasks: [{
+				id: "1214BD12B7F46D48"
+				item: "gtceu:hot_palladium_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6F83CE7A964C4B12"]
+			id: "4DC4C193B7FA95C6"
+			tasks: [{
+				id: "6F46E5B772036194"
+				item: "gtceu:palladium_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7A4B6B2EB57ECFF1"]
+			id: "24C7FD2776A33299"
+			tasks: [{
+				id: "38AF31F99359BEB4"
+				item: "gtceu:palladium_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0CF6B5A23AF70135"]
+			id: "032F0AC9DFEAFCAC"
+			tasks: [{
+				id: "3A5C22CD474DFC94"
+				item: "gtceu:rhodium_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2EE507E1139549C0"]
+			id: "0CF6B5A23AF70135"
+			tasks: [{
+				id: "77B0C99A79A207EB"
+				item: "gtceu:hot_rhodium_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1FA23BBE91023546"]
+			id: "03F7157B3B3A1D1F"
+			tasks: [{
+				id: "29497EB9A86BBCEC"
+				item: "gtceu:ruthenium_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5F14C150373C6E0C"]
+			id: "1FA23BBE91023546"
+			tasks: [{
+				id: "4998884A713D9A90"
+				item: "gtceu:hot_ruthenium_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["05D0C04BF2D26845"]
+			id: "2EE507E1139549C0"
+			tasks: [{
+				id: "40C22596F85F7C5C"
+				item: "gtceu:rhodium_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["44A0A926C623E93F"]
+			id: "5F14C150373C6E0C"
+			tasks: [{
+				id: "622CBB87C035C92C"
+				item: "gtceu:ruthenium_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["580224CB48AAC11E"]
+			id: "3D22A288867DF8A6"
+			tasks: [{
+				id: "5ECBA2D4566A355B"
+				item: "gtceu:platinum_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7D51FE0FED3DAF34"]
+			id: "580224CB48AAC11E"
+			tasks: [{
+				id: "04862CB297439B2F"
+				item: "kubejs:platinum_clump"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			id: "7D51FE0FED3DAF34"
+			tasks: [{
+				id: "0868409564D48449"
+				item: "gtceu:raw_platinum"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2C0ADD27702ED337"]
+			id: "44A0A926C623E93F"
+			tasks: [{
+				id: "0BD3B16BE5FABCFC"
+				item: "gtceu:ruthenium_tetroxide_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["5F2419C415A05EB5"]
+			id: "2C0ADD27702ED337"
+			tasks: [{
+				id: "495D96C11F662710"
+				item: "gtceu:inert_metal_mixture_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2C0ADD27702ED337"]
+			id: "05D0C04BF2D26845"
+			tasks: [{
+				id: "313F811C343DFE6E"
+				item: "gtceu:rhodium_sulfate_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			id: "7A4B6B2EB57ECFF1"
+			tasks: [{
+				id: "089DF8F396AB3684"
+				item: "gtceu:raw_palladium"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5F2419C415A05EB5"]
+			id: "476A1CF1C19C8C26"
+			tasks: [{
+				id: "742BB3D7C2D43CD3"
+				item: "gtceu:rarest_metal_mixture_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["476A1CF1C19C8C26"]
+			id: "1377F6C20CFA859C"
+			tasks: [{
+				id: "01F8C7CA3C3D6F8B"
+				item: "gtceu:iridium_metal_residue_dust"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1377F6C20CFA859C"]
+			id: "5742A029CA88FD59"
+			tasks: [{
+				id: "19C6A6C6BAC99500"
+				item: "gtceu:iridium_chloride_dust"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5742A029CA88FD59"]
+			id: "013DCB3832300A5B"
+			tasks: [{
+				id: "610534D9B9942376"
+				item: "gtceu:iridium_dust"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1898B403C26A16CB"]
+			id: "191B2D50853BEF2D"
+			tasks: [{
+				id: "7F99955C1FC4185B"
+				item: "gtceu:iridium_ingot"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["013DCB3832300A5B"]
+			id: "1898B403C26A16CB"
+			tasks: [{
+				id: "7B5EE4EA4B3E30B8"
+				item: "gtceu:hot_iridium_ingot"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -8.0d
+		}
+		{
+			id: "5F2419C415A05EB5"
+			tasks: [{
+				id: "2C4142A8AD6C4B2E"
+				item: "gtceu:platinum_group_sludge_dust"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.5d
+		}
+	]
+	title: "Chemical Production Lines"
+}
